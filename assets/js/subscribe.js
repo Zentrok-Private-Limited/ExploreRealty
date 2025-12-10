@@ -22,7 +22,7 @@ if (subscribeForm) {
       const url =
         window.location.hostname === "localhost"
           ? "http://localhost:5000/subscriber"
-          : "https://your-production-api.com/subscriber";
+          : "https://explore-realty-backend.vercel.app/subscriber";
 
       const res = await fetch(url, {
         method: "POST",
