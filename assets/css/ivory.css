@@ -1,0 +1,416 @@
+.button{
+  background-color: #14264e !important;
+  color: #ecb44b !important;
+}
+.text-color{
+  color: #e9a43c;
+}
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 110px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Push content right on desktop to make space for sidebar */
+@media (min-width: 992px) {
+  .dashboard-app {
+    margin-left: 250px;
+  }
+  .dashboard-nav.offcanvas {
+    transform: none !important;
+    visibility: visible !important;
+  }
+}
+
+/* ========== SIDEBAR ========== */
+.dashboard-nav {
+  background-color: #0c1b2a !important;
+  width: 250px !important;
+  min-height: 100vh;
+  margin-top: 90px;
+}
+
+/* Sidebar links */
+.dashboard-nav-item {
+  display: block;
+  color: #fab536;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dashboard-nav-item:hover,
+.dashboard-nav-item.active {
+  background-color: #162c46;
+  border-radius: 5px;
+  color: #f1c343;
+}
+
+/* Mobile behavior */
+@media (max-width: 991px) {
+  .dashboard-nav {
+    transform: translateX(-100%);
+  }
+
+  .dashboard-nav.mobile-show {
+    transform: translateX(0);
+  }
+
+  .dashboard-app {
+    margin-left: 0;
+  }
+}
+
+
+/* ========== CONTENT STYLES ========== */
+.dashboard-content {
+  flex-grow: 2;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 15px;
+  }
+}
+
+/* Overview Card */
+.overview {
+  background: #f8f9fa;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.divino {
+  background-color: #0e1927;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Headings */
+#overview h1,
+#overview h2 {
+  color: #2c3e50;
+}
+
+/* ========== ELITE BUTTON ========== */
+.elite {
+  background-color: #0e1927;
+  width: fit-content;
+  padding: 3px 12px;
+  color: #f1c343;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#overview .elite:hover {
+  background: #15284b;
+}
+
+#overview .elite a {
+  color: rgb(245, 191, 75);
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    #overview h1,
+    #overview h2 {
+        text-align: center;
+    }
+
+    .overview p {
+        font-size: 14px;
+    }
+
+    .exploreRealty {
+        text-align: center;
+    }
+
+    .exploreRealty a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .dashboard-nav header .menu-toggle {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+/* sidenav css end  */
+/* ABOUT */
+section.testimonials {
+    background-color: #ECF2F7;
+    padding: 0;
+    width: 100%;
+}
+
+section.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 3rem 3rem 3rem;
+}
+
+section.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "item1 item2 item2"
+        "item4 item5 item3"
+        "item6 item6 item6";
+    gap: 1.5rem;
+    width: 95%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* General Item Styles */
+.item {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 0.1rem; */
+    align-content: start;
+}
+
+/* Padding only for text blocks */
+.item1,
+.item2,
+.item6 {
+    padding: 1.5rem;
+}
+
+/* Text content styles */
+.title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    word-spacing: 0.5rem;
+    margin-top: -10px;
+}
+
+/* Specific Item Areas */
+.item1 {
+    grid-area: item1;
+    background-color: rgb(4, 163, 155);
+    color: #fff;
+}
+
+.item2 {
+    grid-area: item2;
+    background-color: rgb(58, 116, 204);
+    color: #fff;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+    /* height: 210px; */
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+    background-color: rgb(148, 174, 212);
+    color: #ffffff;
+}
+
+/* Make text inside item6 more prominent */
+.item6 span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Image Styling */
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: block;
+    /* This removes default inline spacing */
+}
+
+/* Hover effect */
+.item img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) {
+    section.container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6";
+    }
+
+    .item3,
+    .item4,
+    .item5 {
+        height: 200px;
+    }
+}
+
+h2.text-center {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+@media(min-width: 768px) {
+    .col-md-6 {
+        width: 48%;
+    }
+}
+
+@media(min-width: 992px) {
+    .col-lg-4 {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials .title {
+        font-size: 1.5rem;
+    }
+
+    .testimonials .description {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .item3,
+    .item4,
+    .item5 {
+        height: 130px;
+    }
+}
+
+/* LOCATION */
+.location-section {
+    position: relative;
+    margin-top: 40px;
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.location-overlay {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: rgba(15, 16, 26, 0.95);
+    color: #f3b749;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 350px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.btn-map {
+    display: none;
+    /* hidden on desktop */
+}
+
+/* ✅ Mobile styles */
+@media (max-width: 768px) {
+    .location-overlay {
+        position: static;
+        /* अब map के नीचे आ जाएगी */
+        transform: none;
+        max-width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .map-frame {
+        display: none;
+    }
+
+    .btn-map {
+        display: inline-block;
+        /* दिखेगा mobile पर */
+        text-align: center;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #0e1927;
+        color: #f3b84a;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    .btn-map:hover {
+        background: #172941;
+    }
+
+    .location-overlay h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .location-overlay p {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }
+}
+.amenity-box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.amenity-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-box i {
+  display: block;
+  color: rgb(38, 62, 99);
+}

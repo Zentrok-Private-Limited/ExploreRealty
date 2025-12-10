@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ivory.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#about" class="dashboard-nav-item">About</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Image Row -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/tulsi/tulsi-3.avif" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Headings -->
+                <h1 class="text-center text-light divino mt-4">TULSI VATIKA VILLAS</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <!-- Overview Content -->
+                <div class="container-fluid overview rounded px-3 px-md-5 py-4">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">RERA:</span> UPRERAPRJ256314</p>
+                            <p><span class="fw-bold">Project Name:</span> Tulsi Vatika Royal Villas</p>
+                            <p><span class="fw-bold">Developer:</span> Rohit Construction</p>
+                            <p><span class="fw-bold">Total Floors:</span> Up to 45 floors</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Project Units:</span> 44 Exclusive Villas</p>
+                            <p><span class="fw-bold">Towers:</span> Around 22‑23</p>
+                            <p><span class="fw-bold">Status</span> Under Construction </p>
+                            <p><span class="fw-bold">Project Area:</span>~2 Acres (approx.)</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Possession:</span> Expected December 2025</p>
+                            <p><span class="fw-bold">Location:</span> Vaidpura, Sector 10, Greater Noida West (Noida
+                                Extension)</p>
+                            <p><span class="fw-bold">Project Type:</span> RESIDENTIAL Luxury 3 BHK Villas</p>
+
+                            <!-- Contact CTA -->
+                            <div class="exploreRealty mt-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <button href="#" class="text-decoration-none ms-2">Contact xyz RealEstate Team</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ================--------------about L & T----------============== -->
+            <section class="testimonials" id="about">
+                <section class="container">
+                    <div class="item item1">
+                        <div class="title text-center">TULSI VATIKA VILLAS</div>
+                    </div>
+                    <div class="item item2">
+                        <div class="description">Tulsi Vatika Royal Villas is a premium villa project located in
+                            Vaidpura, Sector-10, Greater Noida West. It offers spacious 3 BHK villas ranging from
+                            approximately 1,872 to 2,085 sq. ft., with prices starting around ₹97 lakh and going up to
+                            ₹1.08 crore. </div>
+                    </div>
+                    <div class="item item3">
+                        <img src="assets/img/tulsi/tulsi-12.webp" alt="Image 1">
+                    </div>
+                    <div class="item item4">
+                        <img src="assets/img/tulsi/tulsi-11.avif" alt="Image 2">
+                    </div>
+                    <div class="item item5">
+                        <img src="assets/img/tulsi/tulsi-10.avif" alt="Image 3">
+                    </div>
+                    <div class="item item6">
+                        <div class="description">The project features 44 units and promises amenities like a clubhouse,
+                            landscaped gardens, temple, and security. Currently under construction, it is expected to be
+                            completed by December 2025. Positioned near Rajesh Pilot Chowk, it offers decent
+                            connectivity and is marketed as a blend of comfort, privacy, and modern living.
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <div class="container-fluid my-5" id="pricing">
+                <h2 class="text-center mb-4">Apartment Configurations & Pricing</h2>
+                <div class="row g-4">
+
+                    <!-- 3 BHK -->
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/tulsi/tulsi-14.webp" data-fancybox="floorplans"
+                                    data-caption="3 BHK Floor Plan">
+                                    <img src="assets/img/tulsi/tulsi-14.webp" alt="3 BHK"
+                                        class="img-fluid rounded shadow-sm"
+                                        style="height: 300px; width: 100%; object-fit: cover;" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK Villa</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> ~ 1,872 sq.ft <br />
+                                    <strong>Price:</strong> ~ ₹ 97.34 Lakh
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 BHK -->
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/tulsi/tulsi-14.webp" data-fancybox="floorplans"
+                                    data-caption="4 BHK Floor Plan">
+                                    <img src="assets/img/tulsi/tulsi-14.webp" alt="4 BHK"
+                                        class="img-fluid rounded shadow-sm"
+                                        style="height: 300px; width: 100%; object-fit: cover;" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK Villa (bigger size)</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong>~ 2,085 sq.ft <br />
+                                    <strong>Price:</strong> ~ ₹ 1.08 Crore
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ======================================Amenities===================================  -->
+            <div class="container my-5" id="amenities">
+                <h2 class="text-center mb-4">Amenities & Lifestyle</h2>
+                <div class="row g-4">
+
+                    <!-- Amenity 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-camera-video-fill fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Security</h5>
+                            <p class="text-muted mb-0">Gated community with 24×7 security & CCTV</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenity 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-house-heart-fill fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Clubhouse</h5>
+                            <p class="text-muted mb-0">Gym, yoga & meditation zone for a healthy lifestyle</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenity 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-droplet-half fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Swimming Pool</h5>
+                            <p class="text-muted mb-0">Luxurious pool & landscaped gardens</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenity 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-emoji-smile-fill fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Play Area</h5>
+                            <p class="text-muted mb-0">Children’s play area & open green spaces</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenity 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-car-front-fill fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Parking</h5>
+                            <p class="text-muted mb-0">Adequate parking spaces (covered & open)</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenity 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="amenity-box text-center p-4 rounded">
+                            <i class="bi bi-lightning-charge-fill fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Power Backup</h5>
+                            <p class="text-muted mb-0">24×7 power backup & water supply</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================================projects============================ -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn button more-btn">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ============================floor Preference ================================ -->
+            <section class="py-5 bg-white" id="investment">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="p-4 border rounded-4 shadow-sm bg-light">
+                                <i
+                                    class="bi bi-bar-chart-line-fill display-5 text-primary mb-3 d-block text-center"></i>
+
+                                <h5 class="fw-semibold mb-3 text-center text-uppercase">Investment Highlights</h5>
+
+                                <ul class="list-unstyled text-muted small mb-4">
+                                    <li>• <strong>Affordable luxury villa option in Noida Extension</strong></li>
+                                    <li>• <strong>High appreciation potential with regional infrastructure growth
+                                            (metro, expressways, airport)</strong></li>
+                                    <li>• <strong>Exclusive low-rise community (only 44 units vs high-rise
+                                            apartments)</strong></li>
+                                    <li>• <strong>Suitable for both end-users & long-term investors</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================location======================== -->
+            <div class="container my-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8467071059067!2d77.48450822450765!3d28.574365536721544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ced007e59a779%3A0x45e3ce49a073dd02!2sTulsi%20Vatika%20Villa!5e0!3m2!1sen!2sin!4v1758620948030!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>• Schools Nearby:</em></p>
+                        <p>Ryan International, Sarvottam International, DPS</p>
+                        <p><em>• Hospitals Nearby </em></p>
+                        <p>Yatharth Super Speciality, Fortis, Kailash Hospital</p>
+                        <p><em>• Shopping / Entertainment </em></p>
+                        <p>Gaur City Mall, local markets, malls at Sector 18 Noida (20–25 mins)</p>
+                        <p><em>• Future Growth Drivers </em></p>
+                        <p>Proximity to Gaur Chowk, upcoming metro expansion, Jewar International Airport connectivity
+                        </p>
+                    </div>
+                    <div class="map-btn">
+                        <a href="https://www.google.com/maps/place/Tulsi+Vatika+Villa/@28.5743655,77.4845082,17z/data=!4m10!1m2!2m1!1sTULSI+VATIKA+VILLAS,++SECTOR+10+GREATER+NOIDA!3m6!1s0x390ced007e59a779:0x45e3ce49a073dd02!8m2!3d28.574178!4d77.487303!15sCi1UVUxTSSBWQVRJS0EgVklMTEFTLCAgU0VDVE9SIDEwIEdSRUFURVIgTk9JREGSAQ9ob3VzaW5nX3NvY2lldHmqAXwKDS9nLzExeDVrZDVzZ2wQASoXIhN0dWxzaSB2YXRpa2EgdmlsbGFzKAAyHxABIhuPLfjpabpajwQyiPo7eo9QaLKBm2rLfBfqNacyLxACIit0dWxzaSB2YXRpa2EgdmlsbGFzIHNlY3RvciAxMCBncmVhdGVyIG5vaWRh4AEA!16s%2Fg%2F11wxw1vply?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" class="btn-map text-white">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<script>
+    Fancybox.bind("[data-fancybox='floorplans']", {
+        Thumbs: {
+            autoStart: true,
+        },
+    });
+</script>
+
+</html>

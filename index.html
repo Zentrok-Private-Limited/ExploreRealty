@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <title>xyz RealEstate </title>
+</head>
+
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div class="hero-section position-relative">
+        <!-- Background Image -->
+        <img src="assets/img/bryan-dickerson-XJeMcS9tKEU-unsplash.jpg" alt="Commercial Building" class="hero-img" />
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Center Heading -->
+        <div class="hero-heading type text-center">
+            <h1>• xyz RealEstate •</h1>
+        </div>
+
+        <!-- ✅ Cards Section -->
+        <div class="card-section container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-house feature-icon"></i>
+                        <h5>Property Sale</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-person-lines-fill feature-icon"></i>
+                        <h5>Property Rent</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-building feature-icon"></i>
+                        <h5>Property Resale</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card feature-card">
+                        <i class="bi bi-house feature-icon"></i>
+                        <h5>Dealers Floor</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- search project start -->
+    <!-- <section class="container property-search">
+        <h2 class="mb-4 text-center">Find Your Property</h2>
+        <form id="searchForm" class="row g-3 justify-content-center">
+            <div class="col-sm-6 col-md-3">
+                <select class="form-select" name="city">
+                    <option value="">Select City</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <select class="form-select" name="listingType">
+                    <option value="">Property Type</option>
+                    <option value="Buy">Buy</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <input type="number" class="form-control" name="minPrice" placeholder="Min Price">
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <input type="number" class="form-control" name="maxPrice" placeholder="Max Price">
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <button type="submit" class="btn button w-100">Search</button>
+            </div>
+        </form>
+    </section> -->
+    <!-- search project end -->
+
+    <!-- Projects Section -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Projects</h2>
+            <a href="project.html" class="btn button">View More</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="assets/img/home18.jpg" class="card-img-top" alt="Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kalpataru Vista</h5>
+                        <p class="price mt-auto">₹5.42 Cr - ₹8.9 Cr</p>
+                        <a href="kalpataru-vista.html" class="btn button mt-2">Explore Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="assets/img/home13.webp" class="card-img-top" alt="Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GYGY</h5>
+                        <p class="price mt-auto">₹1.5 Cr - ₹2.31 Cr</p>
+                        <a href="gygy.html" class="btn button mt-2">Explore Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="assets/img/home6.avif" class="card-img-top" alt="Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                        <p class="price mt-auto">₹2.30 Cr - ₹4.32 Cr</p>
+                        <a href="ats.html" class="btn button mt-2">Explore Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid card-container px-3 py-5">
+        <div class="row align-items-center">
+            <!-- Left Column: 4 Overlay Cards -->
+            <div class="col-12 col-md-6">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6" data-aos="fade-down-right" data-aos-duration="1500">
+                        <div class="overlay-card">
+                            <img src="assets/img/2.avif" alt="Property" class="card-bg-img" />
+                            <div class="card-overlay-content">
+                                <h6>Property Marketing Strategy</h6>
+                                <p>Professional photos & videos</p>
+                                <p>Listings on property portals</p>
+                                <p>Social media promotions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-down-left" data-aos-duration="1500">
+                        <div class="overlay-card">
+                            <img src="assets/img/2.avif" alt="Property" class="card-bg-img" />
+                            <div class="card-overlay-content">
+                                <h6>Customer Engagement Strategy</h6>
+                                <p>Free consultations & site visits</p>
+                                <p>24/7 customer support</p>
+                                <p>Personalized suggestions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-up-right" data-aos-duration="1500">
+                        <div class="overlay-card">
+                            <img src="assets/img/2.avif" alt="Property" class="card-bg-img" />
+                            <div class="card-overlay-content">
+                                <h6>Pricing & Investment Strategy</h6>
+                                <p>No hidden charges</p>
+                                <p>Flexible payment plans</p>
+                                <p>Rental income potential</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-up-left" data-aos-duration="1500">
+                        <div class="overlay-card">
+                            <img src="assets/img/2.avif" alt="Property" class="card-bg-img" />
+                            <div class="card-overlay-content">
+                                <h6>Growth & Partnership Strategy</h6>
+                                <p>Builder collaborations</p>
+                                <p>Exclusive early-buyer deals</p>
+                                <p>Referral rewards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Image with Overlay Text -->
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <div class="position-relative w-100" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="assets/img/zane-lee-cYBmsy3nbk0-unsplash.jpg" alt="Strategy Image"
+                        class="img-fluid rounded shadow w-100">
+                    <div class="image-text-overlay" data-aos="fade-left">
+                        <h3>Your Property Journey, Simplified</h3>
+                        <p>From first-time buyers to seasoned investors, our expertise makes property decisions
+                            stress-free. We believe in relationships, not just transactions.</p>
+                        <ul>
+                            <li><i class="bi bi-chevron-bar-right"></i> Trusted Market Experts</li>
+                            <li><i class="bi bi-chevron-bar-right"></i> Exclusive Real Estate Deals</li>
+                            <li><i class="bi bi-chevron-bar-right"></i> 24/7 Personalized Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <section class="container discover my-5">
+        <h2 class="text-center mb-5">
+            <span class="text-center">Discover Properties Across Top Cities</span>
+        </h2>
+
+        <!-- Grid for md and larger screens -->
+        <div class="d-none d-md-block">
+            <div class="row g-4">
+                <!-- City Card -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card shadow border-0 text-center h-100 city-card">
+                        <img src="assets/img/zoshua-colah-mviR-sX9rXg-unsplash.jpg" class="card-img-top" alt="Noida">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" data-aos="zoom-in">Noida</h5>
+                            <p class="text-muted mb-0">34,385+ Properties</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card shadow border-0 text-center h-100 city-card">
+                        <img src="assets/img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="card-img-top" alt="Gurgaon">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" data-aos="zoom-in">Gurgaon</h5>
+                            <p class="text-muted mb-0">33,557+ Properties</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card shadow border-0 text-center h-100 city-card">
+                        <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg" class="card-img-top"
+                            alt="Mumbai">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" data-aos="zoom-in">Mumbai</h5>
+                            <p class="text-muted mb-0">33,236+ Properties</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card shadow border-0 text-center h-100 city-card">
+                        <img src="assets/img/home11.webp" class="card-img-top" alt="New Delhi">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" data-aos="zoom-in">New Delhi</h5>
+                            <p class="text-muted mb-0">31,797+ Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel for small screens -->
+        <div id="cityCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="assets/img/zoshua-colah-mviR-sX9rXg-unsplash.jpg" class="d-block w-100" alt="Noida">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Noida</h5>
+                        <p>34,385+ Properties</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="assets/img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="d-block w-100" alt="Gurgaon">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gurgaon</h5>
+                        <p>33,557+ Properties</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg" class="d-block w-100"
+                        alt="Mumbai">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mumbai</h5>
+                        <p>33,236+ Properties</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="assets/img/home11.webp" class="d-block w-100" alt="New Delhi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>New Delhi</h5>
+                        <p>31,797+ Properties</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-4">
+            <a class="btn bg-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View More Cities</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-danger">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Explore Buy / Sell / Rent Property in India
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <a href="#" class="text-dark btn">New Delhi</a>
+                    <a href="#" class="text-dark btn">Noida</a>
+                    <a href="#" class="text-dark btn">Hydrabad</a>
+                    <a href="#" class="text-dark btn">Chennai</a>
+                    <a href="#" class="text-dark btn">Pune</a>
+                    <a href="#" class="text-dark btn">Bangalore</a>
+                    <a href="#" class="text-dark btn">Gurgaon</a>
+                    <a href="#" class="text-dark btn">Lucknow</a>
+                    <a href="#" class="text-dark btn">Kolkata</a>
+                    <a href="#" class="text-dark btn">Thane</a>
+                    <a href="#" class="text-dark btn">Ahmedabad</a>
+                    <a href="#" class="text-dark btn">ALWAR</a>
+                    <a href="#" class="text-dark btn">AMRITSAR</a>
+                    <a href="#" class="text-dark btn">AURANGABAD</a>
+                    <a href="#" class="text-dark btn">BHOPAL</a>
+                    <a href="#" class="text-dark btn">CHANDIGARH</a>
+                    <a href="#" class="text-dark btn">GOA</a>
+                    <a href="#" class="text-dark btn">GANGTOK</a>
+                    <a href="#" class="text-dark btn">HARIDWAR</a>
+                    <a href="#" class="text-dark btn">JAIPUR</a>
+                    <a href="#" class="text-dark btn">INDORE</a>
+                    <a href="#" class="text-dark btn">JALANDHAR</a>
+                    <a href="#" class="text-dark btn">JODHPUR</a>
+                    <a href="#" class="text-dark btn">KHIMSAR</a>
+                    <a href="#" class="text-dark btn">LEH</a>
+                    <a href="#" class="text-dark btn">LUDHIANA</a>
+                    <a href="#" class="text-dark btn">MADURAI</a>
+                    <a href="#" class="text-dark btn">MAHABALESHWAR</a>
+                    <a href="#" class="text-dark btn">MANALI</a>
+                    <a href="#" class="text-dark btn">MUSSOORIE</a>
+                    <a href="#" class="text-dark btn">PALAMPUR</a>
+                    <a href="#" class="text-dark btn">SHIMLA</a>
+                    <a href="#" class="text-dark btn">SURAT</a>
+                    <a href="#" class="text-dark btn">TIRUPATI</a>
+                    <a href="#" class="text-dark btn">UDAIPUR</a>
+                    <a href="#" class="text-dark btn">VISHAKAPATNAM</a>
+                    <a href="#" class="text-dark btn">SRINAGAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="on-img position-relative">
+        <img src="assets/img/samson-ZGjbiukp_-A-unsplash.jpg" alt="Background Image" class="img-fluid w-100" />
+        <div class="overlay-1"></div>
+        <div class="overlay-2"></div>
+        <div class="content-on text-center">
+            <div class="content-inner" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Redefining the meaning of home</h2>
+                <p>
+                    Redefining the meaning of home means going beyond four walls and a roof.
+                    It’s about creating spaces that reflect your lifestyle, support your
+                    well-being, and grow with you. From thoughtful layouts to smart features
+                    and peaceful surroundings, we’re building more than houses — we’re
+                    shaping places where you truly belong.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container Explore my-5">
+        <h2 class="text-center mb-4">Explore our Real Estate Services</h2>
+
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5 class="text-dark">Agents / Brokers</h5>
+                    <a href="#" class="icons  fs-1 text-color"><i class="bi bi-person-raised-hand"></i></a>
+                    <p class="text-muted">Here Are Hassle-Free Solutions! Buy - Sell - Rent Your Property.</p>
+                    <a href="#" class="btn button">Read More</a>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5 class="text-dark">Builders / Developers</h5>
+                    <a href="#" class="icons fs-1 text-color"><i class="bi bi-person-workspace"></i></a>
+                    <p class="text-muted">Very professional team, helped me find my office space easily. Highly
+                        recommended!</p>
+                    <a href="#" class="btn button">Read More</a>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5 class="text-dark">Architects / Architecture</h5>
+                    <a href="#" class="icons fs-1 text-color"><i class="bi bi-building"></i></a>
+                    <p class="text-muted">Elite Partners made property search so simple and stress-free. Thank you!</p>
+                    <a href="#" class="btn button">Read More</a>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide text-white text-center p-4">
+                    <h5 class="text-dark">Interior Decorators</h5>
+                    <a href="#" class="icons fs-1 text-color"><i class="bi bi-palette"></i></a>
+                    <p class="text-muted">Quick response and genuine listings. Found my dream home fast.</p>
+                    <a href="#" class="btn button">Read More</a>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+    <!-- =========================Featured Property Agents============================= -->
+
+    <div class="container-fluid mb-5 flip-cards">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip-card-overlay"></div> <!-- overlay -->
+                    <img src="assets/img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg" alt="">
+                    <h2 class="flip-title">Buying Properties</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Buying Properties</h3>
+                    <p>Explore trusted listings, get expert advice, and buy your dream property hassle-free.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip-card-overlay"></div> <!-- overlay -->
+                    <img src="assets/img/b2.webp" alt="">
+                    <h2 class="flip-title">Rent Properties</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Rent Properties</h3>
+                    <p>Find the perfect rental home with ease—verified listings, fair prices, and smooth move-ins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip-card-overlay"></div> <!-- overlay -->
+                    <img src="assets/img/b3.jpg" alt="">
+                    <h2 class="flip-title">Selling Properties</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Selling Properties</h3>
+                    <p>List your property with us for quick visibility, expert support, and smooth transactions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip-card-overlay"></div> <!-- overlay -->
+                    <img src="assets/img/b1.webp" alt="">
+                    <h2 class="flip-title">Property Consultation</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Property Consultation</h3>
+                    <p>Expert advice to help you make smart property decisions—buying, selling, or renting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-5 testimonial">
+        <h1 class="text-center text-white mb-3">Testimonials</h1>
+        <hr class="w-25 mx-auto text-white mb-5" />
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center shadow p-4 rounded">
+                        <div class="testimonial-content text-center px-3" style="max-width: 700px;">
+                            <div class="mb-3">
+                                <img src="assets/img/LOGO.png" alt="Company Logo" class="img-fluid"
+                                    style="max-height: 100px;" />
+                            </div>
+                            <p class="testimonial-quote mx-auto">
+                                "CodePen is a social development environment. At its heart, it allows you to write code
+                                in the browser, and see the results of it as you build. A useful and liberating online
+                                code editor for developers of any skill, and particularly empowering for people learning
+                                to code. We focus primarily on front-end languages like HTML, CSS, JavaScript, and
+                                preprocessing syntaxes that turn into those things."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center shadow p-4 rounded">
+                        <div class="testimonial-content text-center px-3" style="max-width: 700px;">
+                            <div class="mb-3">
+                                <img src="assets/img/334.png" alt="Company Logo" class="img-fluid"
+                                    style="max-height: 100px;" />
+                            </div>
+                            <p class="testimonial-quote mx-auto">
+                                "We say social, because CodePen is a community. Most creations on CodePen are public and
+                                open source. They are living things that other people and the community can interact
+                                with, from a simple hearting, to leaving a comment, to forking and changing for their
+                                own needs."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center shadow p-4 rounded">
+                        <div class="testimonial-content text-center px-3" style="max-width: 700px;">
+                            <div class="mb-3">
+                                <img src="assets/img/334.png" alt="Company Logo" class="img-fluid"
+                                    style="max-height: 100px;" />
+                            </div>
+                            <p class="testimonial-quote mx-auto">
+                                "People use CodePen for all sorts of things: prototyping new ideas, reduced test cases
+                                for bugs, sending clients things to look at, evaluating potential hires, to finding
+                                inspiration. People also use CodePen as a sort of resume and portfolio, showing off
+                                their best design and development work."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators mt-3">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+  <footer class="bg-dark text-light pt-4 pb-3">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Services</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+          </ul>
+        </div><!-- End col -->
+
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Page Link</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+          </ul>
+        </div><!-- End col -->
+
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Subscribe today</h5>
+          <div class="signup_form">
+            <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+              <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail" name="email"
+                placeholder="Enter Email Address" required />
+
+              <button type="submit" class="subscribe__btn">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
+
+            <p id="subscribeMsg" class="small mt-2"></p>
+          </div>
+
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div><!-- End col -->
+      </div><!-- End row -->
+
+      <div class="row mt-3">
+        <div class="col text-center small">
+          <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div><!-- End container -->
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="assets/js/subscribe.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/index.js"></script>
+<!-- <script src="assets/js/testimonial.js"></script> -->
+
+</html>
+<!-- <script>
+    AOS.init();
+</script> -->
+
+<!-- subscribe  -->
+<!-- <script>
+    document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById('emailInput').value;
+        const msg = document.getElementById('msg');
+
+        try {
+            const res = await fetch('http://localhost:5000/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email })
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                msg.textContent = data.message;
+                msg.style.color = 'green';
+                e.target.reset();
+            } else {
+                msg.textContent = data.message || 'Something went wrong!';
+                msg.style.color = 'red';
+            }
+        } catch (error) {
+            msg.textContent = 'Server error. Please try again.';
+            msg.style.color = 'red';
+        }
+    });
+</script> -->
+
+
+<!-- tag hanging script -->
+<!-- <script>
+    // Optional: subtle 3D tilt based on mouse
+    // const wrap = document.querySelector('.wrap');
+    // const hanger = document.getElementById('hanger');
+
+
+    // wrap.addEventListener('mousemove', (e) => {
+    //     const r = wrap.getBoundingClientRect();
+    //     const cx = r.left + r.width / 2;
+    //     const cy = r.top + r.height / 2;
+    //     const dx = (e.clientX - cx) / (r.width / 2);
+    //     const dy = (e.clientY - cy) / (r.height / 2);
+    //     const tiltX = (dy * -6).toFixed(2) + 'deg';
+    //     const tiltY = (dx * 6).toFixed(2) + 'deg';
+    //     hanger.style.setProperty('--tilt-x', tiltX);
+    //     hanger.style.setProperty('--tilt-y', tiltY);
+    // });
+
+
+    // // Click to give a quick "wobble" boost
+    // const tag = document.getElementById('tag');
+    // tag.addEventListener('click', () => {
+    //     tag.style.animation = 'none';
+    //     // force reflow
+    //     void tag.offsetWidth;
+    //     tag.style.animation = '';
+    // });
+
+
+    // Helper: update brand color quickly
+    // function setBrandColor(hex) {
+    //     document.documentElement.style.setProperty('--accent', hex);
+    // }
+    // Example: setBrandColor('#22c55e')
+</script> -->

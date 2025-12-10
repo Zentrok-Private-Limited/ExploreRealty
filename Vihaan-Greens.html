@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/bhutani.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#about" class="dashboard-nav-item">About</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Image Row -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/vihaan/3.webp" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Headings -->
+                <h1 class="text-center divino text-white mt-4">Vihaan Greens</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <!-- Overview Content -->
+                <div class="container-fluid overview rounded px-3 px-md-5 py-4">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Developer:</span>Vihaan Group</p>
+                            <p><span class="fw-bold">Status:</span>Ready to move / some resale inventory available</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Configuration:</span>2 BHK, 3 BHK, and 4 BHK units</p>
+                            <p><span class="fw-bold">No. of Towers:</span>7</p>
+                            <p><span class="fw-bold">Location:</span> Sector 1, Greater Noida West (Noida Extension),
+                                Uttar Pradesh</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Project Area:</span>5 acres (approx.)</p>
+                            <p><span class="fw-bold">Project Type:</span> Residential Apartments (Ready to Move)</p>
+
+                            <!-- Contact CTA -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <button href="#" class="text-decoration-none btn text-white ms-2">Contact Elite
+                                    Team</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ================--------------about L & T----------============== -->
+            <div class="aboutus-section ms-3" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus">
+                                <h2 class="aboutus-title">About Us</h2>
+                                <p class="aboutus-text">Vihaan Group is a dynamic and forward-thinking organization
+                                    committed to excellence in its field. Known for its innovative approach and
+                                    customer-centric philosophy, Vihaan Group strives to deliver high-quality products
+                                    and services that meet the evolving needs of its clients. </p>
+                                <p class="aboutus-text">With a strong foundation
+                                    built on integrity, teamwork, and continuous improvement, the group has established
+                                    itself as a trusted name in the industry. Its diverse portfolio and dedicated
+                                    workforce reflect its passion for growth, sustainability, and creating lasting value
+                                    for stakeholders.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus-banner">
+                                <img class="mb-5 mt-5 rounded" src="assets/img/vihaan/1.jpg" alt="">
+                                <img class="rounded" src="assets/img/vihaan/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content mt-5">
+                                            <h4>Work with heart</h4>
+                                            <p>Vihaan Group believes in “Work with Heart” — putting passion, dedication,
+                                                and care into every task to deliver the best results with sincerity and
+                                                commitment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Reliable services</h4>
+                                            <p>Vihaan Group is known for providing reliable services, ensuring quality
+                                                and trust in every project. They prioritize customer satisfaction by
+                                                delivering timely and efficient solutions with consistency and
+                                                professionalism.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Great support</h4>
+                                            <p>Vihaan Group offers great support, always ready to assist customers with
+                                                prompt and helpful service. Their team is dedicated to solving problems
+                                                quickly and ensuring a smooth experience for everyone.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <section class="price-section" id="pricing">
+                <div class="container">
+                    <h2 class="text-center mb-5">Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>3 BHK</h5>
+                                <p><strong>Size:</strong> 1400 to 1740 sq. ft</p>
+                                <p><strong>Price: </strong> ₹65 – 85 Lakhs</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>4 BHK</h5>
+                                <p><strong>Size:</strong> 2250 sq. ft.</p>
+                                <p><strong>Price: </strong>₹1.2 Cr – 1.4 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>First Floor </h5>
+                                <p><strong>Size:</strong>500 sq. ft</p>
+                                <p><strong>Price:</strong> ₹26,990/-PSF </p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================Amenities===================================  -->
+            <section class="bg-white" id="amenities">
+                <div class="container our-services">
+                    <h1 class="text-center mb-3">Amenities</h1>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-4">🔹 Clubhouse & Community Hall</h5>
+                                        <p>Ideal for social gatherings, events, and resident activities.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/1.jpg" alt="Clubhouse"
+                                            style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Swimming Pool</h5>
+                                        <p>Clean and well-maintained pool for all age groups.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/2.jpg" alt="Swimming Pool"
+                                            style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Gymnasium & Fitness Zone</h5>
+                                        <p>Well-equipped fitness area for a healthy lifestyle.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/3.webp" alt="Gym"
+                                            style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Children’s Play Area</h5>
+                                        <p>Fun, interactive, and safe space for kids to play.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/5.avif"
+                                            alt="Children's Play Area" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="mt-4 text-dark">🔹 Landscaped Gardens & Jogging Track</h5>
+                                        <p>Lush greenery with walking and jogging paths for daily fitness.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/6.jpeg"
+                                            alt="Garden & Track" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Indoor Games Zone</h5>
+                                        <p>Play table tennis, billiards, carrom, and more indoors.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded" src="assets/img/vihaan/1.jpg" alt="Indoor Games"
+                                            style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ================================projects============================ -->
+            <section class="projects-section">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================Rental Yields & Capital Appreciation========================================== -->
+            <section class="rental-section" id="rental-yield">
+                <div class="container">
+                    <h2 class="section-title">Why Consider Vihaan Greens</h2>
+
+                    <div class="rental-box">
+                        <ul>
+                            <li>🏡 <strong>Ready-to-move</strong> project with resale options available.</li>
+                            <li>📐 <strong>Spacious layouts</strong> compared to newer compact projects.</li>
+                            <li>💼 <strong>Good rental yield</strong> due to prime Noida Extension location.</li>
+                            <li>📈 Located in a <strong>developed locality</strong> with growing infrastructure.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ============================floor Preference ================================ -->
+            <section class="hospital-section" id="vihaan-greens-price-list">
+                <div class="container">
+                    <h2 class="section-title">Vihaan Greens – Price List (w.e.f. 15/12/2024)</h2>
+                    <p class="subtitle">Towers Covered: A, B, C</p>
+
+                    <div class="hospital-content">
+                        <div class="hospital-box">
+                            <h4>🔹 Apartment Sizes:</h4>
+                            <ul>
+                                <li>1075 sq. ft. (2 BHK)</li>
+                                <li>1350 sq. ft. (3 BHK)</li>
+                                <li>1610 sq. ft. (3 BHK – Premium)</li>
+                                <li>1640 sq. ft. (3 BHK – Premium)</li>
+                                <li>1895 sq. ft. (4 BHK)</li>
+                            </ul>
+                        </div>
+
+                        <div class="hospital-box">
+                            <h4>🔹 Price Ranges:</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Configuration</th>
+                                        <th>Super Built-up Area</th>
+                                        <th>Price Range</th>
+                                        <th>Resale Price (approx.)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2 BHK</td>
+                                        <td>1075 sq. ft.</td>
+                                        <td>₹74.44 Lacs – ₹78 Lacs</td>
+                                        <td>₹55 Lacs – ₹82 Lacs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 BHK</td>
+                                        <td>1350 / 1610 / 1640 sq. ft.</td>
+                                        <td>₹96.18 Lacs – ₹1.19 Cr</td>
+                                        <td>₹75 Lacs – ₹1.15 Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 BHK</td>
+                                        <td>1895 sq. ft.</td>
+                                        <td>₹1.36 Cr – ₹1.37 Cr</td>
+                                        <td>₹1.9 Cr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="hospital-box">
+                            <h4>💰 Base Prices by Floor (Approx. Total Cost):</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Floor</th>
+                                        <th>1075 sq. ft.</th>
+                                        <th>1350 sq. ft.</th>
+                                        <th>1610 sq. ft.</th>
+                                        <th>1895 sq. ft.</th>
+                                        <th>1640 sq. ft.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20th</td>
+                                        <td>₹82.50 L</td>
+                                        <td>₹1.03 Cr</td>
+                                        <td>₹1.23 Cr</td>
+                                        <td>₹1.45 Cr</td>
+                                        <td>₹1.27 Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15th</td>
+                                        <td>₹83.85 L</td>
+                                        <td>₹1.05 Cr</td>
+                                        <td>₹1.25 Cr</td>
+                                        <td>₹1.47 Cr</td>
+                                        <td>₹1.29 Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>₹85.19 L</td>
+                                        <td>₹1.06 Cr</td>
+                                        <td>₹1.27 Cr</td>
+                                        <td>₹1.50 Cr</td>
+                                        <td>₹1.31 Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th</td>
+                                        <td>₹86.53 L</td>
+                                        <td>₹1.08 Cr</td>
+                                        <td>₹1.29 Cr</td>
+                                        <td>₹1.52 Cr</td>
+                                        <td>₹1.33 Cr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ground</td>
+                                        <td>₹87.88 L</td>
+                                        <td>₹1.10 Cr</td>
+                                        <td>₹1.31 Cr</td>
+                                        <td>₹1.54 Cr</td>
+                                        <td>₹1.35 Cr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><em>Note: Prices increase gradually as floors go lower — approx. ₹20,000–₹30,000 per
+                                    floor difference.</em></p>
+                        </div>
+
+                        <div class="hospital-box">
+                            <h4>📌 Additional Charges:</h4>
+                            <ul>
+                                <li>Covered Car Parking: ₹5,00,000</li>
+                                <li>Lease Rent: ₹80/sq. ft.</li>
+                                <li>External Electrification Charges: ₹50/sq. ft.</li>
+                                <li>Fire Fighting Charges: ₹50/sq. ft.</li>
+                                <li>Club Membership: ₹1,50,000</li>
+                                <li>IFMS: ₹25/sq. ft.</li>
+                                <li>Meter Setup: ₹25,000</li>
+                                <li>Operation Drishti Charges: ₹15,000</li>
+                                <li>Farmer’s No Litigation Incentive: ₹75/sq. ft.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ========================location======================== -->
+            <div class="container my-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7015.821416494768!2d77.44024549119684!3d28.596884068196497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefb6c3a3c079%3A0x77ccf4b0c93e5616!2sSector%201%2C%20Greater%20Noida%20West%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696345296789!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Connectivity & Location</h2>
+                        <ul>
+                            <li>1. Located in Sector 1, Greater Noida West.</li>
+                            <li>2. 10 mins from Gaur Chowk.</li>
+                            <li>3. 20 mins to Noida City Centre (Metro).</li>
+                            <li>4. Nearby: Ryan International, Lotus Valley School.</li>
+                            <li>5. Close to Gaur City Mall & Galaxy Diamond Plaza.</li>
+                            <li>6. Hospitals: Yatharth & Fortis within reach.</li>
+                        </ul>
+                    </div>
+
+                    <div class="map-btn">
+                        <a href="https://www.google.com/maps/place/Sector+1,+Greater+Noida+West,+Uttar+Pradesh/@28.5968841,77.4402455,15z"
+                            target="_blank" class="btn-map text-white">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

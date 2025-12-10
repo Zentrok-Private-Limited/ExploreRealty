@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="assets/css/vista.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/gygy.css">
+    <!-- <link rel="stylesheet" href="assets/css/testimonial.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#about" class="dashboard-nav-item">About</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Project Image -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/ibp/ibp-3.webp" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="divino text-white text-center mt-4">IBP Windsor Valley </h1>
+                <h2 class="ms-3 text-center text-md-start">Overview</h2>
+
+                <!-- Overview Section -->
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
+
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Project Name:</span> IBP Windsor Valley</p>
+                            <p><span class="fw-bold">Developer:</span> IBP Smart Homes</p>
+                            <p><span class="fw-bold">Project Type:</span> Villas / Duplex Villas</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Total Land Area :</span> ~1.75 Acres</p>
+                            <p><span class="fw-bold">~1.75 Acres:</span> ~60 Villas</p>
+                            <p><span class="fw-bold">Status:</span>Ready to Move</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Possession:</span>Immediate</p>
+
+                            <!-- Contact Button -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-color text-decoration-none ms-2">Contact Elite Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================= Pricing ============================ -->
+
+
+            <section class="price-section" id="pricing">
+                <div class="container">
+                    <h2 class="text-center mb-5">Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>2 BHK Duplex Villa with Balcony</h5>
+                                <p><strong>Built-Up Area: </strong>1500 sq.ft.</p>
+                                <p><strong>Plot Size: </strong>75 sq.yd</p>
+                                <p><strong>Price (Approx): </strong>₹56.8 – ₹60 Lakh</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>3 BHK Villa with Terrace</h5>
+                                <p><strong>Built-Up Area: </strong>1800 sq.ft</p>
+                                <p><strong>Plot Size: </strong>90 sq.yd.</p>
+                                <p><strong>Price (Approx): </strong>₹65 – ₹72 Lakh</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>3.5 BHK Villa with Lawn & Extra Room</h5>
+                                <p><strong>Built-Up Area: </strong>2250–2550 sq.ft.</p>
+                                <p><strong>Plot Size: </strong>110–125 sq.yd.</p>
+                                <p><strong>Price (Approx): </strong>₹78 – ₹89 Lakh</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================gallery ==================================== -->
+            <section class="about-section py-5" id="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="mb-4">
+                                <h2 class="fw-bold">About</h2>
+                            </div>
+                            <p>IBP Windsor Valley in Noida Extension is a premium residential project offering modern
+                                living in a well-planned gated community. Located in Sector 16B, Greater Noida West, the
+                                project features well-designed 2 and 3 BHK independent villas and floors with spacious
+                                layouts, quality construction, and essential amenities like 24×7 security, landscaped
+                                gardens, street lighting, and a proposed clubhouse. With its strategic location,
+                                proximity to daily conveniences, and a focus on both comfort and lifestyle, IBP Windsor
+                                Valley is an ideal choice for families seeking a peaceful yet connected urban living
+                                experience.</p>
+                            <a href="contact.html" class="btn btn-primary mt-3 px-4 py-2">Contact Us</a>
+                        </div>
+
+                        <!-- Image Column -->
+                        <div class="col-lg-6 position-relative">
+                            <div class="position-relative rounded overflow-hidden">
+                                <img src="assets/img/ibp/ibp-3.webp" alt="Rahul Kumar Yadav"
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================projects=========================== -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- =================================Amenities & specifications================================== -->
+            <section class="py-5 amenities" id="amenities">
+                <div class="container">
+                    <h1 class="text-center mb-4">Features & Amenities</h1>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                        <!-- Card 1 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                                <div class="amenity-title">24×7 Security</div>
+                                <div class="amenity-desc">Gated community with CCTV surveillance and security personnel.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-tree-fill"></i></div>
+                                <div class="amenity-title">Landscaped Gardens</div>
+                                <div class="amenity-desc">Green open spaces and landscaped gardens for a peaceful
+                                    environment.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                                <div class="amenity-title">Street Lighting</div>
+                                <div class="amenity-desc">Well-lit internal roads ensuring safety and visibility at
+                                    night.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-house-heart-fill"></i></div>
+                                <div class="amenity-title">Clubhouse (Proposed)</div>
+                                <div class="amenity-desc">Modern clubhouse with gym and party hall for recreation and
+                                    events.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-cart-fill"></i></div>
+                                <div class="amenity-title">Retail Convenience</div>
+                                <div class="amenity-desc">Daily convenience stores and retail shops within easy reach.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-car-front-fill"></i></div>
+                                <div class="amenity-title">Ample Parking</div>
+                                <div class="amenity-desc">Designated parking areas for residents and visitors.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- =================================Location & connectivity==================================== -->
+            <div class="container my-5" id="location">
+                <h2 class="ms-3">Location & Connectivity</h2>
+                <div class="row align-items-center g-4">
+
+                    <!-- Left: Location Map -->
+                    <div class="col-md-6 map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.772559399777!2d77.48360937549872!3d28.57659167569537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ced2bdad5e77d%3A0xfe52ef5aff8945bf!2sIBP%20Windsor%20Valley!5e0!3m2!1sen!2sin!4v1758698215330!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Right: Connectivity Highlights -->
+                    <div class="col-md-6">
+                        <div class="row g-3">
+
+                            <!-- Residential Catchment -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Schools Nearby</h5>
+                                        <p class="card-text">Ryan International, Sarvottam International, St. Johns</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metro -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hospitals Nearby</h5>
+                                        <p class="card-text">Yatharth Hospital, Fortis, Kailash</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Roads -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Shopping / Entertainment</h5>
+                                        <p class="card-text">Gaur City Mall, Galaxy Diamond Plaza, local markets</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Landmarks -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Future Growth Driver:</h5>
+                                        <p class="card-text">Proximity to upcoming Metro expansion & infrastructural
+                                            development in Greater Noida West</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================Quick Facts================== -->
+            <section class="quick-facts bg-light py-5" id="quick-facts">
+                <div class="container">
+                    <h2 class="text-center mb-5">Investment Highlights</h2>
+
+                    <div class="row g-4">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-primary bg-white">
+                                <h5 class="mb-2">🏠 Ready-to-Move</h5>
+                                <p class="text-muted">Villa project with immediate possession — no construction delay.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-success bg-white">
+                                <h5 class="mb-2">💎 Affordable Luxury</h5>
+                                <p class="text-muted">Premium lifestyle at competitive pricing vs. high-rise apartments.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-warning bg-white">
+                                <h5 class="mb-2">📈 High Appreciation</h5>
+                                <p class="text-muted">Low-density layout (~60 villas), upcoming metro & commercial zones
+                                    boost future value.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+
+
+        </div>
+    </div>
+</body>
+<!-- <script src="assets/js/testimonial.js"></script> -->
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/gygy.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
+</html>

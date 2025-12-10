@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/l&t.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#gallery" class="dashboard-nav-item">Gallery</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/Signature/3.jpg" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <h1 class="divino text-center text-light mt-4">Signature Villas</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <div class="container-fluid overview rounded p-3">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span> UPRERAPRJ459796/09/2025</p>
+                            <p><span class="fw-bold">Launch Date:</span> Ongoing (plots available with registry &
+                                possession options)</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Developer:</span> : CSB Infracon</p>
+                            <p><span class="fw-bold">Project Area:</span> 50 sq. yd. – 200 sq. yd. (approx.)</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Location:</span> Milak Lachchhi, Greater Noida (Yamuna Expressway
+                                region)</p>
+                            <p><span class="fw-bold">Project Type:</span>Residential Plots</p>
+                            <div class="exploreRealty">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-white text-decoration-none ms-2">
+                                    Contact xyz RealEstate Team
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================--------------about----------============== -->
+            <section class="testimonials" id="about">
+                <section class="container">
+                    <div class="item item1">
+                        <div class="title text-center">Welcome to Signature Villas</div>
+                    </div>
+                    <div class="item item2">
+                        <div class="description">Signature Villas are a prestigious collection of luxury residences,
+                            most famously located on the Palm Jumeirah in Dubai. These villas are designed to offer the
+                            highest standards of living, featuring spacious layouts, private beach access, landscaped
+                            gardens, and individual swimming pools. Each villa is typically custom-designed or comes in
+                            a variety of architectural styles, catering to the tastes of affluent buyers.</div>
+                    </div>
+                    <div class="item item3">
+                        <img src="assets/img/Signature/1.jpg" alt="Image 1">
+                    </div>
+                    <div class="item item4">
+                        <img src="assets/img/Signature/12.jpg" alt="Image 2">
+                    </div>
+                    <div class="item item5">
+                        <img src="assets/img/Signature/11.avif" alt="Image 3">
+                    </div>
+                    <div class="item item6">
+                        <div class="description">Known for their exclusivity and prime waterfront locations, Signature
+                            Villas provide a high level of privacy, comfort, and luxury, making them a popular choice
+                            for high-net-worth individuals and investors seeking premium real estate in iconic settings.
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <div class="container-fluid my-5" id="pricing">
+                <h2 class="text-center mb-4">Apartment Configurations & Pricing</h2>
+                <div class="row g-4"> <!-- g-4 adds gutter spacing -->
+
+                    <!-- 2 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="3 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="3 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK Duplex Villa + Private Lawn</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 1700 sq.ft. <br />
+                                    <strong>Price:</strong> ₹1.25 Cr onwards<br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 BHK -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="4 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="4 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK + Lawn + Terrace</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 1900 sq.ft. <br />
+                                    <strong>Price:</strong> ₹1.45–₹1.55 Cr <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 rounded-3 shadow">
+                            <div class="card-body text-center">
+                                <a href="assets/img/l&t-floorplan.jpg" data-fancybox="floorplans"
+                                    data-caption="4 BHK Floor Plan">
+                                    <img src="assets/img/l&t-floorplan.jpg" alt="4 BHK"
+                                        class="img-fluid rounded shadow-sm" />
+                                </a>
+                                <h5 class="card-title mt-3">3 BHK + Lawn + Terrace</h5>
+                                <p class="card-text">
+                                    <strong>Size:</strong> 1900 sq.ft. <br />
+                                    <strong>Price:</strong> ₹1.45–₹1.55 Cr <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================================Amenities===================================  -->
+            <section class="amenities-section py-5 bg-light" id="amenities">
+                <div class="container">
+                    <h2 class="text-center mb-4">Amenities & Lifestyle Experience</h2>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-shield-lock-fill display-4 text-danger mb-3"></i>
+                            <h5>Fully Gated Community</h5>
+                            <p>Securely gated layout with 24×7 security and CCTV surveillance for complete peace of
+                                mind.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-house-heart-fill display-4 text-success mb-3"></i>
+                            <h5>Clubhouse Facilities</h5>
+                            <p>Enjoy a modern clubhouse featuring a gym, indoor games, and a stylish party lounge.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-water display-4 text-primary mb-3"></i>
+                            <h5>Swimming Pool & Green Zone</h5>
+                            <p>Relax in a well-maintained swimming pool and landscaped gardens designed for tranquility.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-emoji-smile-fill display-4 text-warning mb-3"></i>
+                            <h5>Kids’ Play Area & Jogging Track</h5>
+                            <p>Safe play zones for children and dedicated jogging tracks to support your active
+                                lifestyle.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-car-front-fill display-4 text-info mb-3"></i>
+                            <h5>Dedicated Villa Parking</h5>
+                            <p>Exclusive parking space allocated for each villa, ensuring convenience and security.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-lightbulb-fill display-4 text-secondary mb-3"></i>
+                            <h5>24×7 Water & Power Backup</h5>
+                            <p>Uninterrupted utilities with continuous water supply and reliable power backup systems.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-signpost-split-fill display-4 text-dark mb-3"></i>
+                            <h5>Wide Internal Roads</h5>
+                            <p>Well-planned wide roads with street lighting for smooth and safe internal connectivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ==============================gallery========================  -->
+            <h2 class="gallery text-center mb-4" id="gallery">Gallery</h2>
+            <section class="c-gallery m-3 d-flex flex-wrap justify-content-center gap-3">
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/4.jpeg" alt="Image 1">
+                </div>
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/5.jpg" alt="Image 2">
+                </div>
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/6.avif" alt="Image 3">
+                </div>
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/7.webp" alt="Image 4">
+                </div>
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/luke-stackpoole-KjvIaa_Q5rY-unsplash.jpg" alt="Image 5">
+                </div>
+                <div class="c-gallery__item">
+                    <img src="assets/img/Signature/1.jpg" alt="Image 6">
+                </div>
+            </section>
+
+
+            <!-- ==================================design,architecture=================================  -->
+            <section class="py-5 bg-white" id="key-features">
+                <div class="container">
+                    <h2 class="text-center text-3xl font-bold mb-4">Key Features</h2>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-house-door-fill display-5 text-primary mb-3"></i>
+                            <h5>Independent 3 BHK Villas</h5>
+                            <p>Spacious duplex villas with private entrance, offering comfort, privacy, and modern
+                                living.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-bricks display-5 text-success mb-3"></i>
+                            <h5>Modern Elevation & Lawn</h5>
+                            <p>Contemporary architectural design with a private terrace and landscaped lawn area.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-columns-gap display-5 text-warning mb-3"></i>
+                            <h5>Premium Interiors</h5>
+                            <p>Well-planned interiors with a modular kitchen, spacious layout, and branded fittings
+                                throughout.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-person-workspace display-5 text-info mb-3"></i>
+                            <h5>Servant Room & Parking</h5>
+                            <p>Optional servant quarters and personal parking space for added convenience and
+                                functionality.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-building-fill-exclamation display-5 text-danger mb-3"></i>
+                            <h5>Earthquake-Resistant Structure</h5>
+                            <p>Robust RCC frame structure designed to withstand seismic activity for long-term safety.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-file-earmark-text-fill display-5 text-secondary mb-3"></i>
+                            <h5>Freehold with Registry</h5>
+                            <p>Own your villa with complete legal ownership — freehold property with individual
+                                registry.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-wind display-5 text-dark mb-3"></i>
+                            <h5>Vastu & Ventilation</h5>
+                            <p>Homes designed with Vastu compliance and smart ventilation for natural light and airflow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ================================projects============================ -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================legal & Investment========================================== -->
+            <section class="py-5 bg-light" id="investment">
+                <div class="container">
+                    <h2 class="text-center text-3xl font-bold mb-4">Legal & Investment Perspective</h2>
+
+                    <div class="row text-center mt-3">
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-file-earmark-check-fill display-5 text-success mb-3"></i>
+                            <h5>RERA Registered</h5>
+                            <p>Completely RERA registered, guaranteeing full transparency and buyer protection.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-currency-rupee display-5 text-primary mb-3"></i>
+                            <h5>Promising Investment</h5>
+                            <p>Situated in a rapidly growing zone with excellent potential for capital appreciation and
+                                rentals.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <i class="bi bi-bank2 display-5 text-warning mb-3"></i>
+                            <h5>Bank Approved</h5>
+                            <p>Home loans available through major banks and financial institutions for easy financing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ========================location======================== -->
+
+            <div class="container mb-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.43290745809!2d77.45996487550022!3d28.61678477567337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef15791600fd%3A0xd65976176fcc5a!2sSignature%20Villas!5e0!3m2!1sen!2sin!4v1760429234044!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Mobile button -->
+                    <div class="map-btn">
+                        <a href="https://maps.app.goo.gl/wGoRrLUr2wSEs1jp7" target="_blank" class="btn-map text-white">
+                            Open in Google Maps
+                        </a>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location & Connectivity</h2>
+                        <ul>
+                            <li><em>• Prime location along Yamuna Expressway</em></li>
+                            <li><em>• Just 20 mins from Jewar International Airport</em></li>
+                            <li><em>• Seamless drive to Pari Chowk & Noida sectors</em></li>
+                            <li><em>• Proximity to top institutions like Galgotias & NIU</em></li>
+                            <li><em>• Near Formula 1 track, IT parks & Film City</em></li>
+                            <li><em>• Excellent connectivity to Delhi, Noida & Agra</em></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bhutani.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#about" class="dashboard-nav-item">About</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid mt-4" id="overview">
+                <!-- Image Row -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/escon/escon-2.webp" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Headings -->
+                <h1 class="text-center divino text-light mt-4">Escon Panache Villas</h1>
+                <h2 class="ms-3">Overview</h2>
+
+                <!-- Overview Content -->
+                <div class="container-fluid overview rounded px-3 px-md-5 py-4">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Project Name:</span>Escon Panache Villas</p>
+                            <p><span class="fw-bold">Developer:</span>Escon Infra Realtors Pvt. Ltd. </p>
+                            <p><span class="fw-bold">Project Type:</span> Luxury 4 BHK Triplex Villas</p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Total Land Area:</span>3.5 Acres</p>
+                            <p><span class="fw-bold">Total Units:</span> ~83 Exclusive Villas</p>
+                            <p><span class="fw-bold">Status:</span>Under Construction</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <p><span class="fw-bold">Possession:</span> Expected July 2025</p>
+
+                            <!-- Contact CTA -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <button href="#" class="text-decoration-none btn text-white ms-2">Contact Elite
+                                    Team</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ================--------------about L & T----------============== -->
+            <div class="aboutus-section ms-3" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus">
+                                <h2 class="aboutus-title">About</h2>
+                                <p class="aboutus-text">Escon Panache Villas offer an exceptional blend of luxury,
+                                    privacy, and modern living in a low-density, gated community. Designed for those who
+                                    value open spaces and independence, these villas feature spacious layouts,
+                                    contemporary architecture, and private lawns or terraces. Located in a prime area
+                                    with easy access to expressways, schools, hospitals, and shopping centers, the
+                                    project ensures both convenience and connectivity. Residents enjoy premium lifestyle
+                                    amenities such as a clubhouse, swimming pool, gym, and landscaped gardens. With 24×7
+                                    security, power backup, and a peaceful environment, Escon Panache Villas provide not
+                                    just a home but an upgraded way of living — making it a smart choice for both
+                                    homeowners and investors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus-banner">
+                                <img class="mb-5 mt-5 rounded" src="assets/img/escon/escon-3.jpg" alt="">
+                                <img class="rounded" src="assets/img/escon/escon-2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content mt-5">
+                                            <h4>Work with heart</h4>
+                                            <p>At Escon Panache Villas, we work with heart — crafting every home with
+                                                passion, care, and attention to detail. It's not just construction; it's
+                                                a commitment to comfort, quality, and lasting trust.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Reliable services</h4>
+                                            <p>We pride ourselves on delivering reliable services that you can trust at
+                                                every step. From timely project delivery to transparent communication
+                                                and dedicated customer support, our focus is on building lasting
+                                                relationships through consistency and professionalism. With Escon
+                                                Panache Villas, peace of mind comes standard.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Great support</h4>
+                                            <p>Our commitment doesn’t end at handover — it begins there. At Escon
+                                                Panache Villas, we offer great support through responsive service, quick
+                                                issue resolution, and a dedicated team that genuinely cares. Because
+                                                your comfort and satisfaction matter, every step of the way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =============================== Apartment Configurations & Pricing ============================== -->
+            <section class="price-section" id="pricing">
+                <div class="container">
+                    <h2 class="text-center mb-5">Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>4BHK + Lawn</h5>
+                                <p><strong>Built-Up Area:</strong> 2700 sq.ft </p>
+                                <p><strong>Price Range: </strong>₹2.43 Cr onwards </p>
+                                <p><strong>Approx. Rate per Sq.Ft. :</strong>₹9,000 – ₹9,200/sq.ft.</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>4BHK + Lawn + Lift</h5>
+                                <p><strong>Built-Up Area:</strong> 3000 sq.ft </p>
+                                <p><strong>Price Range: </strong>₹2.7 – ₹2.9 Cr</p>
+                                <p><strong>Approx. Rate per Sq.Ft. :</strong>₹9,000 – ₹9,700/sq.ft.</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>4BHK + Pooja + Pool + Lift </h5>
+                                <p><strong>Built-Up Area:</strong> 3400 sq.ft. </p>
+                                <p><strong>Price Range: </strong>₹3.2 – ₹3.4 Cr</p>
+                                <p><strong>Approx. Rate per Sq.Ft. :</strong>₹9,400 – ₹10,000/sq.ft.</p>
+                                <button class="btn">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================Amenities===================================  -->
+            <section class="bg-white" id="features">
+                <div class="container our-services">
+                    <h1 class="text-center mb-3">Key Features</h1>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Triplex 4 BHK Villas</h5>
+                                        <p>Spacious three-level homes with modern design.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 3400 sq.ft. layout old.jpg"
+                                            alt="Triplex Villas" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Private Lawn/Garden</h5>
+                                        <p>Every villa comes with a dedicated green space.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 2700 sq.ft. layout New.jpg"
+                                            alt="Villa Options" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Lift & Pooja Room Options</h5>
+                                        <p>Customizable interiors with optional lift and puja space.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 3000 sq.ft. layout New.jpg"
+                                            alt="Premium Interiors" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Premium Finishes</h5>
+                                        <p>Includes vitrified tiles, modular kitchens, and teak wood frames.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 3400 sq.ft. layout old.jpg"
+                                            alt="Gated Community" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Earthquake Resistant RCC</h5>
+                                        <p>Safe and solid construction built to last.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 2700 sq.ft. layout New.jpg"
+                                            alt="Modern Elevation" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="text-dark mt-5">🔹 Freehold Property</h5>
+                                        <p>Own your villa outright — no leasehold hassles.</p>
+                                    </div>
+                                    <div class="back">
+                                        <img class="lazyload rounded"
+                                            src="assets/img/escon/Escon Panache Villas Property In Greater Noida 3000 sq.ft. layout New.jpg"
+                                            alt="Low Density Living" style="width:300px;height:180px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================projects============================ -->
+            <section class="projects-section">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================Rental Yields & Capital Appreciation========================================== -->
+            <section class="rental-section" id="investment">
+                <div class="container">
+                    <h2 class="section-title">Investment Highlights</h2>
+                    <div class="rental-box">
+                        <ul>
+                            <li><strong>• Exclusive low-density villa community (only ~83 units)</strong></li>
+                            <li>• High appreciation potential due to<strong> Jewar Airport & Noida International Sports
+                                    City</strong></li>
+                            <li><strong>• Ready-to-move luxury alternative to high-rise apartments</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================floor Preference ================================ -->
+            <section class="hospital-section" id="amenities">
+                <div class="container">
+                    <h2 class="section-title text-center mb-4">Amenities & Lifestyle</h2>
+                    <p class="subtitle text-center mb-5">
+                        Escon Panache Villas brings you a lifestyle of comfort, privacy, and luxury in a low-density
+                        gated community.
+                    </p>
+
+                    <div class="row g-4">
+                        <!-- Gated & Secured -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5> Gated & Secured Living</h5>
+                                <ul class="mb-0">
+                                    <li>Gated community with 24×7 security</li>
+                                    <li>Advanced CCTV surveillance</li>
+                                    <li>Well-lit internal roads & solar street lighting</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Clubhouse -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5> Clubhouse & Wellness</h5>
+                                <ul class="mb-0">
+                                    <li>Clubhouse with gym & fitness center</li>
+                                    <li>Yoga & meditation deck</li>
+                                    <li>Multipurpose hall for events and celebrations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Villa Features -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5>Villa-Specific Features</h5>
+                                <ul class="mb-0">
+                                    <li>Triplex 4 BHK villas with private lawns</li>
+                                    <li>Options with lift, pooja room, private pool</li>
+                                    <li>Freehold property with premium finishes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Finishing & Connectivity -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5>Premium Construction</h5>
+                                <ul class="mb-0">
+                                    <li>RCC framed structure with earthquake resistance</li>
+                                    <li>Vitrified tiles, modular kitchen & teak wood frames</li>
+                                    <li>Fiber optic internet connectivity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Greens & Sustainability -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5>Green Living & Extras</h5>
+                                <ul class="mb-0">
+                                    <li>Landscaped gardens & open greens</li>
+                                    <li>Rainwater harvesting & waste management</li>
+                                    <li>Children’s play area</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Parking -->
+                        <div class="col-md-6">
+                            <div class="hospital-box p-4 bg-dark text-light rounded shadow-sm h-100">
+                                <h5>Parking & Access</h5>
+                                <ul class="mb-0">
+                                    <li>Dedicated parking for each villa</li>
+                                    <li>Visitor parking spaces</li>
+                                    <li>Wide internal roads for smooth movement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- ========================location======================== -->
+            <div class="container my-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.6290447895044!2d77.5130803754967!3d28.520806475726005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb00402cb669%3A0xb4a70debd9a727be!2sEscon%20Panache%20Villas%20(www.esconinfrarealtor.com)!5e0!3m2!1sen!2sin!4v1758706433166!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Connectivity & Surroundings</h2>
+                        <p>DPS, Jaypee Public School, The Millennium School</p>
+                        <p>Sharda Hospital, Max Multi-Speciality</p>
+                        <p>Ansal Plaza, Pari Chowk Markets</p>
+                        <p>Close to upcoming Jewar International Airport</p>
+                    </div>
+                    <div class="map-btn">
+                        <a href="https://maps.app.goo.gl/pYKNXxZSWH7mzHXH8" target="_blank" class="btn-map text-white">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>

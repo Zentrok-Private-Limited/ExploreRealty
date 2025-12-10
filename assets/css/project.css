@@ -1,0 +1,176 @@
+/* === General Styles === */
+.background {
+  background-color: #101e3d !important;
+}
+
+.margin {
+  margin-top: 90px;
+  background-color: #101e3d;
+}
+
+/* === Nav Pills === */
+.nav-pills .nav-link.active {
+  background-color: #14264e !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.nav-pills .nav-link {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+/* Mobile spacing for pills */
+@media (max-width: 767.98px) {
+  .nav-pills .nav-link {
+    margin-bottom: 5px;
+  }
+}
+
+/* === Project Cards === */
+.project-card {
+  display: flex;
+  max-width: 800px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 0 auto 1.5rem; /* center & spacing */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image section */
+.project-image {
+  flex: 0.5;
+  background: #ccc; /* fallback if image not loaded */
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content section */
+.project-content {
+  flex: 1;
+  background-color: #e9eff8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content .inner-box {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* === Buttons (general project links, not navbar) === */
+.my-btn {
+  background: #101e3d;
+  color: #ecb44b;
+  border-radius: 6px;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.my-btn:hover {
+  background: #14264e;
+  color: #ecb768;
+}
+
+/* === Responsive Cards === */
+@media (max-width: 992px) {
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-image {
+    flex: none;
+    width: 100%;
+    height: 200px; /* fixed height for mobile */
+  }
+
+  .project-content {
+    flex: none;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .project-content .inner-box {
+    padding: 1rem 0;
+  }
+
+  .project-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    height: 180px;
+  }
+
+  .project-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+}
+/* Equal height for all cards */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Consistent image sizing */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Card body spacing */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive grid columns for better display on small devices */
+@media (max-width: 768px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

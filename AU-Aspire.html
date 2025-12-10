@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ats.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white "></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#gallery" class="dashboard-nav-item">Gallery</a><br>
+                <a href="#price" class="dashboard-nav-item">Price</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+                <a href="#floor-plans" class="dashboard-nav-item">Floor plans</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Banner Image -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/au/au-1.jpg" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="divino fs-1 text-center text-white mt-4">AU Silicon City by NBCC Aspire </h1>
+                <h2 class="fs-2 text-center text-md-start ms-md-3">Overview</h2>
+
+                <!-- Overview Details -->
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
+
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span> Under process </p>
+                            <p><span class="fw-bold">Developer:</span>NBCC under ASPIRE scheme (executed by AU Real
+                                Estate Services Pvt. Ltd.)</p>
+                            <p><span class="fw-bold">Project Name:</span> AU Aspire Silicon City (NBCC Aspire)
+                            </p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Exact Site:</span> Plot No. 1B, Block F, Sector-50, Noida – 201303
+                            </p>
+                            <p><span class="fw-bold">Price:</span> ₹2.67 crore</p>
+                            <p><span class="fw-bold">Total Units:</span> 446 premium apartments</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Project Size:</span> 8.33–8.5 acres with 7 towers, ranging G+35 to
+                                G+41 floors</p>
+
+                            <!-- Contact Elite -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <button href="#" class="text-decoration-none button ms-2">Contact Elite Team</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===============================gallery======================================  -->
+            <section class="gallery-section mt-2" id="gallery">
+                <div class="container">
+                    <h2>Gallery</h2>
+
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-2.jpg" alt="Gallery Image 1">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-3.webp" alt="Gallery Image 2">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-4.jpg" alt="Gallery Image 3">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-5.avif" alt="Gallery Image 4">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-6.jpg" alt="Gallery Image 5">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/au/au-7.webp" alt="Gallery Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================Price List===================================  -->
+            <section class="price-section" id="price">
+                <div class="container">
+                    <h2>Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>3.5 BHK</h5>
+                                <p><strong>Size :</strong>2,781 sq.ft </p>
+                                <p><strong>Price :</strong> Starting ₹4.03 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>4.5 BHK</h5>
+                                <p><strong>Size :</strong> 3,342 sq.ft </p>
+                                <p><strong>Price :</strong> ₹4.84–₹6.5 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>Penthouse (Duplex)</h5>
+                                <p><strong>Size :</strong> 5,923 sq.ft</p>
+                                <p><strong>Price :</strong> ₹7.5–₹8.57 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================Amenities & Lifestyle Features============================== -->
+
+            <section class="py-5 amenities" id="amenities">
+                <div class="container">
+                    <h1 class="text-center mb-4">Features & Amenities</h1>
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <div class="amenity-title">Yoga Deck</div>
+                                <div class="amenity-desc">Unwind and flex your muscles at the yoga deck.</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-tv"></i>
+                                </div>
+                                <div class="amenity-title">Mini Theatre</div>
+                                <div class="amenity-desc">Catch the latest blockbuster in the exclusive mini theatre.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-car-front"></i>
+                                </div>
+                                <div class="amenity-title">Reserved Parking</div>
+                                <div class="amenity-desc">Largest Car Parking with Exclusive Valet Service</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <div class="amenity-title">Green Themed Reception</div>
+                                <div class="amenity-desc">Integrate nature into every aspect of your life</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-water"></i>
+                                </div>
+                                <div class="amenity-title">Swimming Pool</div>
+                                <div class="amenity-desc">India’s largest ethnic mall with largest F&B area</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <div class="amenity-title">Reading Lounge</div>
+                                <div class="amenity-desc">Make all your occasions memorable in our multi-purpose hall.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <div class="amenity-title">Security</div>
+                                <div class="amenity-desc">On Vigil 24x7: Fire Safety & Advanced Security System</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-bar-chart-line"></i>
+                                </div>
+                                <div class="amenity-title">Gym</div>
+                                <div class="amenity-desc">One of the best ways to improve your physical health</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================projects=========================== -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================location & Connectivity================== -->
+            <div class="container mb-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.965039847676!2d77.37468138885501!3d28.5708125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef0041354729%3A0xf870feb057aa4941!2sAU%20aspire%20silicon%20city%204!5e0!3m2!1sen!2sin!4v1758603574981!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Mobile button -->
+                    <div class="map-btn button">
+                        <a href="https://www.google.com/maps/place/AU+aspire+silicon+city+4/@28.5708125,77.3746814,17z/data=!4m10!1m2!2m1!1sAU+Silicon+City+by+NBCC+Aspire+Sector+76,+NOIDA!3m6!1s0x390cef0041354729:0xf870feb057aa4941!8m2!3d28.5708125!4d77.3791875!15sCi9BVSBTaWxpY29uIENpdHkgYnkgTkJDQyBBc3BpcmUgU2VjdG9yIDc2LCBOT0lEQVowIi5hdSBzaWxpY29uIGNpdHkgYnkgbmJjYyBhc3BpcmUgc2VjdG9yIDc2IG5vaWRhkgEUY29uc3RydWN0aW9uX2NvbXBhbnmaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBHVTAxdFp6SlNNSGhLVVZWa2MxTnNXbTVWUmtaTFdrWk9VVk5JWXhBQqoBlQEKDS9nLzExcmt6MHNocDQKDS9nLzExeGQzcXJzdzkKCS9tLzAzd3R6MBABKhMiD2F1IHNpbGljb24gY2l0eSgAMh8QASIbOCjN4sKI0o4mNBToWh5B5lzSyMXOzCsQhYvJMjIQAiIuYXUgc2lsaWNvbiBjaXR5IGJ5IG5iY2MgYXNwaXJlIHNlY3RvciA3NiBub2lkYeABAPoBBAgAECw!16s%2Fg%2F11xd3qrsw9?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" class="btn-map">
+                            Open in Google Maps
+                        </a>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>Address:</em></p>
+                        <p>Sector 76, Noida, Uttar Pradesh</p>
+                        <p><em>Metro:</em></p>
+                        <p>• Sector 76 Metro Station (adjacent, Aqua Line)</p>
+                        <p>• Sector 50 Metro within walking distance</p>
+                        <p><em>Road Connectivity:</em></p>
+                        <p>• Noida–Greater Noida Expressway</p>
+                        <p>• Yamuna Expressway & Dadri Road nearby</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================Floor Plans==========================  -->
+            <!-- Floor Plans Section -->
+            <div class="container my-5 mt-5" id="floor-plans">
+                <h1 class="text-center mb-5">Floor Plans</h1>
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(221, 232, 248);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal"
+                            data-img="https://via.placeholder.com/800x800?text=4+BHK+Plan">
+                            <h5>3.5 BHK + Study</h5>
+                            <p>2,781 sq.ft</p>
+                            <p><em>₹4.03 Cr</em></p>
+                            <button class="btn button btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(230, 239, 253);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal1"
+                            data-img="https://via.placeholder.com/800x800?text=3+BHK+Plan">
+                            <h5>4.5 BHK + Study</h5>
+                            <p>3,342 sq.ft</p>
+                            <p><em>₹4.84 Cr</em></p>
+                            <button class="btn button btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center shadow-sm floor-card"
+                            style="background-color:  rgb(214, 229, 252);" data-bs-toggle="modal"
+                            data-bs-target="#floorPlanModal2"
+                            data-img="https://via.placeholder.com/800x800?text=3+BHK+Compact+Plan">
+                            <h5>Duplex Penthouse</h5>
+                            <p>5,923 sq.ft</p>
+                            <p><em>₹8.57 Cr</em></p>
+                            <button class="btn button btn-sm">View Plan</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========================Modal Lightbox================================= -->
+            <!-- Modal Lightbox 1 -->
+            <div class="modal fade" id="floorPlanModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-white"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/au/au-3bhk.jpg" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================Modal Lightbox 2============================== -->
+
+            <div class="modal fade" id="floorPlanModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-danger"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/au/1.jpg" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================================Modal Lightbox 3====================================== -->
+            <div class="modal fade" id="floorPlanModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body text-center position-relative p-0">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 m-3 text-white"
+                                data-bs-dismiss="modal"></button>
+                            <img src="assets/img/au/big1.jpg" class="img-fluid rounded shadow-lg" id="floorPlanImage"
+                                alt="Floor Plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sed_testimonial_section homepage-about-us-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Testimonials -->
+                            <div class="left_text_testi_contetn">
+                                <div class="test_user_review_content mt-5 change_contet_test" data-index="1"
+                                    style="display: block;">
+                                    <h1>AU Silicon City</h1>
+                                    <p>AU Silicon City was initially a part of the Amrapali Group's extensive housing
+                                        plans, but they were put on hold because of financial irregularities and poor
+                                        management. Thousands of homebuyers were left in limbo by these incomplete
+                                        projects, which caused widespread annoyance and prompted legal action.</p>
+                                    <p class="bottom_line_yello"></p>
+                                </div>
+                                <div class="test_user_review_content mt-5 change_contet_test" data-index="2"
+                                    style="display: none;">
+                                    <h1>AU Silicon City</h1>
+                                    <p>In a historic ruling, the Supreme Court of India charged NBCC (India) Ltd., a
+                                        Navratna Central Public Sector Enterprise under the Ministry of Housing & Urban
+                                        Affairs (MoHUA), with carrying out these housing projects in a manner overseen
+                                        by the court. As a result, ASPIRE (Amrapali Stalled Projects Investments
+                                        Reconstruction Establishment), a Section 8 business, was established to manage
+                                        the construction, repair, and delivery of impacted properties, including NBCC
+                                        Silicon City.</p>
+                                    <p class="bottom_line_yello"></p>
+                                </div>
+                                <div class="test_user_review_content mt-5 change_contet_test" data-index="3"
+                                    style="display: none;">
+                                    <h1>AU Silicon City</h1>
+                                    <p>More than just a housing development, NBCC Silicon City is a tale of rebirth, a
+                                        dedication to openness, effectiveness, and providing promised homes to their
+                                        rightful owners. In order to meet the needs of today's urban families, the
+                                        development includes a variety of mid- to high-rise residential towers, green
+                                        infrastructure, and contemporary amenities.</p>
+                                    <p class="bottom_line_yello"></p>
+                                </div>
+                                <!-- Add more up to data-index="8" if needed -->
+                            </div>
+                        </div>
+
+                        <!-- Floor Preference   -->
+                        <div class="col-lg-6 mt-2" id="floor-preference">
+                            <!-- Main image -->
+                            <div class="img_peroson_fullsize">
+                                <img class="img-fluid main-user-img" src="assets/img/au/au-1.jpg" alt="User">
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="testi_person_img_icon">
+                                <ul>
+                                    <li class="active_user">
+                                        <img src="assets/img/au/au-1.jpg" data-index="1" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/au/au-2.jpg" data-index="2" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/au/au-3.webp" data-index="3" alt="User 1">
+                                    </li>
+                                    <!-- Add 6 more -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    document.querySelectorAll('.testi_person_img_icon ul li img').forEach(img => {
+        img.addEventListener('click', function () {
+            const index = this.getAttribute('data-index');
+
+            // 1. Content change
+            document.querySelectorAll('.test_user_review_content').forEach(content => {
+                content.style.display = content.getAttribute('data-index') === index ? 'block' : 'none';
+            });
+
+            // 2. Change main image
+            const mainImage = document.querySelector('.img_peroson_fullsize .main-user-img');
+            mainImage.src = this.src;
+
+            // 3. Highlight active thumbnail
+            document.querySelectorAll('.testi_person_img_icon ul li').forEach(li => {
+                li.classList.remove('active_user');
+            });
+            this.parentElement.classList.add('active_user');
+        });
+    });
+
+</script>
+
+</html>

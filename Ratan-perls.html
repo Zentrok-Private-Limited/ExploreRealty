@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ats.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list text-white fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#gallery" class="dashboard-nav-item">Gallery</a><br>
+                <a href="#price" class="dashboard-nav-item">Price</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+                <a href="#floor-plans" class="dashboard-nav-item">Floor Plan</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Banner Image -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/ats-1.jpg" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="divino fs-1 text-center text-white mt-4">Ratan Pearls</h1>
+                <h2 class="fs-2 text-center text-md-start ms-md-3">Overview</h2>
+
+                <!-- Overview Details -->
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
+
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span> UPRERAPRJ15192</p>
+                            <p><span class="fw-bold">Developer:</span> Ratan Buildtech Pvt. Ltd.</p>
+                            <p><span class="fw-bold">Project Type:</span> Residential Apartments
+                            </p>
+                            <p><span class="fw-bold">Land Ownership:</span> Freehold
+                            </p>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Exact Site:</span> GH-01D, Sector-16, Greater Noida West (Noida
+                                Extension)
+                            </p>
+                            <p><span class="fw-bold">Price:</span> ₹82 L - ₹1.55 Cr</p>
+                            <p><span class="fw-bold">Unit:</span> 588 flats</p>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Towers:</span> 4</p>
+                            <p><span class="fw-bold">Project Size:</span> 4.26 acres</p>
+
+                            <!-- Contact Elite -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <button href="#" class="text-decoration-none button ms-2">Contact Elite Team</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===============================gallery======================================  -->
+            <section class="gallery-section mt-2" id="gallery">
+                <div class="container">
+                    <h2>Gallery</h2>
+
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/2.jpg" alt="Gallery Image 1">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/3.jpg" alt="Gallery Image 2">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/5.jpeg" alt="Gallery Image 3">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/6.avif" alt="Gallery Image 4">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/8.jpg" alt="Gallery Image 5">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="gallery-img">
+                                <img src="assets/img/ratan/9.jpg" alt="Gallery Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================================Price List===================================  -->
+            <section class="price-section" id="price">
+                <div class="container">
+                    <h2>Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>2 BHK </h5>
+                                <p><strong>Size :</strong> 1,035 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹82 L – ₹95 L</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>3 BHK </h5>
+                                <p><strong>Size :</strong> 1,370 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹1.10 Cr – ₹1.25 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="price-card">
+                                <h5>3 BHK </h5>
+                                <p><strong>Size :</strong> 1,874 Sq.Ft.</p>
+                                <p><strong>Price :</strong> ₹1.35 Cr – ₹1.55 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================Amenities & Lifestyle Features============================== -->
+
+            <section class="py-5 amenities" id="amenities">
+                <div class="container">
+                    <h1 class="text-center mb-4">Amenities & Lifestyle Features</h1>
+                    <div class="row g-4">
+                        <!-- Residential Highlight 1 -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-house-door-fill"></i></div>
+                                <div class="amenity-title">Spacious Apartments</div>
+                                <div class="amenity-desc">Wide balconies, modern interiors, and excellent natural
+                                    lighting & ventilation.</div>
+                            </div>
+                        </div>
+
+                        <!-- Clubhouse -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-building-fill-check"></i></div>
+                                <div class="amenity-title">Grand Clubhouse</div>
+                                <div class="amenity-desc">Fully equipped with gymnasium, spa, indoor games & party
+                                    spaces.</div>
+                            </div>
+                        </div>
+
+                        <!-- Swimming Pools -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-water"></i></div>
+                                <div class="amenity-title">Swimming Pools</div>
+                                <div class="amenity-desc">Adult & kids' pools with sun deck for leisure and fun.</div>
+                            </div>
+                        </div>
+
+                        <!-- Sports -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-basketball"></i></div>
+                                <div class="amenity-title">Sports Facilities</div>
+                                <div class="amenity-desc">Enjoy basketball, badminton courts and a dedicated jogging
+                                    track.</div>
+                            </div>
+                        </div>
+
+                        <!-- Kids Play Area -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-emoji-smile"></i></div>
+                                <div class="amenity-title">Children's Play Area</div>
+                                <div class="amenity-desc">Safe, fun and interactive outdoor space for children to play
+                                    freely.</div>
+                            </div>
+                        </div>
+
+                        <!-- Amphitheatre -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-easel-fill"></i></div>
+                                <div class="amenity-title">Open Amphitheatre</div>
+                                <div class="amenity-desc">Perfect for hosting cultural events, shows, and evening
+                                    gatherings.</div>
+                            </div>
+                        </div>
+
+                        <!-- Senior Zone -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-person-arms-up"></i></div>
+                                <div class="amenity-title">Senior Citizens' Zone</div>
+                                <div class="amenity-desc">Peaceful seating and walking paths dedicated to senior
+                                    residents.</div>
+                            </div>
+                        </div>
+
+                        <!-- Indoor Games -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-controller"></i></div>
+                                <div class="amenity-title">Indoor Games</div>
+                                <div class="amenity-desc">Billiards, table tennis, and yoga studio to unwind indoors.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Power & Water -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                                <div class="amenity-title">24×7 Utilities</div>
+                                <div class="amenity-desc">Round-the-clock water supply and power backup for
+                                    uninterrupted living.</div>
+                            </div>
+                        </div>
+
+                        <!-- Security -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                                <div class="amenity-title">Advanced Security</div>
+                                <div class="amenity-desc">CCTV surveillance, intercom system & multi-tier
+                                    access-controlled security.</div>
+                            </div>
+                        </div>
+
+                        <!-- Fire & Earthquake Safety -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-fire"></i></div>
+                                <div class="amenity-title">Fire & Earthquake Safety</div>
+                                <div class="amenity-desc">Earthquake-resistant RCC structure with fire alarms &
+                                    sprinklers.</div>
+                            </div>
+                        </div>
+
+                        <!-- Eco Facilities -->
+                        <div class="col-md-3 col-sm-6 d-flex">
+                            <div class="amenity-card d-flex flex-column h-100">
+                                <div class="amenity-icon"><i class="bi bi-droplet-half"></i></div>
+                                <div class="amenity-title">Eco-Friendly Utilities</div>
+                                <div class="amenity-desc">Rainwater harvesting, water softener plant & landscaped green
+                                    zones.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ============================projects=========================== -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn button more-btn">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================location & Connectivity================== -->
+            <div class="container mb-5" id="location">
+                <div class="location-section">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4165.398254855231!2d77.46097205282508!3d28.609721304194096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRATAN%20PEARLS%2C%20SECTOR%2016%20GREATER%20NOIDA%20WEST!5e0!3m2!1sen!2sin!4v1760434243482!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Mobile button -->
+                    <div class="map-btn">
+                        <a href="https://maps.app.goo.gl/MnguY2v9UW8yGY2s6" target="_blank" class="btn-map button">
+                            Open in Google Maps
+                        </a>
+                    </div>
+
+                    <div class="location-overlay">
+                        <h2>Location</h2>
+                        <p><em>1. 03 km from Pari Chowk</em></p>
+                        <p><em>2. 07 minutes drive from International Cricket Stadium</em></p>
+                        <hr>
+                        <p><em>3. 25 minutes drive from Kalindi Kunj</em></p>
+                        <p><em>4. 04 km from Yamuna Expressway</em></p>
+                        <p><em>5. 30 minutes drive from South Delhi</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sed_testimonial_section homepage-about-us-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Testimonials -->
+                            <div class="left_text_testi_contetn">
+                                <div class="test_user_review_content change_contet_test" data-index="1"
+                                    style="display: block;">
+                                    <h1>RATAN PEARLS</h1>
+                                    <p>Ratan Pearls is a residential apartment complex developed by Ratan Housing /
+                                        Ratan Buildtech in GH‑01D, Sector‑16, Greater Noida West. The development sits
+                                        on about 4.26 acres of land, with four towers and roughly 588 units.
+                                        Apartment sizes include 2‑BHK and 3‑BHK layouts, with the smaller units starting
+                                        at around 1,035 sq ft, and larger ones up to about 1,874 sq ft.
+                                        The project is RERA‑registered under IDs UPRERAPRJ8629 and UPRERAPRJ15192.</p>
+
+                                </div>
+                                <div class="test_user_review_content change_contet_test" data-index="2"
+                                    style="display: none;">
+                                    <h1>RATAN PEARLS</h1>
+                                    <p>What sets Ratan Pearls apart is its strong emphasis on open, green space and
+                                        thoughtful architectural design. About 85% of the site is devoted to landscaped
+                                        gardens, open areas, and amenities, leaving only ~15% as built‑up area.
+                                        The towers are designed to allow 360° openness so that many units get natural
+                                        light and cross‑ventilation. The project includes green features such as
+                                        rainwater harvesting,
+                                        energy‑efficient lighting, and an RCC frame structure that offers earthquake
+                                        resistance.</p>
+                                </div>
+                                <div class="test_user_review_content change_contet_test" data-index="3"
+                                    style="display: none;">
+                                    <h1>RATAN PEARLS</h1>
+                                    <p>In terms of amenities, connectivity, and status, Ratan Pearls offers a
+                                        comfortable modern lifestyle. Amenities include a clubhouse, gym, swimming pool,
+                                        landscaped gardens, indoor/outdoor sports courts, jogging track, senior
+                                        citizens’ zone, children’s play areas, etc.
+                                        The project is ready‑to‑move in many parts, having possession phases like Phase
+                                        II reaching completion around December 2023.
+                                        It is reasonably well connected with access to major roads, nearby schools,
+                                        hospitals, and shopping, typical of Greater Noida West.</p>
+                                </div>
+                                <!-- Add more up to data-index="8" if needed -->
+                            </div>
+                        </div>
+
+                        <!-- Floor Preference   -->
+                        <div class="col-lg-6 mt-2" id="floor-preference">
+                            <!-- Main image -->
+                            <div class="img_peroson_fullsize">
+                                <img class="img-fluid main-user-img" src="assets/img/ratan/10.jpg" alt="User">
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="testi_person_img_icon">
+                                <ul>
+                                    <li class="active_user">
+                                        <img src="assets/img/ratan/8.jpg" data-index="1" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/ratan/11.jpg" data-index="2" alt="User 1">
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/ratan/2.jpg" data-index="3" alt="User 1">
+                                    </li>
+                                    <!-- Add 6 more -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    document.querySelectorAll('.testi_person_img_icon ul li img').forEach(img => {
+        img.addEventListener('click', function () {
+            const index = this.getAttribute('data-index');
+
+            // 1. Content change
+            document.querySelectorAll('.test_user_review_content').forEach(content => {
+                content.style.display = content.getAttribute('data-index') === index ? 'block' : 'none';
+            });
+
+            // 2. Change main image
+            const mainImage = document.querySelector('.img_peroson_fullsize .main-user-img');
+            mainImage.src = this.src;
+
+            // 3. Highlight active thumbnail
+            document.querySelectorAll('.testi_person_img_icon ul li').forEach(li => {
+                li.classList.remove('active_user');
+            });
+            this.parentElement.classList.add('active_user');
+        });
+    });
+
+</script>
+
+</html>

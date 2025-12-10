@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="assets/css/vista.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/gygy.css">
+    <!-- <link rel="stylesheet" href="assets/css/testimonial.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>xyz RealEstate</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
+        <div class="container-fluid px-3 px-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/LOGO.png" alt="xyz RealEstate Logo" class="logo-img">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-menu-up text-white"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-dark" href="project.html">Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="#">Property</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <!--============ side navbar========= -->
+
+    <div class='dashboard'>
+        <aside class="dashboard-nav offcanvas offcanvas-start" tabindex="-1" id="sidebarNav" aria-label="Sidebar">
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <nav class="dashboard-nav-list p-3">
+                <a href="#overview" class="dashboard-nav-item">Overview</a><br>
+                <a href="#pricing" class="dashboard-nav-item">Price</a><br>
+                <a href="#gallery" class="dashboard-nav-item">Gallery</a><br>
+                <a href="#amenities" class="dashboard-nav-item">Amenities</a><br>
+                <a href="#location" class="dashboard-nav-item">Location</a><br>
+            </nav>
+        </aside>
+        <!-- ===================side navbar end================ -->
+
+        <div class='dashboard-app'>
+            <div class="container-fluid" id="overview">
+                <!-- Project Image -->
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <!-- ☰ Menu Button (Mobile Only) -->
+                        <button class="side-btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarNav">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                        <img src="assets/img/m3m/m3m-2.jpg" class="img-fluid p-0"
+                            style="height: 50vh; width: 100%; object-fit: cover;" alt="GYGY FIVE O Project" />
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h1 class="divino text-white text-center mt-4">M3M Jacob & Co Residences</h1>
+                <h2 class="ms-3 text-center text-md-start">Overview</h2>
+
+                <!-- Overview Section -->
+                <div class="container-fluid overview p-3 rounded shadow-sm">
+                    <div class="row text-center text-md-start">
+
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">RERA:</span>UP-RERA Registered: UPRERAPRJ544119</p>
+                            <p><span class="fw-bold">Project Name:</span>M3M Jacob & Co Residences</p>
+                            <p><span class="fw-bold">Price:</span> ₹7 Cr+ – ₹15 Cr+ </p>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Developer:</span>M3M India Pvt. Ltd. (in collaboration with Jacob &
+                                Co, the global luxury watch & jewelry brand)</p>
+                            <p><span class="fw-bold">Project Type:</span> Residences</p>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-4 mt-3">
+                            <p><span class="fw-bold">Project Size:</span>Spread across premium land parcel in Sector 94,
+                                Noida, with iconic high-rise towers (over 50 floors proposed).</p>
+                            <!-- Contact Button -->
+                            <div
+                                class="elite d-flex justify-content-center justify-content-md-start align-items-center p-2 rounded">
+                                <i class="bi bi-telephone-fill"></i>
+                                <a href="#" class="text-color text-decoration-none ms-2">Contact Elite Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================= Pricing ============================ -->
+
+
+            <section class="price-section" id="pricing">
+                <div class="container">
+                    <h2 class="text-center mb-5">Price List</h2>
+
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>3 BHK Residences </h5>
+                                <p><strong>2,500 sq.ft </strong></p>
+                                <p>starting from ₹7 Cr+</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>4 BHK Residences </h5>
+                                <p><strong>3,500–4,200 sq.ft</strong> </p>
+                                <p>starting from ₹10–12 Cr</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-card text-center shadow-sm">
+                                <h5>5 BHK & Penthouses </h5>
+                                <p><strong>5,000–6,400 sq.ft </strong></p>
+                                <p>₹15 Cr+ (ultra-luxury category)</p>
+                                <button class="btn button">Request A Call &#8599;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======================================gallery ==================================== -->
+            <div class="container text-center py-5" id="gallery">
+                <h1 class="mb-5">Gallery</h1>
+                <div class="row g-3 justify-content-center">
+                    <!-- Gallery Image Cards -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="0">
+                                <img src="assets/img/m3m/m3m-2.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="1">
+                                <img src="assets/img/m3m/m3m-10.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="2">
+                                <img src="assets/img/m3m/m3m-6.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="3">
+                                <img src="assets/img/m3m/m3m-11.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="4">
+                                <img src="assets/img/m3m/m3m-12.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="gallery-item position-relative overflow-hidden rounded shadow-sm">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleLightbox" data-bs-slide-to="5">
+                                <img src="assets/img/m3m/m3m-5.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="bi bi-plus-lg text-white fs-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Lightbox -->
+            <div class="modal fade" id="exampleLightbox" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="lightboxExampleCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active text-center">
+                                        <img src="assets/img/m3m/m3m-2.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="assets/img/m3m/m3m-10.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="assets/img/m3m/m3m-6.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="assets/img/m3m/m3m-11.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="assets/img/m3m/m3m-12.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="assets/img/m3m/m3m-5.jpg" class="img-fluid mx-auto"
+                                            style="max-height: 80vh;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#lightboxExampleCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#lightboxExampleCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================projects=========================== -->
+            <section class="projects-section py-5">
+                <div class="container">
+                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                        <h2>Projects</h2>
+                        <a href="project.html" class="btn more-btn button">View More</a>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Project Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home18.jpg" class="card-img-top" alt="Kalpataru Vista">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kalpataru Vista</h5>
+                                    <p class="price">₹5.42 Cr - ₹8.9 Cr</p>
+                                    <a href="kalpataru-vista.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home13.webp" class="card-img-top" alt="GYGY">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">GYGY</h5>
+                                    <p class="price">₹1.5 Cr - ₹2.31 Cr</p>
+                                    <a href="gygy.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="assets/img/home6.avif" class="card-img-top" alt="ATS Picturesque Reprieves">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ATS Picturesque Reprieves</h5>
+                                    <p class="price">₹2.30 Cr - ₹4.32 Cr</p>
+                                    <a href="ats.html" class="btn button mt-auto">Explore Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- =================================Amenities & specifications================================== -->
+            <section class="py-5 amenities" id="amenities">
+                <div class="container">
+                    <h1 class="text-center mb-4">Features & Amenities</h1>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                        <!-- Card 1 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-gem"></i></div>
+                                <div class="amenity-title">Jacob & Co Theme</div>
+                                <div class="amenity-desc">Interiors and facade inspired by iconic Jacob & Co luxury
+                                    designs</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-house-check-fill"></i></div>
+                                <div class="amenity-title">Ultra-Luxury Residences</div>
+                                <div class="amenity-desc">3.5, 4.5 & 5.5 BHK homes with private decks and panoramic
+                                    views</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-camera-video-fill"></i></div>
+                                <div class="amenity-title">Advanced Security</div>
+                                <div class="amenity-desc">Facial recognition, 24×7 CCTV, smart access control &
+                                    surveillance</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-stars"></i></div>
+                                <div class="amenity-title">Sky Lounge</div>
+                                <div class="amenity-desc">Signature rooftop lounge with bar, skyline views, and fine
+                                    dining</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-droplet-half"></i></div>
+                                <div class="amenity-title">Infinity Pool</div>
+                                <div class="amenity-desc">Temperature-controlled pool with cabanas and sun deck</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col d-flex">
+                            <div class="amenity-card d-flex flex-column w-100">
+                                <div class="amenity-icon"><i class="bi bi-ev-front-fill"></i></div>
+                                <div class="amenity-title">EV Charging & Valet</div>
+                                <div class="amenity-desc">Dedicated EV charging stations and professional valet service
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- =================================Location & connectivity==================================== -->
+            <div class="container my-5" id="location">
+                <h2 class="ms-3">Location & Connectivity</h2>
+                <div class="row align-items-center g-4">
+
+                    <!-- Left: Location Map -->
+                    <div class="col-md-6 map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14019.255360586289!2d77.3310821899401!3d28.545314710802753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sM3M%20Jacob%20%26%20Co%20Residences!5e0!3m2!1sen!2sin!4v1758610728555!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Right: Connectivity Highlights -->
+                    <div class="col-md-6">
+                        <div class="row g-3">
+
+                            <!-- Address -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">📍 Address</h5>
+                                        <p class="card-text">Sector 94, Noida – right at the Delhi-Noida border (0 km
+                                            from Delhi).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Expressways -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">🛣️ Road Connectivity</h5>
+                                        <p class="card-text">Located next to Noida–Greater Noida Expressway & DND
+                                            Flyway.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metro -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">🚇 Metro Access</h5>
+                                        <p class="card-text">5 mins from Okhla Bird Sanctuary Metro (Aqua Line).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- City Access -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">🚗 Proximity to City</h5>
+                                        <p class="card-text">15–20 mins from South & Central Delhi via DND & Ring Road.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Airport -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">✈️ Airports</h5>
+                                        <p class="card-text">Approx. 25 mins to Jewar International Airport (upcoming).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nearby Landmarks -->
+                            <div class="col-12">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">🏙️ Nearby Hubs</h5>
+                                        <p class="card-text">Close to Amity University, DPS, Lotus Valley, Mall of
+                                            India, Okhla Business District, and Apollo Hospital.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ===================Quick Facts================== -->
+            <section class="quick-facts bg-light py-5" id="quick-facts">
+                <div class="container">
+                    <h2 class="text-center mb-5">📌 Quick Facts</h2>
+
+                    <div class="row g-4">
+
+                        <!-- Project Overview -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-primary bg-white">
+                                <h5 class="mb-2">🏢 Project Overview</h5>
+                                <p class="text-muted mb-1"><strong>Project:</strong> M3M Jacob & Co Residences</p>
+                                <p class="text-muted mb-1"><strong>Location:</strong> Sector 94, Noida (0 KM from Delhi)
+                                </p>
+                                <p class="text-muted"><a href="https://www.m3mindia.com"
+                                        target="_blank">m3mindia.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Legal & Documentation -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-success bg-white">
+                                <h5 class="mb-2">📜 Legal & Documents</h5>
+                                <p class="text-muted mb-1">UP-RERA Registered: <strong>UPRERAPRJ544119</strong></p>
+                                <p class="text-muted"><a href="https://www.up-rera.in" target="_blank">Check RERA
+                                        Status</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Unit Sizes & Pricing -->
+                        <div class="col-md-4">
+                            <div class="fact-card h-100 p-4 shadow-sm border-start border-4 border-warning bg-white">
+                                <h5 class="mb-2">📐 Unit Sizes & Pricing</h5>
+                                <p class="text-muted mb-1">3.5, 4.5 & 5.5 BHK Residences + Duplex Penthouses</p>
+                                <p class="text-muted mb-1">Pricing from ₹6.5 Cr onwards*</p>
+                                <p class="text-muted">*Subject to unit/floor. Source: M3M Sales Team</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- footer -->
+            <footer class="bg-dark text-light pt-4 pb-3">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Services</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Property Sale</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Purchase</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Property Rent / Lease</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Resale Assistance</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Luxury Homes / Villas</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Page Link</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#" class="text-light text-decoration-none">Lorem Ipsum</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Simply dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">The printing and typesetting</a>
+                                </li>
+                                <li><a href="#" class="text-light text-decoration-none">Standard dummy text</a></li>
+                                <li><a href="#" class="text-light text-decoration-none">Type specimen book</a></li>
+                            </ul>
+                        </div><!-- End col -->
+
+                        <div class="col-12 col-md-4">
+                            <h5 class="mb-3">Subscribe today</h5>
+                            <div class="signup_form">
+                                <form id="subscribeForm" class="subscribe d-flex" role="form" novalidate>
+                                    <input class="subscribe__input form-control me-2" type="email" id="subscribeEmail"
+                                        name="email" placeholder="Enter Email Address" required />
+
+                                    <button type="submit" class="subscribe__btn">
+                                        <i class="bi bi-send-fill"></i>
+                                    </button>
+                                </form>
+
+                                <p id="subscribeMsg" class="small mt-2"></p>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-google"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div><!-- End col -->
+                    </div><!-- End row -->
+
+                    <div class="row mt-3">
+                        <div class="col text-center small">
+                            <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- End container -->
+            </footer>
+
+
+        </div>
+    </div>
+</body>
+<!-- <script src="assets/js/testimonial.js"></script> -->
+<script src="assets/js/vista.js"></script>
+<script src="assets/js/gygy.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
+</html>
