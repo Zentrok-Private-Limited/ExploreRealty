@@ -27,7 +27,7 @@ if (contactForm) {
             // ✅ Dev vs Production URL
             const url = window.location.hostname === "localhost"
                 ? "http://localhost:5000/contact"
-                : "https://explore-realty-backend.vercel.app/contact";
+                : "https://api-vert-omega-98.vercel.app/contact";
 
             const res = await fetch(url, {
                 method: "POST",
@@ -72,7 +72,7 @@ if (subscribeForm) {
         try {
             const url = window.location.hostname === "localhost"
                 ? "http://localhost:5000/subscriber"
-                : "https://explore-realty-backend.vercel.app/subscriber";
+                : "https://api-vert-omega-98.vercel.app/subscriber";
 
             const res = await fetch(url, {
                 method: "POST",

@@ -18,11 +18,10 @@ if (subscribeForm) {
     }
 
     try {
-      // ✅ Use http for localhost
       const url =
         window.location.hostname === "localhost"
           ? "http://localhost:5000/subscriber"
-          : "https://explore-realty-backend.vercel.app/subscriber";
+          : "https://api-vert-omega-98.vercel.app/subscriber/";
 
       const res = await fetch(url, {
         method: "POST",
@@ -42,7 +41,6 @@ if (subscribeForm) {
       }
 
       msgEl.innerText = data.message;
-
     } catch (err) {
       console.error("Subscribe error:", err);
       msgEl.innerText = "Server error! Please try again later.";
