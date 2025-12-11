@@ -72,7 +72,7 @@ if (subscribeForm) {
         try {
             const url = window.location.hostname === "localhost"
                 ? "http://localhost:5000/subscriber"
-                : "https://explorerealty.onrender.com/api/subscriber";
+                : "https://explorerealty.onrender.com/api/subscribe";
 
             const res = await fetch(url, {
                 method: "POST",
