@@ -40,18 +40,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Image section */
-.project-image {
-  flex: 0.5;
-  background: #ccc; /* fallback if image not loaded */
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 /* Content section */
 .project-content {
@@ -73,7 +61,7 @@
   color: #ecb44b;
   border-radius: 6px;
   transition: 0.3s;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   display: inline-block;
   text-decoration: none;
 }
@@ -153,7 +141,7 @@
 
 /* Consistent image sizing */
 .card-img-top {
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
