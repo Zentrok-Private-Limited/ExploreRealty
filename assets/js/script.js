@@ -1,37 +1,48 @@
-document.getElementById("searchForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
+function loadHomeProjects() {
 
-  const formData = new FormData(this);
-  const data = {
-    city: formData.get("city"),
-    listingType: formData.get("listingType"),
-    minPrice: formData.get("minPrice"),
-    maxPrice: formData.get("maxPrice")
-  };
+  const container = document.getElementById("homeProjects");
 
-  const res = await fetch("https://explore-realty-ux8g.vercel.app/api/search", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
+  if (!container) return;
+
+  // 👉 सिर्फ 4 project दिखाओ
+  const featured = projects.slice(0, 4);
+
+  let html = "";
+
+  featured.forEach(p => {
+
+    html += `
+      <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+
+        <!-- Image -->
+        <a href="project-detail.html?id=${p.id}">
+          <img src="${p.img}" class="w-full h-40 object-cover">
+        </a>
+
+        <!-- Content -->
+        <div class="p-4">
+
+          <h3 class="font-semibold text-sm mb-1">
+            ${p.name}
+          </h3>
+
+          <p class="text-gray-500 text-sm">
+            ${p.price}
+          </p>
+
+          <a href="project-detail.html?id=${p.id}"
+             class="block mt-3 text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+             View Details
+          </a>
+
+        </div>
+
+      </div>
+    `;
   });
 
-  const result = await res.json();
-  const resultsDiv = document.getElementById("results");
-  resultsDiv.innerHTML = "";
-
-  if (result.length === 0) {
-    resultsDiv.innerHTML = "<p>No properties found.</p>";
-  } else {
-    result.forEach(prop => {
-      const div = document.createElement("div");
-      div.classList.add("property-card");
-      div.innerHTML = `
-        <img src="assets/img/${prop.image}" alt="Property" />
-        <h3>${prop.title}</h3>
-        <p>₹ ${prop.price} | ${prop.area} sq.ft</p>
-        <button>Contact Owner</button>
-      `;
-      resultsDiv.appendChild(div);
-    });
-  }
+  container.innerHTML = html;
+}
+document.addEventListener("DOMContentLoaded", () => {
+  loadHomeProjects();
 });
