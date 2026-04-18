@@ -2,784 +2,238 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/testimonial.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/project.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Explore Realty</title>
-
 </head>
 
 <body>
-  <!-- Navbar Start -->
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-    <div class="container-fluid px-3 px-md-4">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#121E31]">
+    <div class="flex items-center justify-between px-4 md:px-6 h-[90px]">
+
       <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/logo1.png" alt="Explore Realty Logo" class="logo-img">
+      <a href="#">
+        <img src="assets/img/334.png" alt="Explore Realty"
+          class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
       </a>
 
-      <!-- Toggler Button for Mobile -->
-      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="text-white text-3xl md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
       </button>
 
       <!-- Nav Links -->
-      <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project.html">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
 
-  <!-- Navbar End -->
+        <li>
+          <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+        </li>
 
+        <li>
+          <a href="about.html" class="hover:text-gray-300 transition">About</a>
+        </li>
 
-  <!-- Mobile Pills Menu -->
-  <div class="d-block d-md-none mb-3">
-    <button class="btn margin" type="button" data-bs-toggle="collapse" data-bs-target="#mobilePills"
-      aria-expanded="false" aria-controls="mobilePills">
-      <i class="bi bi-three-dots"></i>
-    </button>
+        <li>
+          <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+        </li>
 
-    <div class="collapse background mt-2 position-relative" id="mobilePills">
-      <button class="btn-close position-absolute top-0 end-0 m-2" type="button" data-bs-toggle="collapse"
-        data-bs-target="#mobilePills">
-      </button>
-      <ul class="nav nav-pills flex-column" id="pills-tab-mobile" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all"
-            type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
+        <li>
+          <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="v-pills-upcoming-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upcoming"
-            type="button" role="tab" aria-controls="v-pills-upcoming" aria-selected="false">Upcoming</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="v-pills-commercial-tab" data-bs-toggle="pill"
-            data-bs-target="#v-pills-commercial" type="button" role="tab" aria-controls="v-pills-commercial"
-            aria-selected="false">Commercial</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="v-pills-residential-tab" data-bs-toggle="pill"
-            data-bs-target="#v-pills-residential" type="button" role="tab" aria-controls="v-pills-residential"
-            aria-selected="false">Residential</button>
-        </li>
+
       </ul>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#121E31] text-white px-6 pb-4 space-y-3">
+
+      <a href="index.html" class="block hover:text-gray-300">Home</a>
+      <a href="about.html" class="block hover:text-gray-300">About</a>
+      <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+      <a href="project.html" class="block hover:text-gray-300">Projects</a>
+
+    </div>
+  </nav>
+  <div class="text-center md:pt-30 pt-30">
+    <h1 class="text-3xl font-semibold">Our Projects</h1>
+    <p class="text-gray-500 mt-2">Explore best properties</p>
   </div>
 
-  <!-- Desktop Pills Menu -->
-  <ul class="nav margin nav-pills mb-3 d-none d-md-flex d-flex justify-content-center" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all"
-        type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="v-pills-upcoming-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upcoming"
-        type="button" role="tab" aria-controls="v-pills-upcoming" aria-selected="false">Upcoming</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="v-pills-commercial-tab" data-bs-toggle="pill" data-bs-target="#v-pills-commercial"
-        type="button" role="tab" aria-controls="v-pills-commercial" aria-selected="false">Commercial</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="v-pills-residential-tab" data-bs-toggle="pill" data-bs-target="#v-pills-residential"
-        type="button" role="tab" aria-controls="v-pills-residential" aria-selected="false">Residential</button>
-    </li>
-  </ul>
+  <!-- Filter Buttons -->
+  <div class="flex justify-center gap-4 py-6 bg-gray-100 flex-wrap">
 
-  <!-- Tab Content -->
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab"
-      tabindex="0">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="golden.html"><img src="assets/img/golden/golden1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Golden I</h5>
-                <p class="mt-1"><strong>₹25 L - 70 L</strong></p>
-                <a class="btn button" href="golden.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="grandthum.html"><img src="assets/img/grandthum/Grandthum.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Grandthum (Group 108)</h5>
-                <p class="mt-1"><strong>₹50 L - ₹2 Cr+</strong></p>
-                <a class="btn button" href="grandthum.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="corbett-county.html"><img src="assets/img/corbett/corbett1.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Corbett County</h5>
-                <p class="mt-1"><strong>₹30 L - ₹1 Cr+</strong></p>
-                <a class="btn button" href="corbett-county.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Ratan-perls.html"><img src="assets/img/ratan/12.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Ratan Pearls</h5>
-                <p class="mt-1"><strong>₹82 L - ₹1.55 Cr</strong></p>
-                <a class="btn button" href="Ratan-perls.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="signature-villas.html"><img src="assets/img/Signature/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Signature Villas</h5>
-                <p class="mt-1"><strong>₹1.25 Cr – ₹1.75 Cr</strong></p>
-                <a class="btn button" href="signature-villas.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Vrinda-Heritage.html"><img src="assets/img/Vrinda/6.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Vrinda Heritage Skyward</h5>
-                <p class="mt-1"><strong>1.25 Cr - ₹2.2 Cr</strong></p>
-                <a class="btn button" href="Vrinda-Heritage.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Vihaan-Greens.html"><img src="assets/img/vihaan/6.jpeg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Vihaan Greens</h5>
-                <p class="mt-1"><strong>₹65 Lakhs - ₹1.4 Cr</strong></p>
-                <a class="btn button" href="Vihaan-Greens.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="M3M.html"><img src="assets/img/m3m/m3m-3.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">M3M Jacob & Co Residences</h5>
-                <p class="mt-1"><strong>₹65 Lakhs - ₹1.4 Cr</strong></p>
-                <a class="btn button" href="M3M.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Ivory.html"><img src="assets/img/ivory-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Ivory County</h5>
-                <p class="mt-1"><strong>₹2.85 Crore – ₹12.80 Crore</strong></p>
-                <a class="btn button" href="Ivory.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="AU-Aspire.html"><img src="assets/img/au/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">AU Silicon City by NBCC Aspire</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="AU-Aspire.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="sky-garden.html"><img src="assets/img/sky-garden/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Sky Garden</h5>
-                <p class="mt-1"><strong>₹28 Lakh - ₹1.05 Cr</strong></p>
-                <a class="btn button" href="sky-garden.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Bhutani.html"><img src="assets/img/bhutani/bhutani-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Bhutani Astrathum</h5>
-                <p class="mt-1"><strong>₹76.93 lakh - ₹1.40 Cr</strong></p>
-                <a class="btn button" href="Bhutani.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="escon.html"><img src="assets/img/escon/escon-1.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Escon Panache Villas</h5>
-                <p class="mt-1"><strong>₹2.02 crore</strong></p>
-                <a class="btn button" href="escon.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="ats.html"><img src="assets/img/ats-10.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">ATS Picturesque Reprieves</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="ats.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="gygy.html"><img src="assets/img/gygy-1.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">GYGY FIVE-O</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="gygy.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="IBP.html"><img src="assets/img/ibp/ibp-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">IBP Windsor Valley</h5>
-                <p class="mt-1"><strong>₹56.8 – ₹89 Lakh</strong></p>
-                <a class="btn button" href="IBP.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="kalpataru-vista.html"><img src="assets/img/vista-6.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Kalpataru Limited</h5>
-                <p class="mt-1"><strong>₹5.42 Cr*</strong></p>
-                <a class="btn button" href="kalpataru-vista.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="kdmg.html"><img src="assets/img/kdmg/1.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">KDMG Central Plaza</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="kdmg.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="L&T.HTML"><img src="assets/img/l&t-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">L&T Green Reserve</h5>
-                <p class="mt-1"><strong>₹4.8 Cr – ₹11.44 Cr</strong></p>
-                <a class="btn button" href="L&T.HTML">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Madhav-Kunj.html"><img src="assets/img/madhav/2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Madhav Kunj by CSB Infracon</h5>
-                <p class="mt-1"><strong>₹59.4 Lakhs - ₹79.75 Lakhs</strong></p>
-                <a class="btn button" href="Madhav-Kunj.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="paradise.html"><img src="assets/img/paradise/paradise-2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Paradise Homes</h5>
-                <p class="mt-1"><strong>Price on request</strong></p>
-                <a class="btn button" href="paradise.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="tulsi.html"><img src="assets/img/tulsi/Tulsi-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Tulsi Vatika Royal Villas</h5>
-                <p class="mt-1"><strong>₹97 lakh - ₹1.08 crore</strong></p>
-                <a class="btn button" href="tulsi.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="evergreen.html"><img src="assets/img/evergreen/1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Evergreen Square</h5>
-                <p><strong>₹97 lakh - ₹1.08 crore</strong></p>
-                <a class="btn button" href="evergreen.html">Explore more</a>
-              </div>
-            </div>
-          </div>
+  <button onclick="loadProjects('all')" 
+    class="px-5 py-2 bg-blue-600 text-white rounded-full shadow hover:scale-105 transition">
+    All
+  </button>
 
-        </div>
-      </div>
-    </div>
+  <button onclick="loadProjects('commercial')" 
+    class="px-5 py-2 bg-white shadow rounded-full hover:bg-blue-100">
+    Commercial
+  </button>
 
-    <!-- ===================upcoming======================== -->
-    <div class="tab-pane fade" id="v-pills-upcoming" role="tabpanel" aria-labelledby="v-pills-upcoming-tab"
-      tabindex="0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="sky-garden.html"><img src="assets/img/sky-garden/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Sky Garden</h5>
-                <p class="mt-1"><strong>₹28 Lakh - ₹1.05 Cr</strong></p>
-                <a class="btn button" href="sky-garden.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Bhutani.html"><img src="assets/img/bhutani/bhutani-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Bhutani Astrathum</h5>
-                <p class="mt-1"><strong>₹76.93 lakh - ₹1.40 Cr</strong></p>
-                <a class="btn button" href="Bhutani.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Ivory.html"> <img src="assets/img/ivory-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Ivory County</h5>
-                <p class="mt-1"><strong>₹2.85 Crore – ₹12.80 Crore</strong></p>
-                <a class="btn button" href="Ivory.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="L&T.HTML"><img src="assets/img/l&t-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">L&T Green Reserve</h5>
-                <p class="mt-1"><strong>₹4.8 Cr – ₹11.44 Cr</strong></p>
-                <a class="btn button" href="L&T.HTML">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="AU-Aspire.html"><img src="assets/img/au/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">AU Silicon City by NBCC Aspire</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="AU-Aspire.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="tulsi.html"><img src="assets/img/tulsi/Tulsi-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Tulsi Vatika Royal Villas</h5>
-                <p class="mt-1"><strong>₹97 lakh - ₹1.08 crore</strong></p>
-                <a class="btn button" href="tulsi.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Vrinda-Heritage.html"><img src="assets/img/Vrinda/6.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Vrinda Heritage Skyward</h5>
-                <a class="btn button" href="Vrinda-Heritage.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="paradise.html"><img src="assets/img/paradise/paradise-2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Paradise Homes</h5>
-                <p class="mt-1"><strong>Price on request</strong></p>
-                <a class="btn button" href="paradise.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Madhav-Kunj.html"><img src="assets/img/madhav/2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Madhav Kunj by CSB Infracon</h5>
-                <p class="mt-1"><strong>₹59.4 Lakhs - ₹79.75 Lakhs</strong></p>
-                <a class="btn button" href="Madhav-Kunj.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="M3M.html"><img src="assets/img/m3m/m3m-3.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">M3M Jacob & Co Residences</h5>
-                <p class="mt-1"><strong>₹65 Lakhs - ₹1.4 Cr</strong></p>
-                <a class="btn button" href="M3M.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <button onclick="loadProjects('residential')" 
+    class="px-5 py-2 bg-white shadow rounded-full hover:bg-blue-100">
+    Residential
+  </button>
 
-    <!-- ===================================commercial================================ -->
-    <div class="tab-pane fade" id="v-pills-commercial" role="tabpanel" aria-labelledby="v-pills-commercial-tab"
-      tabindex="0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="grandthum.html"><img src="assets/img/grandthum/Grandthum.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Grandthum (Group 108)</h5>
-                <p class="mt-1"><strong>₹50 L - ₹2 Cr+</strong></p>
-                <a class="btn button" href="grandthum.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="golden.html"><img src="assets/img/golden/golden1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Golden I</h5>
-                <p class="mt-1"><strong>₹25 L - 70 L</strong></p>
-                <a class="btn button" href="golden.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="sky-garden.html"><img src="assets/img/sky-garden/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Sky Garden</h5>
-                <p class="mt-1"><strong>₹28 Lakh - ₹1.05 Cr</strong></p>
-                <a class="btn button" href="sky-garden.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="evergreen.html"><img src="assets/img/evergreen/1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Evergreen Square</h5>
-                <p><strong>₹97 lakh - ₹1.08 crore</strong></p>
-                <a class="btn button" href="evergreen.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Bhutani.html"><img src="assets/img/bhutani/bhutani-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Bhutani Astrathum</h5>
-                <p class="mt-1"><strong>₹76.93 lakh - ₹1.40 Cr</strong></p>
-                <a class="btn button" href="Bhutani.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="kdmg.html"><img src="assets/img/kdmg/1.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">KDMG Central Plaza</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="kdmg.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ============================residential========================= -->
-    <div class="tab-pane fade" id="v-pills-residential" role="tabpanel" aria-labelledby="v-pills-residential-tab"
-      tabindex="0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="corbett-county.html"><img src="assets/img/corbett/corbett1.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Corbett County</h5>
-                <p class="mt-1"><strong>₹30 L - ₹1 Cr+</strong></p>
-                <a class="btn button" href="corbett-county.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Ratan-perls.html"><img src="assets/img/ratan/12.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Ratan Pearls</h5>
-                <p class="mt-1"><strong>₹82 L - ₹1.55 Cr</strong></p>
-                <a class="btn button" href="Ratan-perls.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="signature-villas.html"><img src="assets/img/Signature/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Signature Villas</h5>
-                <p class="mt-1"><strong>₹1.25 Cr – ₹1.75 Cr</strong></p>
-                <a class="btn button" href="signature-villas.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Ivory.html"><img src="assets/img/ivory-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Ivory County</h5>
-                <p class="mt-1"><strong>₹2.85 Crore – ₹12.80 Crore</strong></p>
-                <a class="btn button" href="Ivory.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="IBP.html"><img src="assets/img/ibp/ibp-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">IBP Windsor Valley</h5>
-                <p class="mt-1"><strong>₹56.8 – ₹89 Lakh</strong></p>
-                <a class="btn button" href="IBP.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="L&T.HTML"><img src="assets/img/l&t-1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">L&T Green Reserve</h5>
-                <p class="mt-1"><strong>₹4.8 Cr – ₹11.44 Cr</strong></p>
-                <a class="btn button" href="L&T.HTML">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="AU-Aspire.html"><img src="assets/img/au/1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">AU Silicon City by NBCC Aspire</h5>
-                <p class="mt-1"><strong>₹2.67 crore</strong></p>
-                <a class="btn button" href="AU-Aspire.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="M3M.html"><img src="assets/img/m3m/m3m-3.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">M3M Jacob & Co Residences</h5>
-                <p class="mt-1"><strong>₹65 Lakhs - ₹1.4 Cr</strong></p>
-                <a class="btn button" href="M3M.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="tulsi.html"><img src="assets/img/tulsi/Tulsi-1.webp" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Tulsi Vatika Royal Villas</h5>
-                <p class="mt-1"><strong>₹97 lakh - ₹1.08 crore</strong></p>
-                <a class="btn button" href="tulsi.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Madhav-Kunj.html"><img src="assets/img/madhav/2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Madhav Kunj by CSB Infracon</h5>
-                <p class="mt-1"><strong>₹59.4 Lakhs - ₹79.75 Lakhs</strong></p>
-                <a class="btn button" href="Madhav-Kunj.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Vihaan-Greens.html"><img src="assets/img/vihaan/6.jpeg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Vihaan Greens</h5>
-                <p class="mt-1"><strong>₹65 Lakhs - ₹1.4 Cr</strong></p>
-                <a class="btn button" href="Vihaan-Greens.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="paradise.html"><img src="assets/img/paradise/paradise-2.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Paradise Homes</h5>
-                <p class="mt-1"><strong>Price on request</strong></p>
-                <a class="btn button" href="paradise.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="Vrinda-Heritage.html"><img src="assets/img/Vrinda/6.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Vrinda Heritage Skyward</h5>
-                <a class="btn button" href="Vrinda-Heritage.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <div class="card" style="width: 17rem;">
-              <a href="escon.html"> <img src="assets/img/escon/escon-1.avif" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">Escon Panache Villas</h5>
-                <p class="mt-1"><strong>₹2.02 crore</strong></p>
-                <a class="btn button" href="escon.html">Explore more</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- footer -->
-  <footer class="bg-dark text-light pt-5 pb-3">
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Column 1: Logo -->
-      <div class="col-12 col-md-3 text-center">
-  
-  <img
-    src="assets/img/334.png"
-    alt="Logo"
-    style="height: 100px; display: block; margin: 0 auto;"
-    class="mb-3"
-  />
-
-  <p class="small text-center">
-    Premium real estate solutions in Noida & Greater Noida.
-  </p>
+  <button onclick="loadProjects('upcoming')" 
+    class="px-5 py-2 bg-yellow-500 text-white rounded-full shadow hover:scale-105">
+    Upcoming
+  </button>
 
 </div>
+  </div>
 
-      <!-- Column 2: Contact Info -->
-      <div class="col-12 col-md-3">
-        <h5 class="mb-3">Contact Us</h5>
+  <!-- Project Grid -->
+  <div id="projectContainer"
+    class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  </div>
 
-        <p class="small mb-2">
-          <i class="bi bi-geo-alt-fill me-2"></i>
-          Techzone 4, Greater Noida West, Uttar Pradesh
-        </p>
+  <footer class="bg-[#0f1b2d] text-gray-300 pt-14 pb-6">
 
-        <p class="small mb-2">
-          <i class="bi bi-telephone-fill me-2"></i>
-          +91 8588813259
-        </p>
+    <div class="max-w-7xl mx-auto px-4">
 
-        <p class="small">
-          <i class="bi bi-envelope-fill me-2"></i>
-          Explorerealty515@gmail.com
-        </p>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-      <!-- Column 3: Links -->
-      <div class="col-6 col-md-3">
-        <h5 class="mb-3">Quick Links</h5>
-        <ul class="list-unstyled small">
-          <li class="mb-2">
-            <a href="index.html" class="text-light text-decoration-none">Home</a>
-          </li>
-          <li class="mb-2">
-            <a href="about.html" class="text-light text-decoration-none">About</a>
-          </li>
-          <li class="mb-2">
-            <a href="project.html" class="text-light text-decoration-none">Projects</a>
-          </li>
-          <li>
-            <a href="contact.html" class="text-light text-decoration-none">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <!-- Logo -->
+        <div>
+          <img src="assets/img/334.png" class="h-[90px] mb-4">
 
-      <!-- Column 4: Subscribe -->
-      <div class="col-12 col-md-3">
-        <h5 class="mb-3">Subscribe</h5>
-
-        <form class="d-flex">
-          <input
-            type="email"
-            class="form-control me-2"
-            placeholder="Enter email"
-          />
-          <button class="btn btn-primary">
-            <i class="bi bi-send-fill"></i>
-          </button>
-        </form>
-
-        <!-- Social -->
-        <div class="mt-3 d-flex gap-3">
-          <!-- <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a> -->
-          <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/posts/xplore-luxury-home_ace-verde-sector-22a-on-yamuna-expressway-activity-7360370778430722048-ufb4?utm_source=share&utm_medium=member_ios&rcm=ACoAAFs2kNYBMjSnUV_c5V4MaO5q4Z2N7I1nPps" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
-          <!-- <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a> -->
+          <p class="text-sm leading-relaxed">
+            Premium real estate solutions in Noida & Greater Noida.
+            Helping you find your dream property with trust and transparency.
+          </p>
         </div>
+
+        <!-- Contact -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Contact Us</h5>
+
+          <div class="space-y-3 text-sm">
+
+            <p class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i>
+              Techzone 4, Greater Noida West, Uttar Pradesh
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-500"></i>
+              +91 8588813259
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-500"></i>
+              Explorerealty515@gmail.com
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Quick Links</h5>
+
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Subscribe</h5>
+
+          <p class="text-sm mb-3">
+            Get latest property updates & offers.
+          </p>
+
+          <form class="flex overflow-hidden rounded-lg shadow-lg">
+
+            <input type="email" placeholder="Enter your email"
+              class="w-full bg-white px-4 py-2 text-black focus:outline-none">
+
+            <button class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
+              <i class="fa-solid fa-paper-plane text-white"></i>
+            </button>
+
+          </form>
+
+          <!-- Social -->
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-pink-500 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/xplore-luxury-home/" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-blue-500 transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-12 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
+        © 2025 Explore Realty. All rights reserved.
       </div>
 
     </div>
 
-    <!-- Bottom -->
-    <div class="row mt-4">
-      <div class="col text-center small">
-        <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+  <!-- Floating Contact Wrapper -->
+  <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+
+    <!-- Call Button -->
+    <a href="tel:+918588813259" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        Call Us
+      </span>
+
+      <!-- Button -->
+      <div
+        class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-solid fa-phone text-lg"></i>
+
+        <!-- Pulse -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+
       </div>
-    </div>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        WhatsApp
+      </span>
+
+      <!-- Button -->
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+      </div>
+    </a>
 
   </div>
-</footer>
-  <script src="assets/js/testimonial.js"></script>
-  <script src="assets/js/subscribe.js"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
+<script src="assets/js/project.js"></script>
+<script src="assets/js/new.js"></script>
 
 </html>

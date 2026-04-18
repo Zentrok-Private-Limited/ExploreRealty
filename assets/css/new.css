@@ -1,0 +1,35 @@
+/* About CSS for a website, here are some styles for the service cards and testimonial images: */
+.service-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      border-radius: 12px;
+      background: #ffffff;
+      font-weight: 500;
+      color: #162346;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      background: #162346;
+      color: #fff;
+      transform: translateY(-4px);
+    }
+
+    .testimonial-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: all 0.5s ease;
+    }
+
+    .testimonial-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* =======ABOUT END  */

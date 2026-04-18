@@ -2,258 +2,404 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="icon" type="image/x-icon" href="assets/img/logo1.png"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Explore Realty</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Explore Realty</title>
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom-main">
-        <div class="container-fluid px-3 px-md-4">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo1.png" alt="Explore Realty Logo" class="logo-img">
-            </a>
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#121E31]">
+    <div class="flex items-center justify-between px-4 md:px-6 h-[90px]">
 
-            <!-- Toggler Button for Mobile -->
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="bi bi-list fs-2"></i>
-            </button>
+      <!-- Logo -->
+      <a href="#">
+        <img src="assets/img/334.png" alt="Explore Realty"
+          class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
+      </a>
 
-            <!-- Nav Links -->
-            <div class="collapse navbar-collapse nav-bar justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="project.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="text-white text-3xl md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <!-- Hero Section -->
-    <div class=" hero-section position-relative">
-        <!-- Background Image -->
-        <img src="assets/img/ats-1.jpg" alt="Commercial Building" class="hero-img" />
+      <!-- Nav Links -->
+      <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
 
-        <!-- Overlay -->
-        <div class="overlay"></div>
+        <li>
+          <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+        </li>
 
-        <!-- Center Heading -->
-        <div class="hero-heading type text-center">
-            <h1>• Explore Realty •</h1>
-        </div>
+        <li>
+          <a href="about.html" class="hover:text-gray-300 transition">About</a>
+        </li>
 
-        <!-- ✅ Cards Section -->
-        <div class="card-section container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card feature-card">
-                        <i class="bi bi-house feature-icon"></i>
-                        <h5>24/7 Customer Support</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card feature-card">
-                        <i class="bi bi-person-lines-fill feature-icon"></i>
-                        <h5>Visit Our Office</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card feature-card">
-                        <i class="bi bi-building feature-icon"></i>
-                        <h5>Quick Response</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <li>
+          <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+        </li>
+
+        <li>
+          <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
+        </li>
+
+      </ul>
     </div>
 
-    <div class="container contact">
-        <div class="row g-4">
-            <!-- Map Column -->
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe
-  src="https://maps.google.com/maps?q=Golden%20I%20Techzone%204%20Greater%20Noida%20West&t=&z=14&ie=UTF8&iwloc=&output=embed"
-  width="100%"
-  height="350"
-  style="border:0;"
-  loading="lazy">
-</iframe>
-                </div>
-            </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#121E31] text-white px-6 pb-4 space-y-3">
 
-            <!-- Contact Form -->
-            <div class="col-md-6 contact-form">
-                <form id="contactForm">
-                    <!-- Name -->
-                    <div class="mb-3 position-relative">
-                        <span class="form-icon"><i class="bi bi-person-fill"></i></span>
-                        <input type="text" class="form-control" placeholder="NAME..." required>
-                    </div>
+      <a href="index.html" class="block hover:text-gray-300">Home</a>
+      <a href="about.html" class="block hover:text-gray-300">About</a>
+      <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+      <a href="project.html" class="block hover:text-gray-300">Projects</a>
 
-                    <!-- Email -->
-                    <div class="mb-3 position-relative">
-                        <span class="form-icon"><i class="bi bi-envelope-fill"></i></span>
-                        <input type="email" class="form-control" placeholder="EMAIL..." required>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="mb-3 position-relative">
-                        <span class="form-icon"><i class="bi bi-phone-fill"></i></span>
-                        <input type="number" class="form-control" placeholder="PHONE...">
-                    </div>
-
-                    <!-- Message -->
-                    <div class="mb-3 position-relative">
-                        <span class="form-icon"><i class="bi bi-pencil-square"></i></span>
-                        <textarea class="form-control" rows="5" placeholder="MESSAGE..." required></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="text-end">
-                        <button type="submit" class="button btn">SEND MESSAGE</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Footer Info -->
-        <div class="row mt-5">
-            <div class="col-md-6 text-dark footer-info">
-                <h6>ADDRESS</h6>
-                <p>Explore Realty</p>
-                <p>Golden I Mall, Noida Extention U.P</p>
-            </div>
-            <div class="col-md-6 text-dark footer-info">
-                <h6>CONTACT</h6>
-                <p>(+91) 8588813259</p>
-                <p>explorerealty515@gmail.com</p>
-            </div>
-        </div>
     </div>
-    <!-- footer -->
-    <footer class="bg-dark text-light pt-5 pb-3">
-  <div class="container">
-    <div class="row gy-4">
+  </nav>
 
-      <!-- Column 1: Logo -->
-      <div class="col-12 col-md-3 text-center">
-  
-  <img
-    src="assets/img/334.png"
-    alt="Logo"
-    style="height: 100px; display: block; margin: 0 auto;"
-    class="mb-3"
-  />
+  <section class="relative h-[50vh] md:h-[70vh] flex items-center justify-center overflow-visible">
 
-  <p class="small text-center">
-    Premium real estate solutions in Noida & Greater Noida.
-  </p>
+    <!-- Background Image -->
+    <img src="assets/img/ats-1.jpg" class="w-full h-68 object-cover md:h-full absolute top-0 left-0">
 
-</div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
 
-      <!-- Column 2: Contact Info -->
-      <div class="col-12 col-md-3">
-        <h5 class="mb-3">Contact Us</h5>
+    <!-- Heading -->
+    <div class="relative z-10 text-center text-[#f6b352]">
+      <h1 class="md:text-[2.8rem] md:pt-10 pt-15 text-[1.8rem] font-semibold">
+        • Contact •
+      </h1>
+    </div>
 
-        <p class="small mb-2">
-          <i class="bi bi-geo-alt-fill me-2"></i>
-          Techzone 4, Greater Noida West, Uttar Pradesh
-        </p>
+    <!-- Cards -->
+    <div class="hidden md:block absolute -bottom-[80px] left-1/2 -translate-x-1/2 w-[90%] z-20">
 
-        <p class="small mb-2">
-          <i class="bi bi-telephone-fill me-2"></i>
-          +91 8588813259
-        </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-        <p class="small">
-          <i class="bi bi-envelope-fill me-2"></i>
-          Explorerealty515@gmail.com
-        </p>
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
+          <i class="fa-solid fa-headset text-2xl text-[#162346] mb-2"></i>
+          <h5 class="font-semibold">24/7 Customer Support</h5>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
+          <i class="fa-solid fa-location-dot text-2xl text-[#162346] mb-2"></i>
+          <h5 class="font-semibold">Visit Our Office</h5>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
+          <i class="fa-solid fa-bolt text-2xl text-[#162346] mb-2"></i>
+          <h5 class="font-semibold">Quick Response</h5>
+        </div>
+
       </div>
 
-      <!-- Column 3: Links -->
-      <div class="col-6 col-md-3">
-        <h5 class="mb-3">Quick Links</h5>
-        <ul class="list-unstyled small">
-          <li class="mb-2">
-            <a href="index.html" class="text-light text-decoration-none">Home</a>
-          </li>
-          <li class="mb-2">
-            <a href="about.html" class="text-light text-decoration-none">About</a>
-          </li>
-          <li class="mb-2">
-            <a href="project.html" class="text-light text-decoration-none">Projects</a>
-          </li>
-          <li>
-            <a href="contact.html" class="text-light text-decoration-none">Contact</a>
-          </li>
-        </ul>
+    </div>
+
+  </section>
+  <section class="md:pt-34 pt-10">
+
+    <h2 class="text-center text-2xl font-semibold">
+      What Our Clients Say
+    </h2>
+
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic">
+          "Very smooth experience. Helped me find my dream home quickly."
+        </p>
+        <h4 class="mt-4 font-semibold">Amit Sharma</h4>
       </div>
 
-      <!-- Column 4: Subscribe -->
-      <div class="col-12 col-md-3">
-        <h5 class="mb-3">Subscribe</h5>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 italic">
+          "Professional team and great service. Highly recommended!"
+        </p>
+        <h4 class="mt-4 font-semibold">Neha Verma</h4>
+      </div>
 
-        <form class="d-flex">
-          <input
-            type="email"
-            class="form-control me-2"
-            placeholder="Enter email"
-          />
-          <button class="btn btn-primary">
-            <i class="bi bi-send-fill"></i>
+    </div>
+
+  </section>
+  <section class="max-w-7xl mx-auto px-4 pt-10 md:pt-35">
+
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+      <!-- LEFT SIDE -->
+      <div class="space-y-6">
+
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://maps.google.com/maps?q=Golden%20I%20Techzone%204%20Greater%20Noida%20West&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-[300px] border-0" loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="grid sm:grid-cols-2 gap-4">
+
+          <div class="bg-gray-100 p-5 rounded-xl shadow">
+            <h6 class="font-semibold mb-2">📍 Address</h6>
+            <p class="text-sm text-gray-600">Explore Realty</p>
+            <p class="text-sm text-gray-600">Golden I Mall, Noida Extension</p>
+          </div>
+
+          <div class="bg-gray-100 p-5 rounded-xl shadow">
+            <h6 class="font-semibold mb-2">📞 Contact</h6>
+            <p class="text-sm text-gray-600">+91 8588813259</p>
+            <p class="text-sm text-gray-600">explorerealty515@gmail.com</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE (FORM) -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl">
+
+        <h2 class="text-2xl font-semibold mb-6 text-[#162346]">
+          Get In Touch
+        </h2>
+
+        <form class="space-y-4">
+
+          <!-- Name -->
+          <div class="relative">
+            <i class="fa-solid fa-user absolute left-3 top-3 text-gray-400"></i>
+            <input type="text" placeholder="Your Name"
+              class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+          <!-- Email -->
+          <div class="relative">
+            <i class="fa-solid fa-envelope absolute left-3 top-3 text-gray-400"></i>
+            <input type="email" placeholder="Your Email"
+              class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+          <!-- Phone -->
+          <div class="relative">
+            <i class="fa-solid fa-phone absolute left-3 top-3 text-gray-400"></i>
+            <input type="text" placeholder="Phone Number"
+              class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+          <!-- Message -->
+          <div class="relative">
+            <i class="fa-solid fa-pen absolute left-3 top-3 text-gray-400"></i>
+            <textarea rows="4" placeholder="Your Message"
+              class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+          </div>
+
+          <!-- Button -->
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-2 rounded-lg hover:opacity-90 transition">
+            Send Message
           </button>
+
         </form>
 
-        <!-- Social -->
-        <div class="mt-3 d-flex gap-3">
-          <!-- <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a> -->
-          <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/posts/xplore-luxury-home_ace-verde-sector-22a-on-yamuna-expressway-activity-7360370778430722048-ufb4?utm_source=share&utm_medium=member_ios&rcm=ACoAAFs2kNYBMjSnUV_c5V4MaO5q4Z2N7I1nPps" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
-          <!-- <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a> -->
+      </div>
+
+    </div>
+
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-14">
+
+    <h2 class="text-center text-2xl md:text-3xl font-semibold mb-10">
+      Why Choose Explore Realty
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-users text-3xl text-blue-600 mb-2"></i>
+        <h4 class="font-semibold">500+ Clients</h4>
+        <p class="text-sm text-gray-500">Trusted by happy customers</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-briefcase text-3xl text-blue-600 mb-2"></i>
+        <h4 class="font-semibold">10+ Years</h4>
+        <p class="text-sm text-gray-500">Industry experience</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-shield-halved text-3xl text-blue-600 mb-2"></i>
+        <h4 class="font-semibold">Trusted Deals</h4>
+        <p class="text-sm text-gray-500">100% transparency</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-headset text-3xl text-blue-600 mb-2"></i>
+        <h4 class="font-semibold">24/7 Support</h4>
+        <p class="text-sm text-gray-500">Always available</p>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="bg-[#162346] text-white py-12 text-center">
+
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+      Ready to Find Your Dream Property?
+    </h2>
+
+    <p class="mb-6 text-gray-300">
+      Get in touch with our experts today
+    </p>
+
+    <a href="tel:+918588813259"
+      class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition flex items-center gap-2 justify-center w-fit mx-auto">
+      <i class="fa-solid fa-phone"></i> Call Now
+    </a>
+
+  </section>
+  <footer class="bg-[#0f1b2d] text-gray-300 pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Logo -->
+        <div>
+          <img src="assets/img/334.png" class="h-[90px] mb-4">
+
+          <p class="text-sm leading-relaxed">
+            Premium real estate solutions in Noida & Greater Noida.
+            Helping you find your dream property with trust and transparency.
+          </p>
         </div>
+
+        <!-- Contact -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Contact Us</h5>
+
+          <div class="space-y-3 text-sm">
+
+            <p class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i>
+              Techzone 4, Greater Noida West, Uttar Pradesh
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-500"></i>
+              +91 8588813259
+            </p>
+
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-500"></i>
+              Explorerealty515@gmail.com
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Quick Links</h5>
+
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Subscribe</h5>
+
+          <p class="text-sm mb-3">
+            Get latest property updates & offers.
+          </p>
+
+          <form class="flex overflow-hidden rounded-lg shadow-lg">
+
+            <input type="email" placeholder="Enter your email"
+              class="w-full bg-white px-4 py-2 text-black focus:outline-none">
+
+            <button class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
+              <i class="fa-solid fa-paper-plane text-white"></i>
+            </button>
+
+          </form>
+
+          <!-- Social -->
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-pink-500 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/xplore-luxury-home/" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-blue-500 transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-12 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
+        © 2025 Explore Realty. All rights reserved.
       </div>
 
     </div>
 
-    <!-- Bottom -->
-    <div class="row mt-4">
-      <div class="col text-center small">
-        <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
-      </div>
+  </footer>
+  <!-- Floating Contact Wrapper -->
+<div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+
+  <!-- Call Button -->
+  <a href="tel:+918588813259"
+     class="group flex items-center gap-2">
+
+    <!-- Label -->
+    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+      Call Us
+    </span>
+
+    <!-- Button -->
+    <div class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+
+      <i class="fa-solid fa-phone text-lg"></i>
+
+      <!-- Pulse -->
+      <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+
     </div>
+  </a>
 
-  </div>
-</footer>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918588813259"
+     target="_blank"
+     class="group flex items-center gap-2">
 
+    <!-- Label -->
+    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+      WhatsApp
+    </span>
+
+    <!-- Button -->
+    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+
+      <i class="fa-brands fa-whatsapp text-xl"></i>
+
+    </div>
+  </a>
+
+</div>
 </body>
-<!-- <script src="assets/js/subscribe.js"></script> -->
-<script src="assets/js/contact.js"></script>
+<script src="assets/js/new.js"></script>
 
 </html>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

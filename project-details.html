@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Explore Realty</title>
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#121E31]">
+        <div class="flex items-center justify-between px-4 md:px-6 h-[90px]">
+
+            <!-- Logo -->
+            <a href="#">
+                <img src="assets/img/334.png" alt="Explore Realty"
+                    class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
+            </a>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="text-white text-3xl md:hidden focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
+
+                <li>
+                    <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="hover:text-gray-300 transition">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+                </li>
+
+                <li>
+                    <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#121E31] text-white px-6 pb-4 space-y-3">
+
+            <a href="index.html" class="block hover:text-gray-300">Home</a>
+            <a href="about.html" class="block hover:text-gray-300">About</a>
+            <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+            <a href="project.html" class="block hover:text-gray-300">Projects</a>
+
+        </div>
+    </nav>
+    <div id="projectDetails" class="pt-[50px]"></div>
+    <script src="assets/js/project.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        const project = projects.find(p => p.id === id);
+        const container = document.getElementById("projectDetails");
+
+        if (!project) {
+            container.innerHTML = `<h2 class="text-center mt-20">Project not found</h2>`;
+        } else {
+
+            container.innerHTML = `
+
+<div class="bg-gray-100">
+
+  <!-- 🔥 HERO -->
+            <div class="relative h-[420px] md:h-[500px] overflow-hidden">
+
+  <!-- IMAGE -->
+  <img src="${project.img}" 
+       class="w-full h-full object-cover scale-105 transition duration-700">
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+
+  <!-- CONTENT -->
+  <div class="absolute inset-0 flex items-end md:items-end items-center">
+    <div class="max-w-7xl mx-auto px-4 pb-16 md:pb-10 w-full">
+
+      <!-- GLASS CARD -->
+      <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-xl text-white w-full max-w-xl shadow-lg">
+
+        <!-- TYPE -->
+        <span class="bg-blue-600 text-xs px-3 py-1 rounded-full inline-block">
+          ${project.type?.toUpperCase()}
+        </span>
+
+        <!-- TITLE -->
+        <h1 class="text-2xl md:text-4xl font-bold mt-2 leading-tight">
+          ${project.name}
+        </h1>
+
+        <!-- PRICE -->
+        <p class="text-yellow-400 text-lg md:text-xl font-semibold mt-1">
+          ${project.price}
+        </p>
+
+        <!-- LOCATION -->
+        <p class="text-sm text-gray-200 mt-2 flex items-center gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          ${project.location}
+        </p>
+
+        <!-- BUTTONS (FIXED) -->
+        <div class="flex flex-col sm:flex-row gap-2 my-4">
+
+          <button class="bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 w-full sm:w-auto">
+            <i class="fa-solid fa-phone"></i>
+            Contact
+          </button>
+
+          <button class="bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200 flex items-center justify-center gap-2 w-full sm:w-auto">
+            <i class="fa-solid fa-download"></i>
+            Brochure
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔥 BOTTOM STRIP (HIDE ON MOBILE) -->
+  <div class="hidden md:block absolute bottom-0 w-full bg-black/60 backdrop-blur-md text-white py-3">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-4 gap-4 text-center text-sm">
+
+      <div>
+        <p class="text-gray-300 flex items-center justify-center gap-1">
+          <i class="fa-solid fa-building"></i> Config
+        </p>
+        <p class="font-semibold">${project.config}</p>
+      </div>
+
+      <div>
+        <p class="text-gray-300 flex items-center justify-center gap-1">
+          <i class="fa-solid fa-file"></i> RERA
+        </p>
+        <p class="font-semibold">${project.rera}</p>
+      </div>
+
+      <div>
+        <p class="text-gray-300 flex items-center justify-center gap-1">
+          <i class="fa-solid fa-calendar"></i> Possession
+        </p>
+        <p class="font-semibold">${project.possession}</p>
+      </div>
+
+      <div>
+        <p class="text-gray-300 flex items-center justify-center gap-1">
+          <i class="fa-solid fa-layer-group"></i> Area
+        </p>
+        <p class="font-semibold">${project.area}</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+  <div class="max-w-7xl mx-auto px-4 py-10 grid lg:grid-cols-3 gap-8">
+
+    <!-- LEFT -->
+    <div class="lg:col-span-2 space-y-8">
+
+      <!-- ABOUT + INFO -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white p-6 rounded-xl shadow">
+
+  <!-- HEADING -->
+  <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+    <i class="fa-solid fa-circle-info text-blue-600"></i>
+    About Project
+  </h2>
+
+  <!-- DESCRIPTION -->
+  <p class="text-gray-600 text-sm leading-relaxed">
+    ${project.description}
+  </p>
+
+  <!-- EXTRA POINTS -->
+  <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+
+    <div class="flex items-center gap-2 text-gray-700">
+      <i class="fa-solid fa-check text-green-500"></i>
+      Prime Location Advantage
+    </div>
+
+    <div class="flex items-center gap-2 text-gray-700">
+      <i class="fa-solid fa-check text-green-500"></i>
+      High Investment Potential
+    </div>
+
+    <div class="flex items-center gap-2 text-gray-700">
+      <i class="fa-solid fa-check text-green-500"></i>
+      Modern Infrastructure
+    </div>
+
+    <div class="flex items-center gap-2 text-gray-700">
+      <i class="fa-solid fa-check text-green-500"></i>
+      Excellent Connectivity
+    </div>
+
+  </div>
+
+</div>
+
+        <div class="bg-white p-6 rounded-xl shadow space-y-3">
+
+  <h3 class="font-semibold text-lg flex items-center gap-2">
+    <i class="fa-solid fa-circle-info text-blue-600"></i>
+    Project Info
+  </h3>
+
+  <p class="flex items-center gap-2 text-sm">
+    <i class="fa-solid fa-location-dot text-blue-500 w-4"></i>
+    ${project.location}
+  </p>
+
+  <p class="flex items-center gap-2 text-sm">
+    <i class="fa-solid fa-building text-blue-500 w-4"></i>
+    ${project.config}
+  </p>
+
+  <p class="flex items-center gap-2 text-sm">
+    <i class="fa-solid fa-file-lines text-blue-500 w-4"></i>
+    ${project.rera}
+  </p>
+
+  <p class="flex items-center gap-2 text-sm">
+    <i class="fa-solid fa-user-tie text-blue-500 w-4"></i>
+    ${project.developer}
+  </p>
+
+  <p class="flex items-center gap-2 text-sm">
+    <i class="fa-solid fa-calendar-check text-blue-500 w-4"></i>
+    ${project.possession}
+  </p>
+
+</div>
+
+      </div>
+
+      <!-- 🔥 PRICE TABLE -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Price Details</h2>
+
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="p-2 text-left">Type</th>
+              <th class="p-2">Size</th>
+              <th class="p-2">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            ${project.priceDetails?.map(p => `
+              <tr class="border-t">
+                <td class="p-2">${p.type}</td>
+                <td class="p-2 text-center">${p.size}</td>
+                <td class="p-2 text-blue-600 font-semibold">${p.price}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 🔥 HIGHLIGHTS -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Key Highlights</h2>
+
+        <div class="grid md:grid-cols-3 gap-4">
+          ${project.highlights?.map(h => `
+            <div class="bg-gray-100 p-3 rounded text-sm flex gap-2">
+              <i class="fa-solid fa-check text-green-500"></i> ${h}
+            </div>
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- 🔥 GALLERY -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Gallery</h2>
+
+        <div class="relative">
+          <img id="mainImage" src="${project.gallery[0]}" 
+               class="w-full h-[400px] object-cover rounded-lg">
+
+          <button onclick="prevImage()" class="absolute left-3 top-1/2 bg-black/60 text-white px-3">❮</button>
+          <button onclick="nextImage()" class="absolute right-3 top-1/2 bg-black/60 text-white px-3">❯</button>
+        </div>
+
+        <div class="flex gap-3 mt-4 overflow-x-auto">
+          ${project.gallery.map((img, i) => `
+            <img src="${img}" onclick="setImage(${i})"
+              class="h-20 w-28 object-cover rounded cursor-pointer border">
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- 🔥 FLOOR PLAN -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Floor Plan</h2>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          ${project.floorPlans?.map(img => `
+            <img src="${img}" class="rounded shadow hover:scale-105 transition">
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- 🔥 AMENITIES -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Amenities</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          ${project.amenities.map(a => `
+            <div class="bg-gray-100 p-3 rounded text-center text-sm">${a}</div>
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- 🔥 LOCATION ADVANTAGE -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-semibold mb-4">Location Advantage</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          ${project.locationAdvantages?.map(l => `
+            <div class="bg-gray-100 p-4 rounded text-center">
+              <p class="font-semibold">${l.value}</p>
+              <p class="text-sm text-gray-500">${l.title}</p>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+
+      <!-- 🔥 NEARBY -->
+      <div class="bg-white p-6 rounded-xl shadow">
+
+  <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+    <i class="fa-solid fa-map-location-dot text-blue-600"></i>
+    Nearby
+  </h2>
+
+  <div class="space-y-2">
+
+    ${project.nearby?.map(n => `
+      <p class="flex items-start gap-2 text-sm text-gray-700">
+        <i class="fa-solid fa-check text-green-500 mt-[2px]"></i>
+        ${n}
+      </p>
+    `).join("")}
+
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="space-y-6">
+
+      <!-- CONTACT -->
+      <div class="bg-white p-6 rounded-xl shadow sticky top-20">
+        <h3 class="font-semibold mb-3">Enquire Now</h3>
+        <input placeholder="Name" class="w-full mb-2 p-2 border rounded">
+        <input placeholder="Phone" class="w-full mb-2 p-2 border rounded">
+        <button class="w-full bg-blue-600 text-white py-2 rounded">Get Call</button>
+      </div>
+
+      <!-- BUILDER -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Builder</h3>
+        <p>${project.builderInfo?.name}</p>
+        <p class="text-sm text-gray-500">${project.builderInfo?.experience}</p>
+      </div>
+
+      <!-- INVESTMENT -->
+      <div class="bg-green-600 text-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Investment</h3>
+        <p>Rental: ${project.investment?.rental}</p>
+        <p>Growth: ${project.investment?.appreciation}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+`;
+
+
+            // 🔥 SLIDER
+            let currentIndex = 0;
+            const images = project.gallery;
+
+            window.setImage = i => {
+                currentIndex = i;
+                document.getElementById("mainImage").src = images[i];
+            }
+
+            window.nextImage = () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                setImage(currentIndex);
+            }
+
+            window.prevImage = () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                setImage(currentIndex);
+            }
+
+        }
+    </script>
+    <footer class="bg-[#0f1b2d] text-gray-300 pt-14 pb-6">
+
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Logo -->
+                <div>
+                    <img src="assets/img/334.png" class="h-[90px] mb-4">
+
+                    <p class="text-sm leading-relaxed">
+                        Premium real estate solutions in Noida & Greater Noida.
+                        Helping you find your dream property with trust and transparency.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-lg">Contact Us</h5>
+
+                    <div class="space-y-3 text-sm">
+
+                        <p class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i>
+                            Techzone 4, Greater Noida West, Uttar Pradesh
+                        </p>
+
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-blue-500"></i>
+                            +91 8588813259
+                        </p>
+
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-blue-500"></i>
+                            Explorerealty515@gmail.com
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-lg">Quick Links</h5>
+
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe -->
+                <div>
+                    <h5 class="text-white font-semibold mb-4 text-lg">Subscribe</h5>
+
+                    <p class="text-sm mb-3">
+                        Get latest property updates & offers.
+                    </p>
+
+                    <form class="flex overflow-hidden rounded-lg shadow-lg">
+
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full bg-white px-4 py-2 text-black focus:outline-none">
+
+                        <button
+                            class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
+                            <i class="fa-solid fa-paper-plane text-white"></i>
+                        </button>
+
+                    </form>
+
+                    <!-- Social -->
+                    <div class="flex gap-4 mt-5">
+                        <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-pink-500 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/xplore-luxury-home/" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-blue-500 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-12 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
+                © 2025 Explore Realty. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Floating Contact Wrapper -->
+    <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+
+        <!-- Call Button -->
+        <a href="tel:+918588813259" class="group flex items-center gap-2">
+
+            <!-- Label -->
+            <span
+                class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+                Call Us
+            </span>
+
+            <!-- Button -->
+            <div
+                class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+
+                <i class="fa-solid fa-phone text-lg"></i>
+
+                <!-- Pulse -->
+                <span
+                    class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+
+            </div>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
+
+            <!-- Label -->
+            <span
+                class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+                WhatsApp
+            </span>
+
+            <!-- Button -->
+            <div
+                class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+
+            </div>
+        </a>
+
+    </div>
+</body>
+<script src="assets/js/new.js"></script>
+
+</html>

@@ -699,63 +699,52 @@
     </div>
 
   </footer>
+  <!-- Floating Contact Wrapper -->
+  <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+
+    <!-- Call Button -->
+    <a href="tel:+918588813259" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        Call Us
+      </span>
+
+      <!-- Button -->
+      <div
+        class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-solid fa-phone text-lg"></i>
+
+        <!-- Pulse -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+
+      </div>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        WhatsApp
+      </span>
+
+      <!-- Button -->
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+      </div>
+    </a>
+
+  </div>
 </body>
-<script id="8sd7k2">
-  const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
 <script src="assets/js/subscribe.js"></script>
-
-<!-- swiper js  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script id="swpjs02">
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-</script>
-<!-- testimonial swiper js -->
-<script>
-  var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoHeight: true,
-
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
+<script src="assets/js/new.js"></script>
 
 </html>
