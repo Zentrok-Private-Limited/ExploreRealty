@@ -7,6 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/new.css">
   <title>Explore Realty</title>
 </head>
 
@@ -110,32 +111,31 @@
   <!-- project section  -->
   <section class="md:pt-35 pt-12 bg-gray-100">
 
-  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4">
 
-    <!-- Heading -->
-    <div class="text-center mb-10">
-      <h2 class="text-2xl md:text-3xl font-semibold">
-        Featured Projects
-      </h2>
-      <p class="text-gray-500 mt-2">
-        Explore some of our top properties
-      </p>
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-semibold">
+          Featured Projects
+        </h2>
+        <p class="text-gray-500 mt-2">
+          Explore some of our top properties
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+      <!-- Button -->
+      <div class="text-center mt-8">
+        <a href="project.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+          View All Projects
+        </a>
+      </div>
+
     </div>
 
-    <!-- Projects Grid -->
-    <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
-
-    <!-- Button -->
-    <div class="text-center mt-8">
-      <a href="project.html"
-         class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-         View All Projects
-      </a>
-    </div>
-
-  </div>
-
-</section>
+  </section>
   <section class="w-full px-4 py-20">
 
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -233,6 +233,35 @@
 
     </div>
 
+  </section>
+  <section class="bg-white py-10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Heading -->
+      <div class="text-center mb-6">
+        <h2 class="text-2xl md:text-3xl font-semibold">
+          Trusted Developers & Projects
+        </h2>
+        <p class="text-gray-500 text-sm mt-2">
+          20+ Premium Real Estate Brands
+        </p>
+      </div>
+
+      <!-- Marquee -->
+      <div class="relative overflow-hidden">
+
+        <div class="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+        <div class="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+        <!-- 🔥 Wrapper -->
+        <div class="marquee-track">
+          <div id="logoMarquee" class="flex gap-12"></div>
+          <div id="logoMarqueeClone" class="flex gap-12"></div>
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
   <div class="relative overflow-hidden h-[60vh] max-h-[500px] min-h-[300px]">
@@ -620,13 +649,21 @@
             Get latest property updates & offers.
           </p>
 
-          <form class="flex overflow-hidden rounded-lg shadow-lg">
+          <form class="flex overflow-hidden rounded-lg shadow-lg" onsubmit="handleSubmit(event, 'newsletter')">
 
-            <input type="email" placeholder="Enter your email"
+            <!-- Hidden source -->
+            <input type="hidden" name="source" value="newsletter">
+
+            <!-- Email -->
+            <input type="email" name="email" required placeholder="Enter your email"
               class="w-full bg-white px-4 py-2 text-black focus:outline-none">
 
-            <button class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
+            <!-- Button -->
+            <button type="submit"
+              class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center hover:opacity-90 transition">
+
               <i class="fa-solid fa-paper-plane text-white"></i>
+
             </button>
 
           </form>
@@ -703,4 +740,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/new.js"></script>
 <script src="assets/js/project.js"></script>
+<script src="assets/js/script.js"></script>
+
 </html>

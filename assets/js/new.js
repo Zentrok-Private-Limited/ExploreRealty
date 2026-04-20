@@ -57,3 +57,45 @@ document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("Message sent successfully ✅");
   });
+
+  // 🔥 Marquee Logos Data
+const projectLogos = [
+  { name: "ATS", img: "assets/img/logo/ats.jpg" },
+  { name: "M3M", img: "assets/img/logo/m3m.jpg" },
+  { name: "Bhutani", img: "assets/img/logo/bhutani.jpg" },
+  { name: "Signature", img: "assets/img/logo/signature.webp" },
+  { name: "Kalpataru", img: "assets/img/logo/kalpataru.jpg" },
+  { name: "L&T", img: "assets/img/logo/lnt.jpg" },
+  { name: "AU", img: "assets/img/logo/au.jpg" },
+  { name: "Escon", img: "assets/img/logo/escon.jpg" },
+  { name: "Vihaan Greens", img: "assets/img/logo/vihaan.jpg" },
+  { name: "IBP Windsor Valley", img: "assets/img/logo/ibp.png" },
+  { name: "Sky Garden", img: "assets/img/logo/sky-garden.png" },
+  { name: "Ratan Pearls", img: "assets/img/logo/ratan.jpg" },
+  { name: "Evergreen Square", img: "assets/img/logo/evergreen.png" },
+  { name: "Corbett County", img: "assets/img/logo/corbett.png" },
+  { name: "Golden I", img: "assets/img/logo/golden.png" },
+  { name: "Vrinda Group", img: "assets/img/logo/vrinda-group.png" },
+  { name: "Grandthum", img: "assets/img/logo/grandthum.png" },
+  { name: "Paradise", img: "assets/img/logo/paradise.jpg" },
+  { name: "Prestige", img: "assets/img/logo/prestige.jpg" },
+  { name: "ACE", img: "assets/img/logo/ace.jpg" }
+];
+
+// 🔥 Get container
+const marquee = document.getElementById("logoMarquee");
+const marqueeClone = document.getElementById("logoMarqueeClone");
+
+if (marquee && marqueeClone) {
+
+  const html = projectLogos.map(l => `
+    <img src="${l.img}" 
+         alt="${l.name}"
+         loading="lazy"
+         onerror="this.src='assets/img/logo/default.png'"
+         class="h-12 md:h-14 object-contain opacity-70 hover:opacity-100 hover:scale-110 transition duration-300">
+  `).join("");
+
+  marquee.innerHTML = html;
+  marqueeClone.innerHTML = html; // 🔥 duplicate for seamless loop
+}

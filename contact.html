@@ -168,33 +168,36 @@
           Get In Touch
         </h2>
 
-        <form class="space-y-4">
+        <form class="space-y-4" onsubmit="handleSubmit(event, 'contact')">
+
+          <!-- Hidden -->
+          <input type="hidden" name="source" value="contact_page">
 
           <!-- Name -->
           <div class="relative">
             <i class="fa-solid fa-user absolute left-3 top-3 text-gray-400"></i>
-            <input type="text" placeholder="Your Name"
+            <input type="text" name="name" required placeholder="Your Name"
               class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
           </div>
 
           <!-- Email -->
           <div class="relative">
             <i class="fa-solid fa-envelope absolute left-3 top-3 text-gray-400"></i>
-            <input type="email" placeholder="Your Email"
+            <input type="email" name="email" required placeholder="Your Email"
               class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
           </div>
 
           <!-- Phone -->
           <div class="relative">
             <i class="fa-solid fa-phone absolute left-3 top-3 text-gray-400"></i>
-            <input type="text" placeholder="Phone Number"
+            <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Phone Number"
               class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
           </div>
 
           <!-- Message -->
           <div class="relative">
             <i class="fa-solid fa-pen absolute left-3 top-3 text-gray-400"></i>
-            <textarea rows="4" placeholder="Your Message"
+            <textarea name="message" rows="4" placeholder="Your Message"
               class="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
           </div>
 
@@ -358,48 +361,50 @@
 
   </footer>
   <!-- Floating Contact Wrapper -->
-<div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+  <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
 
-  <!-- Call Button -->
-  <a href="tel:+918588813259"
-     class="group flex items-center gap-2">
+    <!-- Call Button -->
+    <a href="tel:+918588813259" class="group flex items-center gap-2">
 
-    <!-- Label -->
-    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-      Call Us
-    </span>
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        Call Us
+      </span>
 
-    <!-- Button -->
-    <div class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+      <!-- Button -->
+      <div
+        class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
 
-      <i class="fa-solid fa-phone text-lg"></i>
+        <i class="fa-solid fa-phone text-lg"></i>
 
-      <!-- Pulse -->
-      <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+        <!-- Pulse -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
 
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/918588813259"
-     target="_blank"
-     class="group flex items-center gap-2">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
 
-    <!-- Label -->
-    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-      WhatsApp
-    </span>
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        WhatsApp
+      </span>
 
-    <!-- Button -->
-    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+      <!-- Button -->
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
 
-      <i class="fa-brands fa-whatsapp text-xl"></i>
+        <i class="fa-brands fa-whatsapp text-xl"></i>
 
-    </div>
-  </a>
+      </div>
+    </a>
 
-</div>
+  </div>
 </body>
 <script src="assets/js/new.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>

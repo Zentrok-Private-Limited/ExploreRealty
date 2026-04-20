@@ -2,77 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Explore Realty</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Explore Realty</title>
 </head>
 
 <body>
-    <nav class="fixed top-0 left-0 w-full z-50 bg-[#121E31]">
-        <div class="flex items-center justify-between px-4 md:px-6 h-[90px]">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#121E31]">
+    <div class="flex items-center justify-between px-4 md:px-6 h-[90px]">
 
-            <!-- Logo -->
-            <a href="#">
-                <img src="assets/img/334.png" alt="Explore Realty"
-                    class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
-            </a>
+      <!-- Logo -->
+      <a href="#">
+        <img src="assets/img/334.png" alt="Explore Realty"
+          class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
+      </a>
 
-            <!-- Mobile Button -->
-            <button id="menuBtn" class="text-white text-3xl md:hidden focus:outline-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="text-white text-3xl md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-            <!-- Nav Links -->
-            <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
+      <!-- Nav Links -->
+      <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
 
-                <li>
-                    <a href="index.html" class="hover:text-gray-300 transition">Home</a>
-                </li>
+        <li>
+          <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+        </li>
 
-                <li>
-                    <a href="about.html" class="hover:text-gray-300 transition">About</a>
-                </li>
+        <li>
+          <a href="about.html" class="hover:text-gray-300 transition">About</a>
+        </li>
 
-                <li>
-                    <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
-                </li>
+        <li>
+          <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+        </li>
 
-                <li>
-                    <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
-                </li>
+        <li>
+          <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
+        </li>
 
-            </ul>
-        </div>
+      </ul>
+    </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-[#121E31] text-white px-6 pb-4 space-y-3">
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#121E31] text-white px-6 pb-4 space-y-3">
 
-            <a href="index.html" class="block hover:text-gray-300">Home</a>
-            <a href="about.html" class="block hover:text-gray-300">About</a>
-            <a href="contact.html" class="block hover:text-gray-300">Contact</a>
-            <a href="project.html" class="block hover:text-gray-300">Projects</a>
+      <a href="index.html" class="block hover:text-gray-300">Home</a>
+      <a href="about.html" class="block hover:text-gray-300">About</a>
+      <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+      <a href="project.html" class="block hover:text-gray-300">Projects</a>
 
-        </div>
-    </nav>
-    <div id="projectDetails" class="pt-[50px]"></div>
-    <script src="assets/js/project.js"></script>
+    </div>
+  </nav>
+  <div id="projectDetails" class="pt-[50px]"></div>
+  <script src="assets/js/project.js"></script>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get("id");
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
-        const project = projects.find(p => p.id === id);
-        const container = document.getElementById("projectDetails");
+    const project = projects.find(p => p.id === id);
+    const container = document.getElementById("projectDetails");
 
-        if (!project) {
-            container.innerHTML = `<h2 class="text-center mt-20">Project not found</h2>`;
-        } else {
+    if (!project) {
+      container.innerHTML = `<h2 class="text-center mt-20">Project not found</h2>`;
+    } else {
 
-            container.innerHTML = `
+      container.innerHTML = `
 
 <div class="bg-gray-100">
 
@@ -117,15 +117,19 @@
         <!-- BUTTONS (FIXED) -->
         <div class="flex flex-col sm:flex-row gap-2 my-4">
 
-          <button class="bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 w-full sm:w-auto">
-            <i class="fa-solid fa-phone"></i>
-            Contact
-          </button>
+          <a href="tel:918588813259"
+  class="bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 w-full sm:w-auto">
+  
+  <i class="fa-solid fa-phone"></i>
+  Contact
+</a>
 
-          <button class="bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200 flex items-center justify-center gap-2 w-full sm:w-auto">
-            <i class="fa-solid fa-download"></i>
-            Brochure
-          </button>
+          <a href="${project.brochure}" download
+  class="bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200 flex items-center justify-center gap-2 w-full sm:w-auto">
+  
+  <i class="fa-solid fa-download"></i>
+  Brochure
+</a>
 
         </div>
 
@@ -314,15 +318,45 @@
       </div>
 
       <!-- 🔥 FLOOR PLAN -->
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-xl font-semibold mb-4">Floor Plan</h2>
+<div class="bg-white p-6 rounded-xl shadow">
+  <h2 class="text-xl font-semibold mb-4">Floor Plan</h2>
 
-        <div class="grid md:grid-cols-2 gap-4">
-          ${project.floorPlans?.map(img => `
-            <img src="${img}" class="rounded shadow hover:scale-105 transition">
-          `).join("")}
+  <div class="grid md:grid-cols-2 gap-5">
+
+    ${project.floorPlans?.map(plan => `
+      
+      <div class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition duration-300">
+
+        <!-- IMAGE -->
+        <div class="overflow-hidden">
+          <img src="${plan.img}" 
+               class="w-full h-52 object-cover hover:scale-110 transition duration-500">
         </div>
+
+        <!-- DETAILS -->
+        <div class="p-4">
+
+          <h3 class="font-semibold text-gray-800 text-base">
+            ${plan.title}
+          </h3>
+
+          <div class="flex justify-between text-sm text-gray-600 mt-1">
+            <span>${plan.size}</span>
+            <span>${plan.floor}</span>
+          </div>
+
+          <p class="text-blue-600 font-semibold mt-2">
+            ${plan.price}
+          </p>
+
+        </div>
+
       </div>
+
+    `).join("")}
+
+  </div>
+</div>
 
       <!-- 🔥 AMENITIES -->
       <div class="bg-white p-6 rounded-xl shadow">
@@ -348,6 +382,20 @@
           `).join("")}
         </div>
       </div>
+      <!-- 🔥 MAP -->
+<div class="bg-white p-6 rounded-xl shadow">
+  <h2 class="text-xl font-semibold mb-4">Location Map</h2>
+
+  <div class="rounded-xl overflow-hidden">
+    <iframe 
+      src="${project.map}" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
 
       <!-- 🔥 NEARBY -->
       <div class="bg-white p-6 rounded-xl shadow">
@@ -377,11 +425,42 @@
 
       <!-- CONTACT -->
       <div class="bg-white p-6 rounded-xl shadow sticky top-20">
-        <h3 class="font-semibold mb-3">Enquire Now</h3>
-        <input placeholder="Name" class="w-full mb-2 p-2 border rounded">
-        <input placeholder="Phone" class="w-full mb-2 p-2 border rounded">
-        <button class="w-full bg-blue-600 text-white py-2 rounded">Get Call</button>
-      </div>
+
+  <h3 class="font-semibold mb-3">Enquire Now</h3>
+
+  <form onsubmit="handleSubmit(event, 'enquiry')">
+
+    <!-- Hidden fields -->
+    <input type="hidden" name="source" value="enquiry_form">
+    <input type="hidden" name="project" value="${project.name}">
+
+    <!-- Name -->
+    <input 
+      type="text" 
+      name="name"
+      required
+      placeholder="Your Name"
+      class="w-full mb-2 p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none">
+
+    <!-- Phone -->
+    <input 
+      type="tel" 
+      name="phone"
+      required
+      pattern="[0-9]{10}"
+      placeholder="Phone Number"
+      class="w-full mb-2 p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none">
+
+    <!-- Button -->
+    <button 
+      type="submit"
+      class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+      Get Call
+    </button>
+
+  </form>
+
+</div>
 
       <!-- BUILDER -->
       <div class="bg-white p-6 rounded-xl shadow">
@@ -405,168 +484,194 @@
 `;
 
 
-            // 🔥 SLIDER
-            let currentIndex = 0;
-            const images = project.gallery;
+      // 🔥 SLIDER
+      let currentIndex = 0;
+      const images = project.gallery;
 
-            window.setImage = i => {
-                currentIndex = i;
-                document.getElementById("mainImage").src = images[i];
-            }
+      window.setImage = i => {
+        currentIndex = i;
+        document.getElementById("mainImage").src = images[i];
+      }
 
-            window.nextImage = () => {
-                currentIndex = (currentIndex + 1) % images.length;
-                setImage(currentIndex);
-            }
+      window.nextImage = () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        setImage(currentIndex);
+      }
 
-            window.prevImage = () => {
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-                setImage(currentIndex);
-            }
+      window.prevImage = () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        setImage(currentIndex);
+      }
 
-        }
-    </script>
-    <footer class="bg-[#0f1b2d] text-gray-300 pt-14 pb-6">
+    }
+  </script>
+  <section class="md:py-15 py-12 bg-gray-100">
 
-        <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-semibold">
+          Featured Projects
+        </h2>
+        <p class="text-gray-500 mt-2">
+          Explore some of our top properties
+        </p>
+      </div>
 
-                <!-- Logo -->
-                <div>
-                    <img src="assets/img/334.png" class="h-[90px] mb-4">
+      <!-- Projects Grid -->
+      <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
 
-                    <p class="text-sm leading-relaxed">
-                        Premium real estate solutions in Noida & Greater Noida.
-                        Helping you find your dream property with trust and transparency.
-                    </p>
-                </div>
+      <!-- Button -->
+      <div class="text-center mt-8">
+        <a href="project.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+          View All Projects
+        </a>
+      </div>
 
-                <!-- Contact -->
-                <div>
-                    <h5 class="text-white font-semibold mb-4 text-lg">Contact Us</h5>
+    </div>
 
-                    <div class="space-y-3 text-sm">
+  </section>
+  <footer class="bg-[#0f1b2d] text-gray-300 pt-14 pb-6">
 
-                        <p class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i>
-                            Techzone 4, Greater Noida West, Uttar Pradesh
-                        </p>
+    <div class="max-w-7xl mx-auto px-4">
 
-                        <p class="flex items-center gap-3">
-                            <i class="fa-solid fa-phone text-blue-500"></i>
-                            +91 8588813259
-                        </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-                        <p class="flex items-center gap-3">
-                            <i class="fa-solid fa-envelope text-blue-500"></i>
-                            Explorerealty515@gmail.com
-                        </p>
+        <!-- Logo -->
+        <div>
+          <img src="assets/img/334.png" class="h-[90px] mb-4">
 
-                    </div>
-                </div>
+          <p class="text-sm leading-relaxed">
+            Premium real estate solutions in Noida & Greater Noida.
+            Helping you find your dream property with trust and transparency.
+          </p>
+        </div>
 
-                <!-- Links -->
-                <div>
-                    <h5 class="text-white font-semibold mb-4 text-lg">Quick Links</h5>
+        <!-- Contact -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Contact Us</h5>
 
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="space-y-3 text-sm">
 
-                <!-- Subscribe -->
-                <div>
-                    <h5 class="text-white font-semibold mb-4 text-lg">Subscribe</h5>
+            <p class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i>
+              Techzone 4, Greater Noida West, Uttar Pradesh
+            </p>
 
-                    <p class="text-sm mb-3">
-                        Get latest property updates & offers.
-                    </p>
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-500"></i>
+              +91 8588813259
+            </p>
 
-                    <form class="flex overflow-hidden rounded-lg shadow-lg">
+            <p class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-500"></i>
+              Explorerealty515@gmail.com
+            </p>
 
-                        <input type="email" placeholder="Enter your email"
-                            class="w-full bg-white px-4 py-2 text-black focus:outline-none">
+          </div>
+        </div>
 
-                        <button
-                            class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
-                            <i class="fa-solid fa-paper-plane text-white"></i>
-                        </button>
+        <!-- Links -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Quick Links</h5>
 
-                    </form>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Projects</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
 
-                    <!-- Social -->
-                    <div class="flex gap-4 mt-5">
-                        <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" target="_blank"
-                            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-pink-500 transition">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/xplore-luxury-home/" target="_blank"
-                            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-blue-500 transition">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
+        <!-- Subscribe -->
+        <div>
+          <h5 class="text-white font-semibold mb-4 text-lg">Subscribe</h5>
 
-                </div>
+          <p class="text-sm mb-3">
+            Get latest property updates & offers.
+          </p>
 
-            </div>
+          <form class="flex overflow-hidden rounded-lg shadow-lg">
 
-            <!-- Bottom -->
-            <div class="mt-12 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
-                © 2025 Explore Realty. All rights reserved.
-            </div>
+            <input type="email" placeholder="Enter your email"
+              class="w-full bg-white px-4 py-2 text-black focus:outline-none">
+
+            <button class="bg-gradient-to-r from-blue-500 to-blue-700 px-4 flex items-center justify-center">
+              <i class="fa-solid fa-paper-plane text-white"></i>
+            </button>
+
+          </form>
+
+          <!-- Social -->
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/explore.realty?igsh=MWQ2dDh1aGk1ZXU3eg==" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-pink-500 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/xplore-luxury-home/" target="_blank"
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e2b45] hover:bg-blue-500 transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
 
         </div>
 
-    </footer>
-    <!-- Floating Contact Wrapper -->
-    <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+      </div>
 
-        <!-- Call Button -->
-        <a href="tel:+918588813259" class="group flex items-center gap-2">
-
-            <!-- Label -->
-            <span
-                class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-                Call Us
-            </span>
-
-            <!-- Button -->
-            <div
-                class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
-
-                <i class="fa-solid fa-phone text-lg"></i>
-
-                <!-- Pulse -->
-                <span
-                    class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
-
-            </div>
-        </a>
-
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
-
-            <!-- Label -->
-            <span
-                class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-                WhatsApp
-            </span>
-
-            <!-- Button -->
-            <div
-                class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
-
-                <i class="fa-brands fa-whatsapp text-xl"></i>
-
-            </div>
-        </a>
+      <!-- Bottom -->
+      <div class="mt-12 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
+        © 2025 Explore Realty. All rights reserved.
+      </div>
 
     </div>
+
+  </footer>
+  <!-- Floating Contact Wrapper -->
+  <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+
+    <!-- Call Button -->
+    <a href="tel:+918588813259" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        Call Us
+      </span>
+
+      <!-- Button -->
+      <div
+        class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-solid fa-phone text-lg"></i>
+
+        <!-- Pulse -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+
+      </div>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
+
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        WhatsApp
+      </span>
+
+      <!-- Button -->
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+      </div>
+    </a>
+
+  </div>
 </body>
 <script src="assets/js/new.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>

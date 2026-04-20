@@ -10,6 +10,8 @@ const projects = [
             name: "Golden Group",
             experience: "12+ years"
         },
+        brochure: "assets/brochures/golden.pdf",
+        map:"https://www.google.com/maps?q=Golden%20I%20Mall%20Techzone%204%20Greater%20Noida%20West&output=embed",
         shortDesc: "High footfall commercial hub in Noida Extension.",
         description: "Golden I is a premium commercial project offering retail shops and office spaces in a prime location with excellent connectivity.",
         priceDetails: [
@@ -19,7 +21,20 @@ const projects = [
         location: "Techzone 4, Greater Noida West",
         config: "Retail Shops & Offices",
         floorPlans: [
-            "assets/img/golden/golden.png"
+            {
+                img: "assets/img/golden/m9.jpg",
+                title: "Retail Shop",
+                size: "250 sq.ft",
+                floor: "Ground Floor",
+                price: "₹25 L"
+            },
+            {
+                img: "assets/img/golden/m10.jpg",
+                title: "Office Space",
+                size: "500 sq.ft",
+                floor: "1st Floor",
+                price: "₹45 L"
+            }
         ],
 
         rera: "UPRERA0001",
@@ -69,7 +84,8 @@ const projects = [
             name: "Group 108",
             experience: "15+ years"
         },
-
+        brochure: "assets/brochures/grandthum.pdf",
+        map:"https://www.google.com/maps?q=Grandthum%20Techzone%204%20Greater%20Noida%20West&output=embed",
         shortDesc: "Iconic commercial towers with premium office & retail spaces.",
 
         description: "Grandthum is one of the tallest commercial towers in Noida Extension offering retail shops, office spaces, food court and multiplex with massive footfall potential.",
@@ -84,7 +100,27 @@ const projects = [
         config: "Retail Shops, Offices, Multiplex",
 
         floorPlans: [
-            "assets/img/grandthum/Grandthum-floor.webp"
+            {
+                img: "assets/img/grandthum/shop.jpg",
+                title: "Retail Shop",
+                size: "100 - 500 sq.ft",
+                floor: "Ground / 1st Floor",
+                price: "₹20L+"
+            },
+            {
+                img: "assets/img/grandthum/office.jpg",
+                title: "Office Space",
+                size: "500 - 1500 sq.ft",
+                floor: "Tower Floors",
+                price: "₹50L+"
+            },
+            {
+                img: "assets/img/grandthum/studio.jpg",
+                title: "Studio Unit",
+                size: "400 - 800 sq.ft",
+                floor: "Upper Floors",
+                price: "₹60L+"
+            }
         ],
 
         rera: "UPRERA108",
@@ -142,7 +178,8 @@ const projects = [
             name: "County Group",
             experience: "10+ years"
         },
-
+        brochure: "assets/brochures/corbett.pdf",
+        map:"https://www.google.com/maps?q=Jim%20Corbett%20Uttarakhand&output=embed",
         shortDesc: "Premium plotted development near Jim Corbett.",
 
         description: "Corbett County offers luxury plots and villas surrounded by greenery and nature, ideal for investment and peaceful living.",
@@ -157,8 +194,27 @@ const projects = [
         config: "Plots & Villas",
 
         floorPlans: [
-            "assets/img/corbett/11111.webp",
-            "assets/img/corbett/plan.jpg"
+            {
+                img: "assets/img/corbett/plot-layout.jpg",
+                title: "Plot Layout Plan",
+                size: "100 - 200 sq.yd",
+                floor: "Multiple Options",
+                price: "₹30L+"
+            },
+            {
+                img: "assets/img/corbett/2bhk.jpg",
+                title: "2 BHK Villa",
+                size: "800 - 1200 sq.ft",
+                floor: "Ground Floor",
+                price: "₹60L+"
+            },
+            {
+                img: "assets/img/corbett/3bhk.jpg",
+                title: "3 BHK Villa",
+                size: "1200 - 2000 sq.ft",
+                floor: "Duplex / Ground+1",
+                price: "₹1Cr+"
+            }
         ],
 
         rera: "UKRERA001",
@@ -218,7 +274,8 @@ const projects = [
             name: "ATS Infrastructure Ltd.",
             experience: "25+ years"
         },
-
+        brochure: "assets/brochures/ats.pdf",
+        map:"https://www.google.com/maps?q=ATS%20Picturesque%20Reprieves%20Sector%20152%20Noida&output=embed",
         shortDesc: "Luxury villas with premium lifestyle in Greater Noida.",
 
         description: "ATS Picturesque Reprieves is a premium villa project offering spacious and well-designed homes with world-class amenities, lush green surroundings and excellent connectivity.",
@@ -232,10 +289,27 @@ const projects = [
         config: "3 & 4 BHK Villas",
 
         floorPlans: [
-            "assets/img/ats/ats-3-4-bhk.png",
-            "assets/img/ats/ats-3BHK.webp",
-            "assets/img/ats/ats-3BHK1.webp",
-            "assets/img/ats/ats-4BHK.jpeg",
+            {
+                img: "assets/img/ats/3bhk.jpg",
+                title: "3 BHK Apartment",
+                size: "1850 sq.ft",
+                floor: "All Floors",
+                price: "₹3 Cr+"
+            },
+            {
+                img: "assets/img/ats/3bhk-study.jpg",
+                title: "3 BHK + Study",
+                size: "2350 sq.ft",
+                floor: "All Floors",
+                price: "₹3.8 Cr+"
+            },
+            {
+                img: "assets/img/ats/4bhk.jpg",
+                title: "4 BHK + Study",
+                size: "3200 sq.ft",
+                floor: "Premium Floors",
+                price: "₹5 Cr+"
+            }
         ],
         rera: "UPRERAATS152",
         developer: "ATS Infrastructure Ltd.",
@@ -299,7 +373,8 @@ const projects = [
             name: "Signature Global",
             experience: "10+ years"
         },
-
+        brochure: "assets/brochures/signature.pdf",
+        map:"https://www.google.com/maps?q=Signature%20Villas%20Greater%20Noida%20West&output=embed",
         shortDesc: "Premium independent villas with modern lifestyle amenities.",
 
         description: "Signature Villas offers beautifully designed independent villas with spacious layouts, modern architecture and a secure gated community environment, ideal for families seeking luxury and comfort.",
@@ -313,7 +388,27 @@ const projects = [
         config: "3 & 4 BHK Villas",
 
         floorPlans: [
-            "assets/img/Signature/7.webp",
+            {
+                img: "assets/img/signature/ground-floor.jpg",
+                title: "3 BHK Villa (Ground Floor)",
+                size: "74 sq.yd",
+                floor: "Ground Floor",
+                price: "₹95L+"
+            },
+            {
+                img: "assets/img/signature/first-floor.jpg",
+                title: "3 BHK + Study (First Floor)",
+                size: "84 sq.yd",
+                floor: "First Floor",
+                price: "₹1.1 Cr+"
+            },
+            {
+                img: "assets/img/signature/full-villa.jpg",
+                title: "3 BHK + Study Duplex Villa",
+                size: "100 sq.yd",
+                floor: "Ground + 1",
+                price: "₹1.3 Cr+"
+            }
         ],
 
         rera: "UPRERASIGN001",
@@ -378,7 +473,8 @@ const projects = [
             name: "Vrinda Group",
             experience: "15+ years"
         },
-
+        brochure: "assets/brochures/vrinda.pdf",
+        map:"https://www.google.com/maps?q=Vrinda%20Heritage%20Skyward%20Greater%20Noida%20West&output=embed",
         shortDesc: "Modern high-rise apartments with premium lifestyle amenities.",
 
         description: "Vrinda Heritage Skyward is a premium residential project offering spacious apartments with modern architecture, lush green surroundings and world-class amenities designed for comfortable family living.",
@@ -393,9 +489,27 @@ const projects = [
         config: "2, 3 & 4 BHK Apartments",
 
         floorPlans: [
-            "assets/img/Vrinda/plan1.jpg",
-            "assets/img/Vrinda/plan2.jpg",
-            "assets/img/Vrinda/plan3.jpg",
+            {
+                img: "assets/img/vrinda/3bhk-small.jpg",
+                title: "3 BHK Apartment",
+                size: "1298 sq.ft",
+                floor: "All Floors",
+                price: "₹1.4 Cr+"
+            },
+            {
+                img: "assets/img/vrinda/3bhk-large.jpg",
+                title: "3 BHK Premium",
+                size: "1698 sq.ft",
+                floor: "All Floors",
+                price: "₹1.8 Cr+"
+            },
+            {
+                img: "assets/img/vrinda/4bhk.jpg",
+                title: "4 BHK Luxury",
+                size: "2018 sq.ft",
+                floor: "Premium Floors",
+                price: "₹2.2 Cr+"
+            }
         ],
 
         rera: "UPRERAVRINDA001",
@@ -462,7 +576,8 @@ const projects = [
             name: "L&T Realty",
             experience: "20+ years"
         },
-
+        brochure: "assets/brochures/lnt.pdf",
+        map:"https://www.google.com/maps?q=L%26T%20Green%20Reserve%20Sector%20128%20Noida&output=embed",
         shortDesc: "Ultra-luxury residences surrounded by lush green landscapes.",
 
         description: "L&T Green Reserve is a premium upcoming residential project offering ultra-luxury apartments with world-class amenities, sustainable design, and expansive green spaces for an elite lifestyle.",
@@ -477,7 +592,27 @@ const projects = [
         config: "3 & 4 BHK Luxury Apartments & Penthouses",
 
         floorPlans: [
-            "assets/img/l&T/l&t-floorplan.jpg"
+            {
+                img: "assets/img/l&T/3bhk.jpg",
+                title: "3 BHK Luxury Apartment",
+                size: "2850 - 3015 sq.ft",
+                floor: "All Floors",
+                price: "₹6 Cr+"
+            },
+            {
+                img: "assets/img/l&T/4bhk.jpg",
+                title: "4 BHK Premium",
+                size: "3555 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹7.5 Cr+"
+            },
+            {
+                img: "assets/img/l&T/5bhk.jpg",
+                title: "5 BHK Ultra Luxury",
+                size: "5200 - 5700 sq.ft",
+                floor: "Top / Premium Floors",
+                price: "₹12 Cr+"
+            }
         ],
 
         rera: "HRERALT001",
@@ -545,7 +680,8 @@ const projects = [
             name: "AU Real Estate / NBCC",
             experience: "20+ years"
         },
-
+        brochure: "assets/brochures/au.pdf",
+        map:"https://www.google.com/maps?q=AU%20Aspire%20Silicon%20City%20Noida&output=embed",
         shortDesc: "Ultra-luxury high-rise apartments in prime Noida location.",
 
         description: "AU Aspire Silicon City is a premium residential project located in Sector 76, Noida offering ultra-luxury 3.5 & 4.5 BHK apartments and penthouses with modern architecture, spacious layouts and world-class amenities. The project is spread across 8.33 acres with low-density planning for better privacy and lifestyle.",
@@ -560,10 +696,27 @@ const projects = [
         config: "3.5 & 4.5 BHK Apartments + Penthouses",
 
         floorPlans: [
-            "assets/img/au/1.jpg",
-            "assets/img/au/2.jpg",
-            "assets/img/au/3.jpg",
-            "assets/img/au/4.jpg",
+            {
+                img: "assets/img/au/3bhk.jpg",
+                title: "3 BHK + Study",
+                size: "2781 sq.ft",
+                floor: "All Floors",
+                price: "₹3.6 Cr+"
+            },
+            {
+                img: "assets/img/au/4bhk.jpg",
+                title: "4 BHK + Study",
+                size: "3342 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹4.3 Cr+"
+            },
+            {
+                img: "assets/img/au/penthouse.jpg",
+                title: "Duplex Penthouse",
+                size: "5923 sq.ft",
+                floor: "Top Floors",
+                price: "₹8 Cr+"
+            }
         ],
 
         rera: "RERA Not Applicable",
@@ -631,7 +784,8 @@ const projects = [
             name: "Bhutani Infra",
             experience: "20+ years"
         },
-
+        brochure: "assets/brochures/bhutani.pdf",
+        map:"https://www.google.com/maps?q=Bhutani%20Astrathum%20Greater%20Noida%20West&output=embed",
         shortDesc: "Premium IT/office space project in Noida with assured returns.",
 
         description: "Bhutani Astrathum is a modern commercial IT/office space project designed for high rental yield and business growth. It offers fully furnished office spaces with world-class infrastructure and a professional environment.",
@@ -645,7 +799,34 @@ const projects = [
         config: "IT/Office Spaces",
 
         floorPlans: [
-            "assets/img/bhutani/plan.jpeg"
+            {
+                img: "assets/img/bhutani/shop.jpg",
+                title: "Retail Shop",
+                size: "300 - 1000 sq.ft",
+                floor: "Ground / 1st Floor",
+                price: "₹25L+"
+            },
+            {
+                img: "assets/img/bhutani/foodcourt.jpg",
+                title: "Food Court Unit",
+                size: "200 - 600 sq.ft",
+                floor: "Food Zone",
+                price: "₹20L+"
+            },
+            {
+                img: "assets/img/bhutani/office.jpg",
+                title: "Office Space",
+                size: "2000 sq.ft+",
+                floor: "Tower Floors",
+                price: "₹80L+"
+            },
+            {
+                img: "assets/img/bhutani/studio.jpg",
+                title: "Studio / SOHO",
+                size: "815 - 1200 sq.ft",
+                floor: "Upper Floors",
+                price: "₹60L+"
+            }
         ],
 
         rera: "UPRERABHUTANI001",
@@ -710,7 +891,8 @@ const projects = [
             name: "Escon Infra Realtors",
             experience: "15+ years"
         },
-
+        brochure: "assets/brochures/escon.pdf",
+        map:"https://www.google.com/maps?q=Escon%20Panache%20Villas%20Greater%20Noida%20West&output=embed",
         shortDesc: "Ultra-luxury 4 BHK triplex villas with private amenities.",
 
         description: "Escon Panache Villas is a premium residential villa project in Greater Noida offering ultra-luxury 4 BHK triplex villas with private gardens, terrace spaces and modern amenities designed for elite lifestyle living.",
@@ -725,9 +907,27 @@ const projects = [
         config: "4 BHK Triplex Villas",
 
         floorPlans: [
-            "assets/img/escon/1.jpg",
-            "assets/img/escon/2.jpg",
-            "assets/img/escon/3.jpg",
+            {
+                img: "assets/img/escon/2700.jpg",
+                title: "4 BHK Villa",
+                size: "2700 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹2.4 Cr+"
+            },
+            {
+                img: "assets/img/escon/3000.jpg",
+                title: "4 BHK Premium Villa",
+                size: "3000 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹2.8 Cr+"
+            },
+            {
+                img: "assets/img/escon/3400.jpg",
+                title: "4 BHK Ultra Luxury",
+                size: "3400 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹3.2 Cr+"
+            }
         ],
 
         rera: "Available (Project Registered)",
@@ -795,7 +995,8 @@ const projects = [
             name: "Evergreen Developers",
             experience: "12+ years"
         },
-
+        brochure: "assets/brochures/evergreen.pdf",
+        map:"https://www.google.com/maps?q=Evergreen%20Square%20Surajpur%20Greater%20Noida&output=embed",
         shortDesc: "Modern commercial hub with retail shops & office spaces.",
 
         description: "Evergreen Square is a well-planned commercial project offering retail shops and office spaces in a high footfall area, designed for strong rental returns and business growth.",
@@ -809,10 +1010,27 @@ const projects = [
         config: "Retail Shops & Office Spaces",
 
         floorPlans: [
-            "assets/img/evergreen/8.webp",
-            "assets/img/evergreen/9.webp",
-            "assets/img/evergreen/10.avif",
-            "assets/img/evergreen/11.avif",
+            {
+                img: "assets/img/evergreen/shop.jpg",
+                title: "Retail Shop",
+                size: "150 - 500 sq.ft",
+                floor: "Ground / 1st Floor",
+                price: "₹20L+"
+            },
+            {
+                img: "assets/img/evergreen/office.jpg",
+                title: "Office / Business Suite",
+                size: "400 - 1000 sq.ft",
+                floor: "Upper Floors",
+                price: "₹35L+"
+            },
+            {
+                img: "assets/img/evergreen/studio.jpg",
+                title: "Studio Unit",
+                size: "600 - 800 sq.ft",
+                floor: "Mixed Floors",
+                price: "₹50L+"
+            }
         ],
 
         rera: "UPRERAEVER001",
@@ -872,7 +1090,8 @@ const projects = [
         type: "residential",
 
         builderInfo: { name: "Ratan Group", experience: "12+ years" },
-
+        brochure: "assets/brochures/ratan.pdf",
+        map:"https://www.google.com/maps?q=Ratan%20Pearls%20Noida%20Extension&output=embed",
         shortDesc: "Affordable luxury apartments in Greater Noida West.",
         description: "Ratan Pearls offers well-designed apartments with modern amenities and good connectivity.",
 
@@ -881,9 +1100,20 @@ const projects = [
             { type: "3 BHK", size: "1450 sq.ft", price: "₹1.55 Cr" }
         ],
         floorPlans: [
-            "assets/img/ratan/m1.jpg",
-            "assets/img/ratan/m2.jpg",
-            "assets/img/ratan/m3.jpg",
+            {
+                img: "assets/img/ratan/2bhk.jpg",
+                title: "2 BHK Apartment",
+                size: "1035 - 1189 sq.ft",
+                floor: "All Floors",
+                price: "₹85L+"
+            },
+            {
+                img: "assets/img/ratan/3bhk.jpg",
+                title: "3 BHK Apartment",
+                size: "1370 - 1874 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹1.1 Cr+"
+            }
         ],
         location: "Greater Noida West",
         config: "2 & 3 BHK Apartments",
@@ -922,7 +1152,8 @@ const projects = [
         type: "residential",
 
         builderInfo: { name: "Vihaan Group", experience: "10+ years" },
-
+        brochure: "assets/brochures/vihaan-greens.pdf",
+        map:"https://www.google.com/maps?q=Vihaan%20Greens%20Greater%20Noida%20West&output=embed",
         shortDesc: "Green living apartments with modern facilities.",
         description: "Peaceful living with greenery and modern amenities.",
 
@@ -935,10 +1166,27 @@ const projects = [
         config: "2 & 3 BHK",
 
         floorPlans: [
-            "assets/img/vihaan/m1.jpg",
-            "assets/img/vihaan/m2.jpg",
-            "assets/img/vihaan/m3.jpg",
-            "assets/img/vihaan/m4.jpg",
+            {
+                img: "assets/img/vihaan/2bhk.jpg",
+                title: "2 BHK Apartment",
+                size: "1075 sq.ft",
+                floor: "All Floors",
+                price: "₹75L+"
+            },
+            {
+                img: "assets/img/vihaan/3bhk.jpg",
+                title: "3 BHK Apartment",
+                size: "1350 - 1640 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹95L+"
+            },
+            {
+                img: "assets/img/vihaan/4bhk.jpg",
+                title: "4 BHK Apartment",
+                size: "1895 sq.ft",
+                floor: "Premium Floors",
+                price: "₹1.3 Cr+"
+            }
         ],
 
         rera: "UPRERAVIHAN001",
@@ -967,380 +1215,859 @@ const projects = [
         ]
     },
     {
-  id: "sky-garden",
-  name: "Sky Garden",
-  price: "₹28 L - ₹1.05 Cr",
-  img: "assets/img/sky-garden/1.jpg",
-  type: "commercial",
-
-  builderInfo: { name: "Skyline Group", experience: "10+ years" },
-
-  shortDesc: "Unique rooftop commercial concept.",
-
-  description: "Sky Garden offers rooftop retail and food court spaces.",
-
-  priceDetails: [
-    { type: "Shop", size: "200 sq.ft", price: "₹28 L" }
-  ],
-
-  location: "Greater Noida West",
-  config: "Retail Shops",
-
-  floorPlans: [
-    "assets/img/sky-garden/m1.jpg",
-    "assets/img/sky-garden/m2.jpg",
-    "assets/img/sky-garden/m3.jpg",
-    "assets/img/sky-garden/m4.jpg",
-  ],
-
-  rera: "UPRERASKY001",
-  developer: "Skyline Group",
-  possession: "Under Construction",
-  area: "3 Acres",
-
-  roi: "10-12%",
-
-  amenities: ["Rooftop garden","Food court"],
-
-  highlights: ["Unique concept","High footfall"],
-
-  locationAdvantages: [{ title: "NH-24", value: "5 min" }],
-
-  nearby: ["Residential area"],
-
-  investment: { rental: "₹20k", appreciation: "10%" },
-
-  gallery: [
-    "assets/img/sky-garden/1.jpg",
-    "assets/img/sky-garden/7.jpg",
-    "assets/img/sky-garden/3.jpg",
-    "assets/img/sky-garden/4.avif",
-  ]
-},
-{
-  id: "ibp-windsor",
-  name: "IBP Windsor Valley",
-  price: "₹56.8 – ₹89 Lakh",
-  img: "assets/img/ibp/ibp-1.webp",
-  type: "residential",
-
-  builderInfo: { name: "IBP Group", experience: "8+ years" },
-
-  shortDesc: "Affordable residential apartments.",
-
-  description: "Budget-friendly homes with essential amenities.",
-
-  priceDetails: [
-    { type: "2 BHK", size: "900 sq.ft", price: "₹56 L" }
-  ],
-
-  location: "Greater Noida",
-  config: "2 BHK",
-
-  floorPlans: [
-    "assets/img/ibp/ibp-5.avif"
-  ],
-
-  rera: "UPRERAIBP001",
-  developer: "IBP Group",
-  possession: "Ready",
-  area: "4 Acres",
-
-  roi: "7-9%",
-
-  amenities: ["Security","Parking"],
-
-  highlights: ["Budget homes"],
-
-  locationAdvantages: [{ title: "Metro", value: "Nearby" }],
-
-  nearby: ["Schools nearby"],
-
-  investment: { rental: "₹12k", appreciation: "8%" },
-
-  gallery: [
-    "assets/img/ibp/ibp-1.webp",
-    "assets/img/ibp/ibp-2.avif",
-    "assets/img/ibp/ibp-3.webp",
-    "assets/img/ibp/ibp-4.jpeg",
-  ]
-},
-{
-  id: "tulsi-vatika",
-  name: "Tulsi Vatika",
-  price: "₹97 L - ₹1.08 Cr",
-  img: "assets/img/tulsi/Tulsi-1.webp",
-  type: "residential",
-
-  builderInfo: { name: "Tulsi Group", experience: "10+ years" },
-
-  shortDesc: "Peaceful residential homes with greenery.",
-
-  description: "Comfortable homes in a green and secure environment.",
-
-  priceDetails: [
-    { type: "3 BHK", size: "1400 sq.ft", price: "₹1 Cr" }
-  ],
-
-  location: "Greater Noida",
-  config: "3 BHK",
-
-  floorPlans: [
-    "assets/img/tulsi/tulsi-7.webp",
-  ],
-
-  rera: "UPRERATULSI001",
-  developer: "Tulsi Group",
-  possession: "Ready",
-  area: "5 Acres",
-
-  roi: "8-10%",
-
-  amenities: ["Park","Security"],
-
-  highlights: ["Green living"],
-
-  locationAdvantages: [{ title: "NH-24", value: "10 min" }],
-
-  nearby: ["Markets nearby"],
-
-  investment: { rental: "₹20k", appreciation: "9%" },
-
-  gallery: [
-    "assets/img/tulsi/tulsi-1.webp",
-    "assets/img/tulsi/tulsi-2.jpg",
-    "assets/img/tulsi/tulsi-3.avif",
-    "assets/img/tulsi/tulsi-4.avif",
-    "assets/img/tulsi/tulsi-5.avif",
-    "assets/img/tulsi/tulsi-6.avif",
-  ]
-},
-{
-  id: "gygy-fiveo",
-  name: "GYGY FIVE-O",
-  price: "₹2.67 Cr",
-  img: "assets/img/gygy/1.avif",
-  type: "commercial",
-
-  builderInfo: {
-    name: "GYGY Group",
-    experience: "15+ years"
-  },
-
-  shortDesc: "Premium commercial office spaces in prime Noida location.",
-
-  description: "GYGY FIVE-O offers high-end office spaces with modern infrastructure, excellent connectivity and strong investment potential.",
-
-  priceDetails: [
-    { type: "Office Space", size: "1000 sq.ft", price: "₹2.67 Cr" }
-  ],
-
-  location: "Sector 50, Noida",
-  config: "Office Spaces",
-
-  floorPlans: [
-      "assets/img/gygy/gygy-floor-1.jpeg",
-      "assets/img/gygy/gygy-floor-2.jpeg"
-  ],
-
-  rera: "UPRERAGYGY001",
-  developer: "GYGY Group",
-  possession: "Under Construction",
-  area: "3 Acres",
-
-  roi: "10-12%",
-
-  amenities: [
-    "High Speed Elevators",
-    "Parking",
-    "Security",
-    "Cafeteria",
-    "Conference Rooms"
-  ],
-
-  highlights: [
-    "Prime business location",
-    "High rental demand",
-    "Modern office infrastructure"
-  ],
-
-  locationAdvantages: [
-    { title: "Metro", value: "5 min" },
-    { title: "Expressway", value: "Nearby" }
-  ],
-
-  nearby: [
-    "Close to corporate offices",
-    "Near residential areas"
-  ],
-
-  investment: {
-    rental: "₹50k–₹80k/month",
-    appreciation: "11% yearly"
-  },
-
-  gallery: [
-    "assets/img/gygy/gygy-1.avif",
-    "assets/img/gygy/gygy-2.jpg",
-    "assets/img/gygy/gygy-3.jpg",
-    "assets/img/gygy/gygy-4.jpg",
-    "assets/img/gygy/gygy-5.png"
-  ]
-},
-{
-  id: "ivory-county",
-  name: "Ivory County",
-  price: "₹2.85 Cr – ₹12.80 Cr",
-  img: "assets/img/ivory-9.jpg",
-  type: "upcoming",
-
-  builderInfo: {
-    name: "County Group",
-    experience: "15+ years"
-  },
-
-  shortDesc: "Ultra-luxury residences with premium amenities.",
-
-  description: "Ivory County is a high-end residential project offering spacious luxury apartments with top-class amenities and elite lifestyle.",
-
-  priceDetails: [
-    { type: "3 BHK", size: "2200 sq.ft", price: "₹2.85 Cr" },
-    { type: "4 BHK", size: "3200 sq.ft", price: "₹5 Cr+" },
-    { type: "Penthouse", size: "5000 sq.ft", price: "₹12.8 Cr" }
-  ],
-
-  location: "Noida",
-  config: "3 & 4 BHK + Penthouses",
-
-  floorPlans: [
-    "assets/img/ivory/ivory-1.jpg",
-    "assets/img/ivory/ivory-2.jpg",
-    "assets/img/ivory/ivory-3.jpg",
-    "assets/img/ivory/ivory-4.jpg",
-  ],
-
-  rera: "UPRERAIVORY001",
-  developer: "County Group",
-  possession: "Upcoming",
-  area: "20 Acres",
-
-  roi: "12-15%",
-
-  amenities: [
-    "Clubhouse",
-    "Infinity Pool",
-    "Gym",
-    "Spa",
-    "Security",
-    "Parking"
-  ],
-
-  highlights: [
-    "Ultra luxury living",
-    "Low density project",
-    "Premium location"
-  ],
-
-  locationAdvantages: [
-    { title: "Metro", value: "10 min" },
-    { title: "Expressway", value: "5 min" }
-  ],
-
-  nearby: [
-    "Close to malls & hospitals",
-    "Near business hubs"
-  ],
-
-  investment: {
-    rental: "₹80k–₹2L/month",
-    appreciation: "13% yearly"
-  },
-
-  gallery: [
-    "assets/img/ivory/ivory-5.jpg",
-    "assets/img/ivory/ivory-6.avif",
-    "assets/img/ivory/ivory-7.jpg",
-    "assets/img/ivory/ivory-8.webp",
-    "assets/img/ivory/ivory-9.jpg",
-    "assets/img/ivory/ivory-10.webp",
-  ]
-},
-{
-  id: "kalpataru-vista",
-  name: "Kalpataru Vista",
-  price: "₹5.42 Cr",
-  img: "assets/img//kalptaru/vista-2.jpg",
-  type: "residential",
-
-  builderInfo: {
-    name: "Kalpataru Limited",
-    experience: "50+ years"
-  },
-
-  shortDesc: "Luxury high-rise residences with premium lifestyle.",
-
-  description: "Kalpataru Vista offers ultra-modern apartments with world-class amenities and elegant design.",
-
-  priceDetails: [
-    { type: "3 BHK", size: "2000 sq.ft", price: "₹5.42 Cr" }
-  ],
-
-  location: "Noida",
-  config: "3 BHK Luxury",
-
-  floorPlans: [
-    "assets/img/kalptaru/1.jpg",
-    "assets/img/kalptaru/2.jpg",
-    "assets/img/kalptaru/3.jpg",
-    "assets/img/kalptaru/4.jpg",   
-    "assets/img/kalptaru/5.jpg",
-    "assets/img/kalptaru/6.jpg",
-  ],
-
-  rera: "UPRERAKALP001",
-  developer: "Kalpataru Limited",
-  possession: "Under Construction",
-  area: "10 Acres",
-
-  roi: "12%",
-
-  amenities: [
-    "Clubhouse",
-    "Pool",
-    "Gym",
-    "Security",
-    "Parking"
-  ],
-
-  highlights: [
-    "Premium brand",
-    "Luxury living",
-    "High appreciation"
-  ],
-
-  locationAdvantages: [
-    { title: "Metro", value: "Nearby" }
-  ],
-
-  nearby: [
-    "Schools & malls nearby"
-  ],
-
-  investment: {
-    rental: "₹60k/month",
-    appreciation: "12%"
-  },
-
-  gallery: [
-    "assets/img/kalptaru/vista-1.jpg",
-    "assets/img/kalptaru/vista-2.jpg",
-    "assets/img/kalptaru/vista-3.png",
-    "assets/img/kalptaru/vista-4.webp",
-    "assets/img/kalptaru/vista-5.webp",
-    "assets/img/kalptaru/vista-6.webp",
-
-  ]
-}
+        id: "sky-garden",
+        name: "Sky Garden",
+        price: "₹28 L - ₹1.05 Cr",
+        img: "assets/img/sky-garden/1.jpg",
+        type: "commercial",
+
+        builderInfo: { name: "Skyline Group", experience: "10+ years" },
+        brochure: "assets/brochures/sky-garden.pdf",
+        map:"https://www.google.com/maps?q=Shri%20Radha%20Sky%20Gardens%20Noida%20Extension&output=embed",
+        shortDesc: "Unique rooftop commercial concept.",
+
+        description: "Sky Garden offers rooftop retail and food court spaces.",
+
+        priceDetails: [
+            { type: "Shop", size: "200 sq.ft", price: "₹28 L" }
+        ],
+
+        location: "Greater Noida West",
+        config: "Retail Shops",
+
+        floorPlans: [
+            {
+                img: "assets/img/sky-garden/2bhk.jpg",
+                title: "2 BHK Apartment",
+                size: "1182 - 1370 sq.ft",
+                floor: "All Floors",
+                price: "₹70L+"
+            },
+            {
+                img: "assets/img/sky-garden/3bhk.jpg",
+                title: "3 BHK Apartment",
+                size: "1465 - 1940 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹95L+"
+            },
+            {
+                img: "assets/img/sky-garden/3bhk-study.jpg",
+                title: "3.5 BHK Apartment",
+                size: "2619 sq.ft",
+                floor: "Premium Floors",
+                price: "₹1.4 Cr+"
+            },
+            {
+                img: "assets/img/sky-garden/4bhk.jpg",
+                title: "4 BHK Luxury",
+                size: "3150 sq.ft",
+                floor: "Top Floors",
+                price: "₹2 Cr+"
+            }
+        ],
+
+        rera: "UPRERASKY001",
+        developer: "Skyline Group",
+        possession: "Under Construction",
+        area: "3 Acres",
+
+        roi: "10-12%",
+
+        amenities: ["Rooftop garden", "Food court"],
+
+        highlights: ["Unique concept", "High footfall"],
+
+        locationAdvantages: [{ title: "NH-24", value: "5 min" }],
+
+        nearby: ["Residential area"],
+
+        investment: { rental: "₹20k", appreciation: "10%" },
+
+        gallery: [
+            "assets/img/sky-garden/1.jpg",
+            "assets/img/sky-garden/7.jpg",
+            "assets/img/sky-garden/3.jpg",
+            "assets/img/sky-garden/4.avif",
+        ]
+    },
+    {
+        id: "ibp-windsor",
+        name: "IBP Windsor Valley",
+        price: "₹56.8 – ₹89 Lakh",
+        img: "assets/img/ibp/ibp-1.webp",
+        type: "residential",
+
+        builderInfo: { name: "IBP Group", experience: "8+ years" },
+        brochure: "assets/brochures/ibp-windsor.pdf",
+        map:"https://www.google.com/maps?q=IBP%20Windsor%20Valley%20Greater%20Noida%20West&output=embed",
+        shortDesc: "Affordable residential apartments.",
+
+        description: "Budget-friendly homes with essential amenities.",
+
+        priceDetails: [
+            { type: "2 BHK", size: "900 sq.ft", price: "₹56 L" }
+        ],
+
+        location: "Greater Noida",
+        config: "2 BHK",
+
+        floorPlans: [
+            {
+                img: "assets/img/ibp/2bhk.jpg",
+                title: "2 BHK Villa",
+                size: "1500 sq.ft",
+                floor: "Ground + 1",
+                price: "₹56L+"
+            },
+            {
+                img: "assets/img/ibp/3bhk.jpg",
+                title: "3 BHK Villa",
+                size: "1600 - 1950 sq.ft",
+                floor: "Ground + 1",
+                price: "₹65L+"
+            },
+            {
+                img: "assets/img/ibp/3bhk-study.jpg",
+                title: "3 BHK + Study Villa",
+                size: "2300 - 2550 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹85L+"
+            }
+        ],
+
+        rera: "UPRERAIBP001",
+        developer: "IBP Group",
+        possession: "Ready",
+        area: "4 Acres",
+
+        roi: "7-9%",
+
+        amenities: ["Security", "Parking"],
+
+        highlights: ["Budget homes"],
+
+        locationAdvantages: [{ title: "Metro", value: "Nearby" }],
+
+        nearby: ["Schools nearby"],
+
+        investment: { rental: "₹12k", appreciation: "8%" },
+
+        gallery: [
+            "assets/img/ibp/ibp-1.webp",
+            "assets/img/ibp/ibp-2.avif",
+            "assets/img/ibp/ibp-3.webp",
+            "assets/img/ibp/ibp-4.jpeg",
+        ]
+    },
+    {
+        id: "tulsi-vatika",
+        name: "Tulsi Vatika",
+        price: "₹97 L - ₹1.08 Cr",
+        img: "assets/img/tulsi/Tulsi-1.webp",
+        type: "residential",
+
+        builderInfo: { name: "Tulsi Group", experience: "10+ years" },
+        brochure: "assets/brochures/tulsi.pdf",
+        map:"https://www.google.com/maps?q=Tulsi%20Vatika%20Greater%20Noida%20West&output=embed",
+        shortDesc: "Peaceful residential homes with greenery.",
+
+        description: "Comfortable homes in a green and secure environment.",
+
+        priceDetails: [
+            { type: "3 BHK", size: "1400 sq.ft", price: "₹1 Cr" }
+        ],
+
+        location: "Greater Noida",
+        config: "3 BHK",
+
+        floorPlans: [
+            {
+                img: "assets/img/tulsi/1872.jpg",
+                title: "3 BHK Villa",
+                size: "1872 sq.ft",
+                floor: "Ground + 1",
+                price: "₹95L+"
+            },
+            {
+                img: "assets/img/tulsi/2085.jpg",
+                title: "3 BHK Premium Villa",
+                size: "2085 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹1.05 Cr+"
+            }
+        ],
+
+        rera: "UPRERATULSI001",
+        developer: "Tulsi Group",
+        possession: "Ready",
+        area: "5 Acres",
+
+        roi: "8-10%",
+
+        amenities: ["Park", "Security"],
+
+        highlights: ["Green living"],
+
+        locationAdvantages: [{ title: "NH-24", value: "10 min" }],
+
+        nearby: ["Markets nearby"],
+
+        investment: { rental: "₹20k", appreciation: "9%" },
+
+        gallery: [
+            "assets/img/tulsi/tulsi-1.webp",
+            "assets/img/tulsi/tulsi-2.jpg",
+            "assets/img/tulsi/tulsi-3.avif",
+            "assets/img/tulsi/tulsi-4.avif",
+            "assets/img/tulsi/tulsi-5.avif",
+            "assets/img/tulsi/tulsi-6.avif",
+        ]
+    },
+    {
+        id: "gygy-fiveo",
+        name: "GYGY FIVE-O",
+        price: "₹2.67 Cr",
+        img: "assets/img/gygy/1.avif",
+        type: "commercial",
+
+        builderInfo: {
+            name: "GYGY Group",
+            experience: "15+ years"
+        },
+        brochure: "assets/brochures/gygy-fiveo.pdf",
+        map:"https://www.google.com/maps?q=GYGY%20FiveO%20Sector%2050%20Noida&output=embed",
+        shortDesc: "Premium commercial office spaces in prime Noida location.",
+
+        description: "GYGY FIVE-O offers high-end office spaces with modern infrastructure, excellent connectivity and strong investment potential.",
+
+        priceDetails: [
+            { type: "Office Space", size: "1000 sq.ft", price: "₹2.67 Cr" }
+        ],
+
+        location: "Sector 50, Noida",
+        config: "Office Spaces",
+
+        floorPlans: [
+            {
+                img: "assets/img/gygy/shop.jpg",
+                title: "Retail Shop",
+                size: "100 - 600 sq.ft",
+                floor: "Ground / 1st Floor",
+                price: "₹30L+"
+            },
+            {
+                img: "assets/img/gygy/foodcourt.jpg",
+                title: "Food Court Unit",
+                size: "200 - 600 sq.ft",
+                floor: "2nd / 3rd Floor",
+                price: "₹25L+"
+            },
+            {
+                img: "assets/img/gygy/office.jpg",
+                title: "Office Space",
+                size: "500 - 2000 sq.ft",
+                floor: "Upper Floors",
+                price: "₹50L+"
+            }
+        ],
+
+        rera: "UPRERAGYGY001",
+        developer: "GYGY Group",
+        possession: "Under Construction",
+        area: "3 Acres",
+
+        roi: "10-12%",
+
+        amenities: [
+            "High Speed Elevators",
+            "Parking",
+            "Security",
+            "Cafeteria",
+            "Conference Rooms"
+        ],
+
+        highlights: [
+            "Prime business location",
+            "High rental demand",
+            "Modern office infrastructure"
+        ],
+
+        locationAdvantages: [
+            { title: "Metro", value: "5 min" },
+            { title: "Expressway", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Close to corporate offices",
+            "Near residential areas"
+        ],
+
+        investment: {
+            rental: "₹50k–₹80k/month",
+            appreciation: "11% yearly"
+        },
+
+        gallery: [
+            "assets/img/gygy/gygy-1.avif",
+            "assets/img/gygy/gygy-2.jpg",
+            "assets/img/gygy/gygy-3.jpg",
+            "assets/img/gygy/gygy-4.jpg",
+            "assets/img/gygy/gygy-5.png"
+        ]
+    },
+    {
+        id: "ivory-county",
+        name: "Ivory County",
+        price: "₹2.85 Cr – ₹12.80 Cr",
+        img: "assets/img/ivory-9.jpg",
+        type: "upcoming",
+
+        builderInfo: {
+            name: "County Group",
+            experience: "15+ years"
+        },
+        brochure: "assets/brochures/ivory-county.pdf",
+        map:"https://www.google.com/maps?q=Ivory%20County%20Sector%20115%20Noida&output=embed",
+        shortDesc: "Ultra-luxury residences with premium amenities.",
+
+        description: "Ivory County is a high-end residential project offering spacious luxury apartments with top-class amenities and elite lifestyle.",
+
+        priceDetails: [
+            { type: "3 BHK", size: "2200 sq.ft", price: "₹2.85 Cr" },
+            { type: "4 BHK", size: "3200 sq.ft", price: "₹5 Cr+" },
+            { type: "Penthouse", size: "5000 sq.ft", price: "₹12.8 Cr" }
+        ],
+
+        location: "Noida",
+        config: "3 & 4 BHK + Penthouses",
+
+        floorPlans: [
+            {
+                img: "assets/img/ivory/3bhk.jpg",
+                title: "3 BHK Apartment",
+                size: "2034 - 2304 sq.ft",
+                floor: "All Floors",
+                price: "₹3.3 Cr+"
+            },
+            {
+                img: "assets/img/ivory/4bhk.jpg",
+                title: "4 BHK Premium",
+                size: "2727 - 3195 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹4.5 Cr+"
+            },
+            {
+                img: "assets/img/ivory/5bhk.jpg",
+                title: "5 BHK Ultra Luxury",
+                size: "6939 sq.ft",
+                floor: "Top / Premium Floors",
+                price: "₹8 Cr+"
+            }
+        ],
+
+        rera: "UPRERAIVORY001",
+        developer: "County Group",
+        possession: "Upcoming",
+        area: "20 Acres",
+
+        roi: "12-15%",
+
+        amenities: [
+            "Clubhouse",
+            "Infinity Pool",
+            "Gym",
+            "Spa",
+            "Security",
+            "Parking"
+        ],
+
+        highlights: [
+            "Ultra luxury living",
+            "Low density project",
+            "Premium location"
+        ],
+
+        locationAdvantages: [
+            { title: "Metro", value: "10 min" },
+            { title: "Expressway", value: "5 min" }
+        ],
+
+        nearby: [
+            "Close to malls & hospitals",
+            "Near business hubs"
+        ],
+
+        investment: {
+            rental: "₹80k–₹2L/month",
+            appreciation: "13% yearly"
+        },
+
+        gallery: [
+            "assets/img/ivory/ivory-5.jpg",
+            "assets/img/ivory/ivory-6.avif",
+            "assets/img/ivory/ivory-7.jpg",
+            "assets/img/ivory/ivory-8.webp",
+            "assets/img/ivory/ivory-9.jpg",
+            "assets/img/ivory/ivory-10.webp",
+        ]
+    },
+    {
+        id: "kalpataru-vista",
+        name: "Kalpataru Vista",
+        price: "₹5.42 Cr",
+        img: "assets/img//kalptaru/vista-2.jpg",
+        type: "residential",
+
+        builderInfo: {
+            name: "Kalpataru Limited",
+            experience: "50+ years"
+        },
+        brochure: "assets/brochures/kalpataru-vista.pdf",
+        map:"https://www.google.com/maps?q=Kalpataru%20Vista%20Jaypee%20Greens%20Noida&output=embed",
+        shortDesc: "Luxury high-rise residences with premium lifestyle.",
+
+        description: "Kalpataru Vista offers ultra-modern apartments with world-class amenities and elegant design.",
+
+        priceDetails: [
+            { type: "3 BHK", size: "2000 sq.ft", price: "₹5.42 Cr" }
+        ],
+
+        location: "Noida",
+        config: "3 BHK Luxury",
+
+        floorPlans: [
+            {
+                img: "assets/img/kalptaru/3bhk.jpg",
+                title: "3 BHK Luxury Apartment",
+                size: "3011 - 3047 sq.ft",
+                floor: "All Floors",
+                price: "₹5.5 Cr+"
+            },
+            {
+                img: "assets/img/kalptaru/4bhk.jpg",
+                title: "4 BHK Premium",
+                size: "3905 - 4145 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹7.5 Cr+"
+            },
+            {
+                img: "assets/img/kalptaru/duplex.jpg",
+                title: "Duplex Apartment",
+                size: "4000+ sq.ft",
+                floor: "Top Floors",
+                price: "₹9 Cr+"
+            }
+        ],
+
+        rera: "UPRERAKALP001",
+        developer: "Kalpataru Limited",
+        possession: "Under Construction",
+        area: "10 Acres",
+
+        roi: "12%",
+
+        amenities: [
+            "Clubhouse",
+            "Pool",
+            "Gym",
+            "Security",
+            "Parking"
+        ],
+
+        highlights: [
+            "Premium brand",
+            "Luxury living",
+            "High appreciation"
+        ],
+
+        locationAdvantages: [
+            { title: "Metro", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Schools & malls nearby"
+        ],
+
+        investment: {
+            rental: "₹60k/month",
+            appreciation: "12%"
+        },
+
+        gallery: [
+            "assets/img/kalptaru/vista-1.jpg",
+            "assets/img/kalptaru/vista-2.jpg",
+            "assets/img/kalptaru/vista-3.png",
+            "assets/img/kalptaru/vista-4.webp",
+            "assets/img/kalptaru/vista-5.webp",
+            "assets/img/kalptaru/vista-6.webp",
+
+        ]
+    },
+    {
+        id: "kdmg-central",
+        name: "KDMG Central Plaza",
+        price: "₹2.67 Cr",
+        img: "assets/img/kdmg/1.png",
+        type: "commercial",
+
+        builderInfo: {
+            name: "KDMG Group",
+            experience: "12+ years"
+        },
+        brochure: "assets/brochures/kdmg-central.pdf",
+        map:"https://www.google.com/maps?q=KDMG%20Central%20Plaza%20Greater%20Noida&output=embed",
+        shortDesc: "Modern commercial plaza with retail & office spaces.",
+
+        description: "KDMG Central Plaza is a premium commercial project offering shops and office spaces in a strategic location.",
+
+        priceDetails: [
+            { type: "Shop", size: "300 sq.ft", price: "₹2.67 Cr" }
+        ],
+
+        location: "Noida",
+        config: "Retail Shops & Offices",
+
+        floorPlans: [
+            {
+                img: "assets/img/kdmg/shop.jpg",
+                title: "Retail Shop",
+                size: "150 - 600 sq.ft",
+                floor: "Ground / 1st Floor",
+                price: "₹25L+"
+            },
+            {
+                img: "assets/img/kdmg/foodcourt.jpg",
+                title: "Food Court Unit",
+                size: "200 - 500 sq.ft",
+                floor: "Food Zone",
+                price: "₹20L+"
+            },
+            {
+                img: "assets/img/kdmg/office.jpg",
+                title: "SOHO / Office Space",
+                size: "400 - 1000 sq.ft",
+                floor: "Upper Floors",
+                price: "₹35L+"
+            }
+        ],
+
+        rera: "UPRERAKDMG001",
+        developer: "KDMG Group",
+        possession: "Under Construction",
+        area: "2 Acres",
+
+        roi: "10-11%",
+
+        amenities: [
+            "Parking",
+            "Security",
+            "Lift",
+            "Food Court"
+        ],
+
+        highlights: [
+            "Prime location",
+            "High footfall",
+            "Good investment"
+        ],
+
+        locationAdvantages: [
+            { title: "Main Road", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Residential societies"
+        ],
+
+        investment: {
+            rental: "₹40k/month",
+            appreciation: "10%"
+        },
+
+        gallery: [
+            "assets/img/kdmg/1.png",
+            "assets/img/kdmg/3.jpg",
+            "assets/img/kdmg/4.jpg",
+            "assets/img/kdmg/5.png",
+            "assets/img/kdmg/6.jpg",
+            "assets/img/kdmg/7.jpg",
+        ]
+    },
+    {
+        id: "m3m-residences",
+        name: "M3M Jacob & Co Residences",
+        price: "₹3 Cr – ₹10 Cr",
+        img: "assets/img/m3m/m3m-3.jpg",
+        type: "residential",
+
+        builderInfo: {
+            name: "M3M India",
+            experience: "15+ years"
+        },
+        brochure: "assets/brochures/m3m.pdf",
+        map:"https://www.google.com/maps?q=M3M%20Jacob%20and%20Co%20Residences%20Sector%2097%20Noida&output=embed",
+        shortDesc: "Ultra-luxury branded residences in Gurgaon.",
+
+        description: "M3M Jacob & Co Residences offers world-class luxury apartments with branded interiors and elite amenities.",
+
+        priceDetails: [
+            { type: "3 BHK", size: "2000 sq.ft", price: "₹3 Cr" },
+            { type: "4 BHK", size: "3000 sq.ft", price: "₹6 Cr+" },
+            { type: "Penthouse", size: "5000 sq.ft", price: "₹10 Cr" }
+        ],
+
+        location: "Gurgaon",
+        config: "Luxury Apartments",
+
+        floorPlans: [
+            {
+                img: "assets/img/m3m/3bhk.jpg",
+                title: "3 BHK Ultra Luxury",
+                size: "2500 sq.ft",
+                floor: "All Floors",
+                price: "₹7.5 Cr+"
+            },
+            {
+                img: "assets/img/m3m/4bhk.jpg",
+                title: "4 BHK Premium",
+                size: "3500 - 4500 sq.ft",
+                floor: "Mid / Upper Floors",
+                price: "₹10 Cr+"
+            },
+            {
+                img: "assets/img/m3m/5bhk.jpg",
+                title: "5 BHK Ultra Luxury",
+                size: "5500 - 6400 sq.ft",
+                floor: "Premium Floors",
+                price: "₹15 Cr+"
+            }
+        ],
+
+        rera: "HRERAM3M001",
+        developer: "M3M India",
+        possession: "Under Construction",
+        area: "10 Acres",
+
+        roi: "12-15%",
+
+        amenities: [
+            "Clubhouse",
+            "Infinity Pool",
+            "Spa",
+            "Gym",
+            "Security"
+        ],
+
+        highlights: [
+            "Branded residences",
+            "Luxury lifestyle",
+            "Prime Gurgaon location"
+        ],
+
+        locationAdvantages: [
+            { title: "Golf Course Road", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Corporate hubs",
+            "Luxury malls"
+        ],
+
+        investment: {
+            rental: "₹1L+/month",
+            appreciation: "13%"
+        },
+
+        gallery: [
+            "assets/img/m3m/m3m-1.jpg",
+            "assets/img/m3m/m3m-2.jpg",
+            "assets/img/m3m/m3m-3.jpg",
+            "assets/img/m3m/m3m-4.webp",
+            "assets/img/m3m/m3m-5.jpg",
+            "assets/img/m3m/m3m-6.jpg",
+            "assets/img/m3m/m3m-7.webp",
+        ]
+    },
+    {
+        id: "madhav-kunj",
+        name: "Madhav Kunj",
+        price: "₹59.4 L - ₹79.75 L",
+        img: "assets/img/madhav/2.avif",
+        type: "residential",
+
+        builderInfo: {
+            name: "Madhav Group",
+            experience: "10+ years"
+        },
+        brochure: "assets/brochures/madhav-kunj.pdf",
+        map: "https://www.google.com/maps?q=Greater%20Noida%20West&output=embed",
+        shortDesc: "Affordable residential apartments with basic amenities.",
+
+        description: "Madhav Kunj offers budget-friendly homes suitable for families looking for affordable housing.",
+
+        priceDetails: [
+            { type: "2 BHK", size: "900 sq.ft", price: "₹59 L" },
+            { type: "3 BHK", size: "1200 sq.ft", price: "₹79 L" }
+        ],
+
+        location: "Greater Noida",
+        config: "2 & 3 BHK",
+
+        floorPlans: [
+            {
+                img: "assets/img/madhav/m1.jpg",
+                title: "3 BHK Villa",
+                size: "1500 sq.ft",
+                floor: "Ground + 1",
+                price: "₹55L+"
+            },
+            {
+                img: "assets/img/madhav/m2.jpg",
+                title: "3 BHK Premium Villa",
+                size: "1800 - 2000 sq.ft",
+                floor: "Ground + 1 + Terrace",
+                price: "₹70L+"
+            },
+            {
+                img: "assets/img/madhav/m3.jpg",
+                title: "Residential Plot",
+                size: "75 - 150 sq.yd",
+                floor: "NA",
+                price: "₹30L+"
+            }
+        ],
+
+        rera: "UPRERAMADHAV001",
+        developer: "Madhav Group",
+        possession: "Ready",
+        area: "4 Acres",
+
+        roi: "7-9%",
+
+        amenities: [
+            "Security",
+            "Parking",
+            "Park"
+        ],
+
+        highlights: [
+            "Affordable housing",
+            "Good for families",
+            "Basic amenities"
+        ],
+
+        locationAdvantages: [
+            { title: "NH-24", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Markets & schools nearby"
+        ],
+
+        investment: {
+            rental: "₹12k–₹20k/month",
+            appreciation: "8%"
+        },
+
+        gallery: [
+            "assets/img/madhav/1.jpg",
+            "assets/img/madhav/2.avif",
+            "assets/img/madhav/3.jpg",
+            "assets/img/madhav/4.webp",
+            "assets/img/madhav/5.webp",
+        ]
+    },
+    {
+        id: "paradise-homes",
+        name: "Paradise Homes",
+        price: "Price on request",
+        img: "assets/img/paradise/paradise-2.avif",
+        type: "residential",
+        brochure: "assets/brochures/paradise-homes.pdf",
+        map:"https://www.google.com/maps?q=Paradise%20Homes%20Greater%20Noida%20West&output=embed",
+        builderInfo: {
+            name: "Paradise Group",
+            experience: "10+ years"
+        },
+
+        shortDesc: "Affordable residential homes with modern amenities.",
+
+        description: "Paradise Homes offers budget-friendly apartments designed for comfortable family living with essential amenities and good connectivity.",
+
+        priceDetails: [
+            { type: "2 BHK", size: "900 sq.ft", price: "₹45 L+" },
+            { type: "3 BHK", size: "1250 sq.ft", price: "₹65 L+" }
+        ],
+
+        location: "Greater Noida West",
+        config: "2 & 3 BHK Apartments",
+
+        floorPlans: [
+            {
+                img: "assets/img/paradise/paradise-4.avif",
+                title: "3 BHK Villa",
+                size: "1820 sq.ft",
+                floor: "Ground + 1",
+                price: "₹88L+"
+            },
+            {
+                img: "assets/img/paradise/paradise-5.avif",
+                title: "3 BHK Premium Villa",
+                size: "2080 sq.ft",
+                floor: "Ground + 1 + Balcony",
+                price: "₹1 Cr+"
+            }
+        ],
+
+        rera: "UPRERAPARADISE001",
+        developer: "Paradise Group",
+        possession: "Under Construction",
+        area: "5 Acres",
+
+        roi: "8-10% Appreciation",
+
+        amenities: [
+            "Clubhouse",
+            "Kids Play Area",
+            "Park",
+            "24x7 Security",
+            "Power Backup",
+            "Parking"
+        ],
+
+        highlights: [
+            "Affordable pricing",
+            "Family-friendly environment",
+            "Good connectivity",
+            "Peaceful surroundings"
+        ],
+
+        locationAdvantages: [
+            { title: "NH-24", value: "10 min" },
+            { title: "Metro", value: "15 min" },
+            { title: "Schools", value: "Nearby" }
+        ],
+
+        nearby: [
+            "Close to Gaur City Mall",
+            "Near schools & hospitals",
+            "Easy connectivity to Noida & Delhi"
+        ],
+
+        investment: {
+            rental: "₹15k–₹25k/month",
+            appreciation: "9% yearly"
+        },
+
+        gallery: [
+            "assets/img/paradise/paradise-1.webp",
+            "assets/img/paradise/paradise-2.avif",
+            "assets/img/paradise/paradise-3.webp",
+            "assets/img/paradise/paradise-6.jpg",
+            "assets/img/paradise/paradise-7.jpg",
+            "assets/img/paradise/paradise-8.avif"
+        ]
+    }
 ];
 
 function loadProjects(filter = "all") {
@@ -1408,18 +2135,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function loadHomeProjects() {
 
-  const container = document.getElementById("homeProjects");
+    const container = document.getElementById("homeProjects");
 
-  if (!container) return;
+    if (!container) return;
 
-  // 👉 सिर्फ 4 project दिखाओ
-  const featured = projects.slice(0, 4);
+    // 👉 सिर्फ 4 project दिखाओ
+    const featured = projects.slice(0, 4);
 
-  let html = "";
+    let html = "";
 
-  featured.forEach(p => {
+    featured.forEach(p => {
 
-    html += `
+        html += `
       <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
 
         <!-- Image -->
@@ -1447,10 +2174,10 @@ function loadHomeProjects() {
 
       </div>
     `;
-  });
+    });
 
-  container.innerHTML = html;
+    container.innerHTML = html;
 }
 document.addEventListener("DOMContentLoaded", () => {
-  loadHomeProjects();
+    loadHomeProjects();
 });

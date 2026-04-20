@@ -1,48 +1,35 @@
-function loadHomeProjects() {
+function handleSubmit(e, type) {
+  e.preventDefault();
 
-  const container = document.getElementById("homeProjects");
+  const form = e.target;
+  const data = Object.fromEntries(new FormData(form));
 
-  if (!container) return;
+  data.formType = type;
 
-  // 👉 सिर्फ 4 project दिखाओ
-  const featured = projects.slice(0, 4);
+  fetch("http://localhost:5000/api/form", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(() => {
 
-  let html = "";
+    // ✅ Different messages
+    if (type === "newsletter") {
+      alert("Subscribed successfully!");
+    } 
+    else if (type === "contact") {
+      alert("Message sent successfully!");
+    } 
+    else {
+      alert("We will contact you soon!");
+    }
 
-  featured.forEach(p => {
-
-    html += `
-      <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-
-        <!-- Image -->
-        <a href="project-detail.html?id=${p.id}">
-          <img src="${p.img}" class="w-full h-40 object-cover">
-        </a>
-
-        <!-- Content -->
-        <div class="p-4">
-
-          <h3 class="font-semibold text-sm mb-1">
-            ${p.name}
-          </h3>
-
-          <p class="text-gray-500 text-sm">
-            ${p.price}
-          </p>
-
-          <a href="project-detail.html?id=${p.id}"
-             class="block mt-3 text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
-             View Details
-          </a>
-
-        </div>
-
-      </div>
-    `;
+    form.reset();
+  })
+  .catch(() => {
+    alert("Error submitting form");
   });
-
-  container.innerHTML = html;
 }
-document.addEventListener("DOMContentLoaded", () => {
-  loadHomeProjects();
-});

@@ -33,3 +33,31 @@
     }
 
     /* =======ABOUT END  */
+
+    /* index.html marquree  =================== */
+ .marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 25s linear infinite;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hover pause */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile speed */
+@media (max-width: 768px) {
+  .marquee-track {
+    animation: scrollMarquee 18s linear infinite;
+  }
+}
