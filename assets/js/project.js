@@ -2098,30 +2098,38 @@ function loadProjects(filter = "all") {
             : "";
 
         html += `
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 relative">
+      <div class="relative overflow-hidden text-center group">
 
-        ${badge}
+  ${badge}
 
-        <!-- Image -->
-        <a href="project-details.html?id=${p.id}">
-          <img src="${p.img}" class="w-full h-48 object-cover">
-        </a>
+  <!-- Image -->
+  <a href="project-details.html?id=${p.id}">
+    <img src="${p.img}" 
+         class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+  </a>
 
-        <!-- Content -->
-        <div class="p-4">
+  <!-- Content -->
+  <div class="p-5">
 
-          <h3 class="font-semibold text-lg">${p.name}</h3>
+    <!-- Title -->
+    <h3 class="text-xl md:text-xl font-semibold text-gray-800">
+      ${p.name}
+    </h3>
 
-          <p class="text-gray-600 mt-1">${p.price}</p>
+    <!-- Price -->
+    <p class="text-gray-500 italic mt-2 text-sm md:text-base">
+      ${p.price}
+    </p>
 
-          <a href="project-details.html?id=${p.id}"
-             class="block mt-3 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-             Explore Project
-          </a>
+    <!-- Button (minimal style) -->
+    <a href="project-details.html?id=${p.id}"
+       class="inline-block mt-4 text-sm text-[#162346] border-b border-[#162346] hover:text-[#f6b352] hover:border-[#f6b352] transition">
+       Explore Project →
+    </a>
 
-        </div>
+  </div>
 
-      </div>
+</div>
     `;
     });
 
@@ -2135,49 +2143,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function loadHomeProjects() {
 
-    const container = document.getElementById("homeProjects");
+  const container = document.getElementById("homeProjects");
+  if (!container) return;
 
-    if (!container) return;
+  const featured = projects.slice(0, 3);
 
-    // 👉 सिर्फ 4 project दिखाओ
-    const featured = projects.slice(0, 4);
+  let html = "";
 
-    let html = "";
+  featured.forEach(p => {
 
-    featured.forEach(p => {
+    html += `
+    <div class="transition overflow-hidden text-center">
 
-        html += `
-      <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+      <!-- Image -->
+      <a href="project-details.html?id=${p.id}">
+        <img src="${p.img}" class="w-full h-56 object-cover">
+      </a>
 
-        <!-- Image -->
-        <a href="project-details.html?id=${p.id}">
-          <img src="${p.img}" class="w-full h-40 object-cover">
-        </a>
+      <!-- Content -->
+      <div class="p-5">
 
-        <!-- Content -->
-        <div class="p-4">
+        <!-- Title -->
+        <h3 class="text-xl heading md:text-xl font-semibold text-gray-800">
+          ${p.name}
+        </h3>
 
-          <h3 class="font-semibold text-sm mb-1">
-            ${p.name}
-          </h3>
-
-          <p class="text-gray-500 text-sm">
-            ${p.price}
-          </p>
-
-          <a href="project-details.html?id=${p.id}"
-             class="block mt-3 text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
-             View Details
-          </a>
-
-        </div>
+        <!-- Subtitle -->
+        <p class="text-gray-500 italic mt-2 text-sm md:text-base">
+          ${p.price}
+        </p>
 
       </div>
-    `;
-    });
 
-    container.innerHTML = html;
+    </div>
+    `;
+  });
+
+  container.innerHTML = html;
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-    loadHomeProjects();
+  loadHomeProjects();
 });

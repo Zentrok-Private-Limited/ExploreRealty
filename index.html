@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/new.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
   <title>Explore Realty</title>
 </head>
 
@@ -18,7 +19,7 @@
       <!-- Logo -->
       <a href="#">
         <img src="assets/img/334.png" alt="Explore Realty"
-          class="h-[60px] md:h-[90px] transition-all duration-300 ml-4">
+          class="h-[60px] md:h-[90px] p-2 transition-all duration-300 ml-4">
       </a>
 
       <!-- Mobile Button -->
@@ -27,22 +28,22 @@
       </button>
 
       <!-- Nav Links -->
-      <ul id="menu" class="hidden md:flex items-center gap-6 text-white text-[1.1rem]">
+      <ul id="menu" class="hidden md:flex items-center gap-8 text-white text-base pr-6">
 
         <li>
-          <a href="index.html" class="hover:text-gray-300 transition">Home</a>
+          <a href="index.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Home</a>
         </li>
 
         <li>
-          <a href="about.html" class="hover:text-gray-300 transition">About</a>
+          <a href="about.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">About</a>
         </li>
 
         <li>
-          <a href="contact.html" class="hover:text-gray-300 transition">Contact</a>
+          <a href="contact.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Contact</a>
         </li>
 
         <li>
-          <a href="project.html" class="hover:text-gray-300 transition">Projects</a>
+          <a href="project.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Projects</a>
         </li>
 
       </ul>
@@ -58,58 +59,49 @@
 
     </div>
   </nav>
-  <!-- hero section -->
-  <div class="relative h-[42vh] md:h-[70vh] flex items-center justify-center overflow-visible">
+  <!-- HERO SECTION -->
+  <div class="relative h-[70vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
 
     <!-- Background Image -->
-    <img src="assets/img/bryan-dickerson-XJeMcS9tKEU-unsplash.jpg" alt="Commercial Building"
-      class="w-full h-70 object-cover md:h-full absolute top-0 left-0">
+    <img src="assets/img/bryan-dickerson-XJeMcS9tKEU-unsplash.jpg" alt="Explore Realty"
+      class="absolute inset-0 w-full h-full object-cover z-0">
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/50 z-[1]"></div>
+    <div class="absolute inset-0 bg-black/60 z-[1]"></div>
 
     <!-- Heading -->
-    <div class="absolute z-[2] text-center text-[#f6b352]">
-      <h1 class="md:text-[2.8rem] md:pt-10 pt-15 text-[1.8rem] font-semibold">
-        • Explore Realty•
+    <div class="relative z-[2] text-center pt-15 text-[#f6b352] px-4">
+      <h1 class="heading text-4xl md:text-7xl">
+        Explore Realty
       </h1>
+      <p class="mt-4 text-white sub-heading text-xs text-lg md:text-xl">
+        Legacy Begins with a Landmark
+      </p>
     </div>
 
-    <!-- Cards Section -->
-    <div class="absolute -bottom-[90px] left-1/2 -translate-x-1/2 w-[90%] z-[5] hidden sm:block">
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl text-center p-6 shadow-lg hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-house text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-medium">Property Sale</h5>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl text-center p-6 shadow-lg hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-user text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-medium">Property Rent</h5>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl text-center p-6 shadow-lg hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-building text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-medium">Property Resale</h5>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-xl text-center p-6 shadow-lg hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-house-chimney text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-medium">Dealers Floor</h5>
-        </div>
-
-      </div>
-    </div>
   </div>
+  <!-- =================PROJECTS TYPES=============== -->
+
+  <div class="relative w-[90%] mx-auto mt-4 overflow-hidden">
+
+    <!-- LEFT BLUR -->
+    <div class="pointer-events-none absolute left-0 top-0 h-full w-10 z-10 
+              bg-gradient-to-r from-white to-transparent"></div>
+
+    <!-- RIGHT BLUR -->
+    <div class="pointer-events-none absolute right-0 top-0 h-full w-10 z-10 
+              bg-gradient-to-l from-white to-transparent"></div>
+
+    <!-- Marquee -->
+    <div id="cardMarquee" class="flex gap-6 whitespace-nowrap">
+      <!-- Cards -->
+    </div>
+
+  </div>
+  <!-- projexs types section end -->
 
   <!-- project section  -->
-  <section class="md:pt-35 pt-12 bg-gray-100">
+  <section class="md:py-15 py-12 bg-gray-100">
 
     <div class="max-w-7xl mx-auto px-4">
 
@@ -124,7 +116,7 @@
       </div>
 
       <!-- Projects Grid -->
-      <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+      <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"></div>
 
       <!-- Button -->
       <div class="text-center mt-8">

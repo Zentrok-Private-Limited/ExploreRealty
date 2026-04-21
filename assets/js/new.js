@@ -1,64 +1,64 @@
 //  navbar toggle for mobile menu 
- const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-  // end of navbar toggle for mobile menu
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+// end of navbar toggle for mobile menu
 
 //   swiper slider 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
     },
-  });
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
 //   end  of swiper slider
 
 // home page testimonial slider.
 var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoHeight: true,
 
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 //   end of testimonial slider
 // contact page form js 
 document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Message sent successfully ✅");
-  });
+  e.preventDefault();
+  alert("Message sent successfully ✅");
+});
 
-  // 🔥 Marquee Logos Data
+// 🔥 Marquee Logos Data
 const projectLogos = [
   { name: "ATS", img: "assets/img/logo/ats.jpg" },
   { name: "M3M", img: "assets/img/logo/m3m.jpg" },
@@ -99,3 +99,30 @@ if (marquee && marqueeClone) {
   marquee.innerHTML = html;
   marqueeClone.innerHTML = html; // 🔥 duplicate for seamless loop
 }
+// 2nd marquee for projects 
+document.addEventListener("DOMContentLoaded", function () {
+
+  const cards = [
+  { icon: "fa-house", title: "BUYING" },              // home buy
+  { icon: "fa-hand-holding-dollar", title: "SELLING" }, // money deal
+  { icon: "fa-file-signature", title: "LEASING" },     // agreement
+  { icon: "fa-map-location-dot", title: "PLOTS" },     // land/plot
+  { icon: "fa-house-flag", title: "VILLAS" },          // luxury home
+  { icon: "fa-building-user", title: "RESIDENTIAL" },  // living spaces
+  { icon: "fa-city", title: "COMMERCIAL" }             // business buildings
+];
+
+  const marquee = document.getElementById("cardMarquee");
+
+  if (!marquee) return; // safety
+
+  const allCards = [...cards, ...cards];
+
+  marquee.innerHTML = allCards.map(c => `
+    <div class="min-w-[180px] bg-[#121E31] text-[#f6b352] rounded-xl text-center p-6 shadow-lg transition duration-300 hover:-translate-y-2 mt-3">
+      <i class="fa-solid ${c.icon} text-2xl mb-3"></i>
+      <h5 class="text-sm font-medium">${c.title}</h5>
+    </div>
+  `).join("");
+
+});

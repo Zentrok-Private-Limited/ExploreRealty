@@ -1,4 +1,14 @@
 /* About CSS for a website, here are some styles for the service cards and testimonial images: */
+.heading{
+  scroll-behavior: smooth;
+  font-family: Cormorant Garamond;
+}
+.sub-heading{
+  font-family: Raleway, sans-serif ;
+}
+html{
+  font-family: Raleway, sans-serif ;
+}
 .service-card {
       display: flex;
       align-items: center;
@@ -60,4 +70,25 @@
   .marquee-track {
     animation: scrollMarquee 18s linear infinite;
   }
+}
+
+/* property type */
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#cardMarquee {
+  display: flex;
+  width: max-content;
+  animation: scrollCards 25s linear infinite;
+}
+
+/* hover pause */
+#cardMarquee:hover {
+  animation-play-state: paused;
 }
