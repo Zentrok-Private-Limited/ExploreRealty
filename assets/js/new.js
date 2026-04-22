@@ -77,9 +77,7 @@ const projectLogos = [
   { name: "Golden I", img: "assets/img/logo/golden.png" },
   { name: "Vrinda Group", img: "assets/img/logo/vrinda-group.png" },
   { name: "Grandthum", img: "assets/img/logo/grandthum.png" },
-  { name: "Paradise", img: "assets/img/logo/paradise.jpg" },
-  { name: "Prestige", img: "assets/img/logo/prestige.jpg" },
-  { name: "ACE", img: "assets/img/logo/ace.jpg" }
+  { name: "Paradise", img: "assets/img/logo/paradise.jpg" }
 ];
 
 // 🔥 Get container
@@ -88,14 +86,13 @@ const marqueeClone = document.getElementById("logoMarqueeClone");
 
 if (marquee && marqueeClone) {
 
-  const html = projectLogos.map(l => `
-    <img src="${l.img}" 
-         alt="${l.name}"
-         loading="lazy"
-         onerror="this.src='assets/img/logo/default.png'"
-         class="h-12 md:h-14 object-contain opacity-70 hover:opacity-100 hover:scale-110 transition duration-300">
-  `).join("");
-
+ const html = projectLogos.map(l => `
+  <img src="${l.img}" 
+       alt="${l.name}"
+       loading="lazy"
+       onerror="this.onerror=null; this.src='assets/img/logo/default.png';"
+       class="h-12 md:h-14 object-contain opacity-70 hover:opacity-100 hover:scale-110 transition duration-300">
+`).join("");
   marquee.innerHTML = html;
   marqueeClone.innerHTML = html; // 🔥 duplicate for seamless loop
 }

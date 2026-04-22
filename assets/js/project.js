@@ -2079,10 +2079,15 @@ function loadProjects(filter = "all") {
 
   const container = document.getElementById("projectContainer");
 
+  // ✅ VERY IMPORTANT (error fix for other pages)
+  if (!container) return;
+
+  // ✅ Filter logic
   const filtered = filter === "all"
     ? projects
     : projects.filter(p => p.type === filter);
 
+  // ❌ No data case
   if (filtered.length === 0) {
     container.innerHTML = `
       <p class="text-center col-span-full text-gray-500 text-lg">
@@ -2091,6 +2096,11 @@ function loadProjects(filter = "all") {
     `;
     return;
   }
+
+  // ✅ URL update (refresh pe same filter rahe)
+  const url = new URL(window.location);
+  url.searchParams.set("type", filter);
+  window.history.pushState({}, "", url);
 
   let html = "";
 
@@ -2103,13 +2113,14 @@ function loadProjects(filter = "all") {
       : "";
 
     html += `
-      <div class="relative overflow-hidden text-center group">
+      <div class="relative overflow-hidden text-center group bg-white rounded-xl shadow hover:shadow-lg transition duration-300">
 
         ${badge}
 
         <!-- Image -->
         <a href="project-details.html?id=${p.id}">
           <img src="${p.img}" 
+               onerror="this.onerror=null; this.src='assets/img/default.jpg';"
                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
         </a>
 
@@ -2141,17 +2152,19 @@ function loadProjects(filter = "all") {
   container.innerHTML = html;
 }
 
+// 🔥 Page load
 document.addEventListener("DOMContentLoaded", () => {
 
+  const container = document.getElementById("projectContainer");
+
+  // ✅ Prevent error on other pages
+  if (!container) return;
+
   // 👉 URL se type uthao
-  const type = getQueryParam("type");
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type") || "all";
 
-  if (type) {
-    loadProjects(type); // commercial / residential
-  } else {
-    loadProjects(); // all
-  }
-
+  loadProjects(type);
 });
 
 function loadHomeProjects() {
