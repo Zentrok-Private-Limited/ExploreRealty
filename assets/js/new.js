@@ -90,7 +90,6 @@ if (marquee && marqueeClone) {
   <img src="${l.img}" 
        alt="${l.name}"
        loading="lazy"
-       onerror="this.onerror=null; this.src='assets/img/default.png';"
        class="h-12 md:h-14 object-contain opacity-70 hover:opacity-100 hover:scale-110 transition duration-300">
 `).join("");
   marquee.innerHTML = html;
