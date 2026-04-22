@@ -11,7 +11,7 @@ const projects = [
             experience: "12+ years"
         },
         brochure: "assets/brochures/golden.pdf",
-        map:"https://www.google.com/maps?q=Golden%20I%20Mall%20Techzone%204%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Golden%20I%20Mall%20Techzone%204%20Greater%20Noida%20West&output=embed",
         shortDesc: "High footfall commercial hub in Noida Extension.",
         description: "Golden I is a premium commercial project offering retail shops and office spaces in a prime location with excellent connectivity.",
         priceDetails: [
@@ -85,7 +85,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/grandthum.pdf",
-        map:"https://www.google.com/maps?q=Grandthum%20Techzone%204%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Grandthum%20Techzone%204%20Greater%20Noida%20West&output=embed",
         shortDesc: "Iconic commercial towers with premium office & retail spaces.",
 
         description: "Grandthum is one of the tallest commercial towers in Noida Extension offering retail shops, office spaces, food court and multiplex with massive footfall potential.",
@@ -179,7 +179,7 @@ const projects = [
             experience: "10+ years"
         },
         brochure: "assets/brochures/corbett.pdf",
-        map:"https://www.google.com/maps?q=Jim%20Corbett%20Uttarakhand&output=embed",
+        map: "https://www.google.com/maps?q=Jim%20Corbett%20Uttarakhand&output=embed",
         shortDesc: "Premium plotted development near Jim Corbett.",
 
         description: "Corbett County offers luxury plots and villas surrounded by greenery and nature, ideal for investment and peaceful living.",
@@ -275,7 +275,7 @@ const projects = [
             experience: "25+ years"
         },
         brochure: "assets/brochures/ats.pdf",
-        map:"https://www.google.com/maps?q=ATS%20Picturesque%20Reprieves%20Sector%20152%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=ATS%20Picturesque%20Reprieves%20Sector%20152%20Noida&output=embed",
         shortDesc: "Luxury villas with premium lifestyle in Greater Noida.",
 
         description: "ATS Picturesque Reprieves is a premium villa project offering spacious and well-designed homes with world-class amenities, lush green surroundings and excellent connectivity.",
@@ -374,7 +374,7 @@ const projects = [
             experience: "10+ years"
         },
         brochure: "assets/brochures/signature.pdf",
-        map:"https://www.google.com/maps?q=Signature%20Villas%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Signature%20Villas%20Greater%20Noida%20West&output=embed",
         shortDesc: "Premium independent villas with modern lifestyle amenities.",
 
         description: "Signature Villas offers beautifully designed independent villas with spacious layouts, modern architecture and a secure gated community environment, ideal for families seeking luxury and comfort.",
@@ -474,7 +474,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/vrinda.pdf",
-        map:"https://www.google.com/maps?q=Vrinda%20Heritage%20Skyward%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Vrinda%20Heritage%20Skyward%20Greater%20Noida%20West&output=embed",
         shortDesc: "Modern high-rise apartments with premium lifestyle amenities.",
 
         description: "Vrinda Heritage Skyward is a premium residential project offering spacious apartments with modern architecture, lush green surroundings and world-class amenities designed for comfortable family living.",
@@ -577,7 +577,7 @@ const projects = [
             experience: "20+ years"
         },
         brochure: "assets/brochures/lnt.pdf",
-        map:"https://www.google.com/maps?q=L%26T%20Green%20Reserve%20Sector%20128%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=L%26T%20Green%20Reserve%20Sector%20128%20Noida&output=embed",
         shortDesc: "Ultra-luxury residences surrounded by lush green landscapes.",
 
         description: "L&T Green Reserve is a premium upcoming residential project offering ultra-luxury apartments with world-class amenities, sustainable design, and expansive green spaces for an elite lifestyle.",
@@ -681,7 +681,7 @@ const projects = [
             experience: "20+ years"
         },
         brochure: "assets/brochures/au.pdf",
-        map:"https://www.google.com/maps?q=AU%20Aspire%20Silicon%20City%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=AU%20Aspire%20Silicon%20City%20Noida&output=embed",
         shortDesc: "Ultra-luxury high-rise apartments in prime Noida location.",
 
         description: "AU Aspire Silicon City is a premium residential project located in Sector 76, Noida offering ultra-luxury 3.5 & 4.5 BHK apartments and penthouses with modern architecture, spacious layouts and world-class amenities. The project is spread across 8.33 acres with low-density planning for better privacy and lifestyle.",
@@ -785,7 +785,7 @@ const projects = [
             experience: "20+ years"
         },
         brochure: "assets/brochures/bhutani.pdf",
-        map:"https://www.google.com/maps?q=Bhutani%20Astrathum%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Bhutani%20Astrathum%20Greater%20Noida%20West&output=embed",
         shortDesc: "Premium IT/office space project in Noida with assured returns.",
 
         description: "Bhutani Astrathum is a modern commercial IT/office space project designed for high rental yield and business growth. It offers fully furnished office spaces with world-class infrastructure and a professional environment.",
@@ -892,7 +892,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/escon.pdf",
-        map:"https://www.google.com/maps?q=Escon%20Panache%20Villas%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Escon%20Panache%20Villas%20Greater%20Noida%20West&output=embed",
         shortDesc: "Ultra-luxury 4 BHK triplex villas with private amenities.",
 
         description: "Escon Panache Villas is a premium residential villa project in Greater Noida offering ultra-luxury 4 BHK triplex villas with private gardens, terrace spaces and modern amenities designed for elite lifestyle living.",
@@ -996,7 +996,7 @@ const projects = [
             experience: "12+ years"
         },
         brochure: "assets/brochures/evergreen.pdf",
-        map:"https://www.google.com/maps?q=Evergreen%20Square%20Surajpur%20Greater%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=Evergreen%20Square%20Surajpur%20Greater%20Noida&output=embed",
         shortDesc: "Modern commercial hub with retail shops & office spaces.",
 
         description: "Evergreen Square is a well-planned commercial project offering retail shops and office spaces in a high footfall area, designed for strong rental returns and business growth.",
@@ -1091,7 +1091,7 @@ const projects = [
 
         builderInfo: { name: "Ratan Group", experience: "12+ years" },
         brochure: "assets/brochures/ratan.pdf",
-        map:"https://www.google.com/maps?q=Ratan%20Pearls%20Noida%20Extension&output=embed",
+        map: "https://www.google.com/maps?q=Ratan%20Pearls%20Noida%20Extension&output=embed",
         shortDesc: "Affordable luxury apartments in Greater Noida West.",
         description: "Ratan Pearls offers well-designed apartments with modern amenities and good connectivity.",
 
@@ -1153,7 +1153,7 @@ const projects = [
 
         builderInfo: { name: "Vihaan Group", experience: "10+ years" },
         brochure: "assets/brochures/vihaan-greens.pdf",
-        map:"https://www.google.com/maps?q=Vihaan%20Greens%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Vihaan%20Greens%20Greater%20Noida%20West&output=embed",
         shortDesc: "Green living apartments with modern facilities.",
         description: "Peaceful living with greenery and modern amenities.",
 
@@ -1223,7 +1223,7 @@ const projects = [
 
         builderInfo: { name: "Skyline Group", experience: "10+ years" },
         brochure: "assets/brochures/sky-garden.pdf",
-        map:"https://www.google.com/maps?q=Shri%20Radha%20Sky%20Gardens%20Noida%20Extension&output=embed",
+        map: "https://www.google.com/maps?q=Shri%20Radha%20Sky%20Gardens%20Noida%20Extension&output=embed",
         shortDesc: "Unique rooftop commercial concept.",
 
         description: "Sky Garden offers rooftop retail and food court spaces.",
@@ -1299,7 +1299,7 @@ const projects = [
 
         builderInfo: { name: "IBP Group", experience: "8+ years" },
         brochure: "assets/brochures/ibp-windsor.pdf",
-        map:"https://www.google.com/maps?q=IBP%20Windsor%20Valley%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=IBP%20Windsor%20Valley%20Greater%20Noida%20West&output=embed",
         shortDesc: "Affordable residential apartments.",
 
         description: "Budget-friendly homes with essential amenities.",
@@ -1368,7 +1368,7 @@ const projects = [
 
         builderInfo: { name: "Tulsi Group", experience: "10+ years" },
         brochure: "assets/brochures/tulsi.pdf",
-        map:"https://www.google.com/maps?q=Tulsi%20Vatika%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Tulsi%20Vatika%20Greater%20Noida%20West&output=embed",
         shortDesc: "Peaceful residential homes with greenery.",
 
         description: "Comfortable homes in a green and secure environment.",
@@ -1435,7 +1435,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/gygy-fiveo.pdf",
-        map:"https://www.google.com/maps?q=GYGY%20FiveO%20Sector%2050%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=GYGY%20FiveO%20Sector%2050%20Noida&output=embed",
         shortDesc: "Premium commercial office spaces in prime Noida location.",
 
         description: "GYGY FIVE-O offers high-end office spaces with modern infrastructure, excellent connectivity and strong investment potential.",
@@ -1527,7 +1527,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/ivory-county.pdf",
-        map:"https://www.google.com/maps?q=Ivory%20County%20Sector%20115%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=Ivory%20County%20Sector%20115%20Noida&output=embed",
         shortDesc: "Ultra-luxury residences with premium amenities.",
 
         description: "Ivory County is a high-end residential project offering spacious luxury apartments with top-class amenities and elite lifestyle.",
@@ -1615,7 +1615,7 @@ const projects = [
         id: "kalpataru-vista",
         name: "Kalpataru Vista",
         price: "₹5.42 Cr",
-        img: "assets/img//kalptaru/vista-2.jpg",
+        img: "assets/img/kalptaru/vista-2.jpg",
         type: "residential",
 
         builderInfo: {
@@ -1623,7 +1623,7 @@ const projects = [
             experience: "50+ years"
         },
         brochure: "assets/brochures/kalpataru-vista.pdf",
-        map:"https://www.google.com/maps?q=Kalpataru%20Vista%20Jaypee%20Greens%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=Kalpataru%20Vista%20Jaypee%20Greens%20Noida&output=embed",
         shortDesc: "Luxury high-rise residences with premium lifestyle.",
 
         description: "Kalpataru Vista offers ultra-modern apartments with world-class amenities and elegant design.",
@@ -1715,7 +1715,7 @@ const projects = [
             experience: "12+ years"
         },
         brochure: "assets/brochures/kdmg-central.pdf",
-        map:"https://www.google.com/maps?q=KDMG%20Central%20Plaza%20Greater%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=KDMG%20Central%20Plaza%20Greater%20Noida&output=embed",
         shortDesc: "Modern commercial plaza with retail & office spaces.",
 
         description: "KDMG Central Plaza is a premium commercial project offering shops and office spaces in a strategic location.",
@@ -1805,7 +1805,7 @@ const projects = [
             experience: "15+ years"
         },
         brochure: "assets/brochures/m3m.pdf",
-        map:"https://www.google.com/maps?q=M3M%20Jacob%20and%20Co%20Residences%20Sector%2097%20Noida&output=embed",
+        map: "https://www.google.com/maps?q=M3M%20Jacob%20and%20Co%20Residences%20Sector%2097%20Noida&output=embed",
         shortDesc: "Ultra-luxury branded residences in Gurgaon.",
 
         description: "M3M Jacob & Co Residences offers world-class luxury apartments with branded interiors and elite amenities.",
@@ -1984,7 +1984,7 @@ const projects = [
         img: "assets/img/paradise/paradise-2.avif",
         type: "residential",
         brochure: "assets/brochures/paradise-homes.pdf",
-        map:"https://www.google.com/maps?q=Paradise%20Homes%20Greater%20Noida%20West&output=embed",
+        map: "https://www.google.com/maps?q=Paradise%20Homes%20Greater%20Noida%20West&output=embed",
         builderInfo: {
             name: "Paradise Group",
             experience: "10+ years"
@@ -2071,59 +2071,57 @@ const projects = [
 ];
 
 function getQueryParam(param) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
 }
 
 function loadProjects(filter = "all") {
 
-  const container = document.getElementById("projectContainer");
+    const container = document.getElementById("projectContainer");
 
-  // ✅ VERY IMPORTANT (error fix for other pages)
-  if (!container) return;
+    // ✅ VERY IMPORTANT (error fix for other pages)
+    if (!container) return;
 
-  // ✅ Filter logic
-  const filtered = filter === "all"
-    ? projects
-    : projects.filter(p => p.type === filter);
+    // ✅ Filter logic
+    const filtered = filter === "all"
+        ? projects
+        : projects.filter(p => p.type === filter);
 
-  // ❌ No data case
-  if (filtered.length === 0) {
-    container.innerHTML = `
+    // ❌ No data case
+    if (filtered.length === 0) {
+        container.innerHTML = `
       <p class="text-center col-span-full text-gray-500 text-lg">
         No projects found
       </p>
     `;
-    return;
-  }
+        return;
+    }
 
-  // ✅ URL update (refresh pe same filter rahe)
-  const url = new URL(window.location);
-  url.searchParams.set("type", filter);
-  window.history.pushState({}, "", url);
+    // ✅ URL update (refresh pe same filter rahe)
+    const url = new URL(window.location);
+    url.searchParams.set("type", filter);
+    window.history.pushState({}, "", url);
 
-  let html = "";
+    let html = "";
 
-  filtered.forEach(p => {
+    filtered.forEach(p => {
 
-    const badge = p.type === "upcoming"
-      ? `<span class="absolute top-2 left-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
+        const badge = p.type === "upcoming"
+            ? `<span class="absolute top-2 left-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
            Upcoming
          </span>`
-      : "";
+            : "";
 
-    html += `
+        html += `
       <div class="relative overflow-hidden text-center group bg-white rounded-xl shadow hover:shadow-lg transition duration-300">
 
         ${badge}
 
         <!-- Image -->
-        <a href="project-details.html?id=${p.id}">
-          <img src="${p.img}" 
-               onerror="this.onerror=null; this.src='/assets/img/default.png';"
-               class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
-        </a>
-
+       <a href="project-details.html?id=${p.id}">
+  <img src="${p.img}" 
+       class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+</a>
         <!-- Content -->
         <div class="p-5">
 
@@ -2147,38 +2145,38 @@ function loadProjects(filter = "all") {
 
       </div>
     `;
-  });
+    });
 
-  container.innerHTML = html;
+    container.innerHTML = html;
 }
 
 // 🔥 Page load
 document.addEventListener("DOMContentLoaded", () => {
 
-  const container = document.getElementById("projectContainer");
+    const container = document.getElementById("projectContainer");
 
-  // ✅ Prevent error on other pages
-  if (!container) return;
+    // ✅ Prevent error on other pages
+    if (!container) return;
 
-  // 👉 URL se type uthao
-  const params = new URLSearchParams(window.location.search);
-  const type = params.get("type") || "all";
+    // 👉 URL se type uthao
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type") || "all";
 
-  loadProjects(type);
+    loadProjects(type);
 });
 
 function loadHomeProjects() {
 
-  const container = document.getElementById("homeProjects");
-  if (!container) return;
+    const container = document.getElementById("homeProjects");
+    if (!container) return;
 
-  const featured = projects.slice(0, 3);
+    const featured = projects.slice(0, 3);
 
-  let html = "";
+    let html = "";
 
-  featured.forEach(p => {
+    featured.forEach(p => {
 
-    html += `
+        html += `
     <div class="transition overflow-hidden text-center">
 
       <!-- Image -->
@@ -2203,25 +2201,25 @@ function loadHomeProjects() {
 
     </div>
     `;
-  });
+    });
 
-  container.innerHTML = html;
+    container.innerHTML = html;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadHomeProjects();
+    loadHomeProjects();
 });
 // project search and filter functionality on project listing page
 function filterProjects() {
 
-  const type = document.getElementById("projectType").value;
+    const type = document.getElementById("projectType").value;
 
-  // agar kuch select nahi kiya
-  if (!type) {
-    window.location.href = "project.html";
-    return;
-  }
+    // agar kuch select nahi kiya
+    if (!type) {
+        window.location.href = "project.html";
+        return;
+    }
 
-  // redirect with type
-  window.location.href = `project.html?type=${type}`;
+    // redirect with type
+    window.location.href = `project.html?type=${type}`;
 }
