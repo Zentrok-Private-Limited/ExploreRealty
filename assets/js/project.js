@@ -1519,7 +1519,7 @@ const projects = [
         id: "ivory-county",
         name: "Ivory County",
         price: "₹2.85 Cr – ₹12.80 Cr",
-        img: "assets/img/ivory-9.jpg",
+        img: "assets/img/ivory/ivory-7.jpg",
         type: "upcoming",
 
         builderInfo: {
