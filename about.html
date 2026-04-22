@@ -30,19 +30,23 @@
       <ul id="menu" class="hidden md:flex items-center gap-8 text-white text-base pr-6">
 
         <li>
-          <a href="index.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Home</a>
+          <a href="index.html"
+            class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Home</a>
         </li>
 
         <li>
-          <a href="about.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">About</a>
+          <a href="about.html"
+            class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">About</a>
         </li>
 
         <li>
-          <a href="contact.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Contact</a>
+          <a href="contact.html"
+            class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Contact</a>
         </li>
 
         <li>
-          <a href="project.html" class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Projects</a>
+          <a href="project.html"
+            class="inline-block hover:text-gray-300 transition duration-300 hover:-translate-y-1">Projects</a>
         </li>
 
       </ul>
@@ -58,57 +62,48 @@
 
     </div>
   </nav>
-  <section class="relative md:h-[70vh] h-[50vh] flex items-center justify-center overflow-visible">
+  <div class="relative h-[70vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
 
     <!-- Background Image -->
-    <img src="assets/img/hom3.jpg" class="absolute inset-0 w-full h-full object-cover">
+    <img src="assets/img/hom3.jpg" alt="Explore Realty" class="absolute inset-0 w-full h-full object-cover z-0">
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-black/60 z-[1]"></div>
 
     <!-- Heading -->
-    <div class="relative z-10 text-center ">
-      <h1 class="md:text-[2.8rem] text-[#f6b352] heading md:pt-10 pt-15 text-[1.8rem] font-semibold">
-        About 
+    <div class="relative z-[2] text-center pt-15 text-[#f6b352] px-4">
+      <h1 class="heading text-4xl md:text-7xl">
+        About
       </h1>
-      <p class="text-white sub-heading text-xs text-lg md:text-xl"><i>Building Trust, One Property at a Time</i></p>
+      <p class="my-4 text-white sub-heading text-xs text-lg md:text-xl">
+        Building Trust, One Property at a Time
+      </p>
     </div>
 
-    <!-- Cards -->
-    <div class="absolute -bottom-[80px] hidden md:block left-1/2 -translate-x-1/2 w-[90%] z-20">
+  </div>
+  <div class="relative w-[90%] mx-auto mt-4 overflow-hidden">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- LEFT BLUR -->
+    <div class="pointer-events-none absolute left-0 top-0 h-full w-10 z-10 
+              bg-gradient-to-r from-white to-transparent"></div>
 
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-house text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-semibold">Property Sale</h5>
-        </div>
+    <!-- RIGHT BLUR -->
+    <div class="pointer-events-none absolute right-0 top-0 h-full w-10 z-10 
+              bg-gradient-to-l from-white to-transparent"></div>
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-user text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-semibold">Property Rent</h5>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-lg text-center p-6 hover:-translate-y-1 transition duration-300">
-          <i class="fa-solid fa-building text-2xl text-[#162346] mb-2"></i>
-          <h5 class="font-semibold">Property Resale</h5>
-        </div>
-
-      </div>
-
+    <!-- Marquee -->
+    <div id="cardMarquee" class="flex gap-6 whitespace-nowrap">
+      <!-- Cards -->
     </div>
 
-  </section>
-  <section class="max-w-7xl mx-auto px-4 pt-10 md:pt-35">
+  </div>
+  <section class="max-w-7xl mx-auto px-4 py-20">
 
     <div class="grid md:grid-cols-2 gap-10 items-center">
 
       <!-- Image -->
       <div>
-        <img src="assets/img/lotus-design-n-print-wRzBarqn3hs-unsplash.jpg"
+        <img src="assets/img/Commercial.jpg"
           class="w-full rounded-xl shadow-lg object-cover">
       </div>
 
@@ -136,6 +131,85 @@
 
     </div>
 
+  </section>
+  <section class="w-full px-4 py-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="mb-8">
+          <h2 class="text-2xl md:text-3xl font-semibold">
+            Why Choose Us
+          </h2>
+          <p class="text-gray-500 mt-2">
+            We make your property journey simple, secure, and successful
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition">
+            <i class="fa-solid fa-shield-halved text-2xl text-blue-600 mb-2"></i>
+            <h4 class="font-semibold mb-1">Trusted Platform</h4>
+            <p class="text-gray-500 text-sm">
+              Verified listings and transparent deals ensure trust.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition">
+            <i class="fa-solid fa-user-tie text-2xl text-blue-600 mb-2"></i>
+            <h4 class="font-semibold mb-1">Expert Guidance</h4>
+            <p class="text-gray-500 text-sm">
+              Professional advisors help you choose wisely.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition">
+            <i class="fa-solid fa-indian-rupee-sign text-2xl text-blue-600 mb-2"></i>
+            <h4 class="font-semibold mb-1">Best Pricing</h4>
+            <p class="text-gray-500 text-sm">
+              Competitive prices with no hidden charges.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition">
+            <i class="fa-solid fa-headset text-2xl text-blue-600 mb-2"></i>
+            <h4 class="font-semibold mb-1">24/7 Support</h4>
+            <p class="text-gray-500 text-sm">
+              We are always available for your assistance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+
+        <img src="assets/img/19.png" class="w-full rounded-xl shadow-lg object-cover h-[220px] md:h-full">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 rounded-xl 
+              flex flex-col justify-center 
+              p-4 md:p-8 text-white">
+
+          <h3 class="text-lg md:text-2xl font-semibold mb-2 leading-snug">
+            Your Property Journey, Simplified
+          </h3>
+
+          <p class="mb-3 text-xs md:text-base leading-relaxed">
+            From first-time buyers to investors, we make decisions easy and stress-free.
+          </p>
+
+          <ul class="space-y-1 text-xs md:text-base">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-check text-green-400"></i>
+              Trusted Market Experts
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-check text-green-400"></i>
+              Exclusive Real Estate Deals
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-check text-green-400"></i>
+              24/7 Personalized Support
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
   </section>
   <section class="max-w-6xl mx-auto px-4 my-16">
 
@@ -191,11 +265,101 @@
     </div>
 
   </section>
-  <section class="md:py-15 py-12 bg-gray-100">
 
+  <!-- ====================our team=================== -->
+  <section class="max-w-7xl mx-auto px-4 py-14">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 animate-fadeUp">
+        Meet Our Team
+      </h2>
+      <p class="text-gray-500 mt-2 text-sm animate-fadeUp delay-100">
+        The people behind your trusted real estate journey
+      </p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- ============1================= -->
+      <div class="text-center group animate-fadeUp delay-200 hover:-translate-y-1 transition duration-300">
+        <div class="relative w-24 h-24 mx-auto mb-3">
+          <img src="assets/img/m1.jpg" class="w-full h-full object-cover rounded-full shadow-md 
+                 transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+          <div class="absolute inset-0 rounded-full border-2 border-blue-500 
+                    opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-110 
+                    transition duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center gap-2 
+                    opacity-0 group-hover:opacity-100 transition duration-300">
+            <i class="fa-brands fa-instagram text-white text-xs hover:scale-125 transition"></i>
+            <i class="fa-brands fa-linkedin text-white text-xs hover:scale-125 transition"></i>
+          </div>
+        </div>
+        <h4 class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">
+          Rahul Sharma
+        </h4>
+        <p class="text-xs text-blue-600">Founder</p>
+      </div>
+<!-- ==================2=================== -->
+      <div class="text-center group animate-fadeUp delay-300 hover:-translate-y-1 transition duration-300">
+        <div class="relative w-24 h-24 mx-auto mb-3">
+          <img src="assets/img/w1.jpeg" class="w-full h-full object-cover rounded-full shadow-md 
+                 transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+          <div class="absolute inset-0 rounded-full border-2 border-blue-500 
+                    opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-110 
+                    transition duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center gap-2 
+                    opacity-0 group-hover:opacity-100 transition duration-300">
+            <i class="fa-brands fa-instagram text-white text-xs"></i>
+            <i class="fa-brands fa-linkedin text-white text-xs"></i>
+          </div>
+        </div>
+        <h4 class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">
+          Priya Verma
+        </h4>
+        <p class="text-xs text-blue-600">Sales Head</p>
+      </div>
+
+      <!--============================3=============================== -->
+      <div class="text-center group animate-fadeUp delay-200 hover:-translate-y-1 transition duration-300">
+        <div class="relative w-24 h-24 mx-auto mb-3">
+          <img src="assets/img/m2.JPG" class="w-full h-full object-cover rounded-full shadow-md 
+                 transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+          <div class="absolute inset-0 rounded-full border-2 border-blue-500 
+                    opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-110 
+                    transition duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center gap-2 
+                    opacity-0 group-hover:opacity-100 transition duration-300">
+            <i class="fa-brands fa-instagram text-white text-xs"></i>
+            <i class="fa-brands fa-linkedin text-white text-xs"></i>
+          </div>
+        </div>
+        <h4 class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">
+          Amit Singh
+        </h4>
+        <p class="text-xs text-blue-600">Consultant</p>
+      </div>
+
+      <!--============================4=============================== -->
+      <div class="text-center group animate-fadeUp delay-300 hover:-translate-y-1 transition duration-300">
+        <div class="relative w-24 h-24 mx-auto mb-3">
+          <img src="assets/img/w2.jpg" class="w-full h-full object-cover rounded-full shadow-md 
+                 transition duration-300 group-hover:scale-110 group-hover:rotate-3">
+          <div class="absolute inset-0 rounded-full border-2 border-blue-500 
+                    opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-110 
+                    transition duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center gap-2 
+                    opacity-0 group-hover:opacity-100 transition duration-300">
+            <i class="fa-brands fa-instagram text-white text-xs"></i>
+            <i class="fa-brands fa-linkedin text-white text-xs"></i>
+          </div>
+        </div>
+        <h4 class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition">
+          Neha Singh
+        </h4>
+        <p class="text-xs text-blue-600">Advisor</p>
+      </div>
+    </div>
+  </section>
+  <!-- =============================featured projects===============================  -->
+  <section class="md:py-15 py-12">
     <div class="max-w-7xl mx-auto px-4">
-
-      <!-- Heading -->
       <div class="text-center mb-10">
         <h2 class="text-2xl md:text-3xl font-semibold">
           Featured Projects
@@ -204,23 +368,16 @@
           Explore some of our top properties
         </p>
       </div>
-
-      <!-- Projects Grid -->
       <div id="homeProjects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"></div>
-
-      <!-- Button -->
       <div class="text-center mt-8">
         <a href="project.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
           View All Projects
         </a>
       </div>
-
     </div>
-
   </section>
+  <!-- =============================our services===============================   -->
   <section class="max-w-7xl mx-auto px-4 py-14">
-
-    <!-- Heading -->
     <div class="text-center mb-10">
       <h2 class="text-2xl md:text-3xl font-semibold">
         Our Services
@@ -229,67 +386,50 @@
         Complete real estate solutions for every need
       </p>
     </div>
-
     <div class="grid md:grid-cols-2 gap-10 items-center">
-
-      <!-- RIGHT (Services First on Mobile) -->
       <div class="order-1 md:order-2 grid grid-cols-1 sm:grid-cols-2 gap-5">
-
-        <!-- Card -->
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-house"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Property Sale</span>
         </div>
-
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-key"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Property Purchase</span>
         </div>
-
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-building"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Rent / Lease</span>
         </div>
-
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-scale-balanced"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Legal Assistance</span>
         </div>
-
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-gears"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Property Management</span>
         </div>
-
-        <div
-          class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
+        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group">
           <div
             class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-globe"></i>
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">NRI Advisory</span>
         </div>
-
         <div
           class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition group sm:col-span-2">
           <div
@@ -298,10 +438,7 @@
           </div>
           <span class="font-medium text-gray-700 group-hover:text-blue-600">Loan & Finance</span>
         </div>
-
       </div>
-
-      <!-- LEFT (Description Below on Mobile) -->
       <div class="order-2 md:order-1 bg-gray-100 p-6 md:p-8 rounded-xl shadow-md">
         <p class="text-gray-600 leading-relaxed text-sm md:text-base">
           We provide complete real estate solutions tailored to your needs.
@@ -311,52 +448,42 @@
           confident and informed decisions.
         </p>
       </div>
-
     </div>
-
   </section>
+  <!-- =============================our stats===============================  -->
   <section class="bg-gray-100 py-14">
-
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-
       <div>
         <h2 class="text-3xl font-bold text-blue-600">500+</h2>
         <p class="text-gray-600">Happy Clients</p>
       </div>
-
       <div>
         <h2 class="text-3xl font-bold text-blue-600">200+</h2>
         <p class="text-gray-600">Properties Sold</p>
       </div>
-
       <div>
         <h2 class="text-3xl font-bold text-blue-600">10+</h2>
         <p class="text-gray-600">Years Experience</p>
       </div>
-
       <div>
         <h2 class="text-3xl font-bold text-blue-600">50+</h2>
         <p class="text-gray-600">Ongoing Projects</p>
       </div>
-
     </div>
-
   </section>
+  <!-- =============================call to action===============================   -->
   <section class="text-center py-16 bg-blue-600 text-white">
-
     <h2 class="text-2xl md:text-3xl font-semibold">
       Looking for your dream property?
     </h2>
-
     <p class="mt-2 text-sm md:text-base">
       Get in touch with our experts today
     </p>
-
     <button class="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:scale-105 transition">
       Contact Us
     </button>
-
   </section>
+  
   <footer class="bg-[#121E31] text-gray-300 pt-12 pb-6">
 
     <div class="max-w-7xl mx-auto px-4">
@@ -436,51 +563,54 @@
     </div>
   </footer>
   <!-- Floating Contact Wrapper -->
-<div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+  <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
 
-  <!-- Call Button -->
-  <a href="tel:+918588813259"
-     class="group flex items-center gap-2">
+    <!-- Call Button -->
+    <a href="tel:+918588813259" class="group flex items-center gap-2">
 
-    <!-- Label -->
-    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-      Call Us
-    </span>
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        Call Us
+      </span>
 
-    <!-- Button -->
-    <div class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
+      <!-- Button -->
+      <div
+        class="relative w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition">
 
-      <i class="fa-solid fa-phone text-lg"></i>
+        <i class="fa-solid fa-phone text-lg"></i>
 
-      <!-- Pulse -->
-      <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
+        <!-- Pulse -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
 
-    </div>
-  </a>
+      </div>
+    </a>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/918588813259"
-     target="_blank"
-     class="group flex items-center gap-2">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918588813259" target="_blank" class="group flex items-center gap-2">
 
-    <!-- Label -->
-    <span class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
-      WhatsApp
-    </span>
+      <!-- Label -->
+      <span
+        class="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition bg-black text-white text-xs px-3 py-1 rounded-md shadow">
+        WhatsApp
+      </span>
 
-    <!-- Button -->
-    <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
+      <!-- Button -->
+      <div
+        class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition">
 
-      <i class="fa-brands fa-whatsapp text-xl"></i>
+        <i class="fa-brands fa-whatsapp text-xl"></i>
 
-    </div>
-  </a>
+      </div>
+    </a>
 
-</div>
+  </div>
 </body>
-<!-- <script src="nav.js"></script> -->
-<script src="assets/js/testimonial.js"></script>
+<script src="assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/new.js"></script>
 <script src="assets/js/project.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/testimonial.js"></script>
 
 </html>

@@ -2070,76 +2070,89 @@ const projects = [
     }
 ];
 
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
 function loadProjects(filter = "all") {
 
-    const container = document.getElementById("projectContainer");
+  const container = document.getElementById("projectContainer");
 
-    const filtered = filter === "all"
-        ? projects
-        : projects.filter(p => p.type === filter);
+  const filtered = filter === "all"
+    ? projects
+    : projects.filter(p => p.type === filter);
 
-    if (filtered.length === 0) {
-        container.innerHTML = `
+  if (filtered.length === 0) {
+    container.innerHTML = `
       <p class="text-center col-span-full text-gray-500 text-lg">
         No projects found
       </p>
     `;
-        return;
-    }
+    return;
+  }
 
-    let html = "";
+  let html = "";
 
-    filtered.forEach(p => {
+  filtered.forEach(p => {
 
-        const badge = p.type === "upcoming"
-            ? `<span class="absolute top-2 left-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
+    const badge = p.type === "upcoming"
+      ? `<span class="absolute top-2 left-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
            Upcoming
          </span>`
-            : "";
+      : "";
 
-        html += `
+    html += `
       <div class="relative overflow-hidden text-center group">
 
-  ${badge}
+        ${badge}
 
-  <!-- Image -->
-  <a href="project-details.html?id=${p.id}">
-    <img src="${p.img}" 
-         class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
-  </a>
+        <!-- Image -->
+        <a href="project-details.html?id=${p.id}">
+          <img src="${p.img}" 
+               class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+        </a>
 
-  <!-- Content -->
-  <div class="p-5">
+        <!-- Content -->
+        <div class="p-5">
 
-    <!-- Title -->
-    <h3 class="text-xl md:text-xl font-semibold text-gray-800">
-      ${p.name}
-    </h3>
+          <!-- Title -->
+          <h3 class="text-xl font-semibold text-gray-800">
+            ${p.name}
+          </h3>
 
-    <!-- Price -->
-    <p class="text-gray-500 italic mt-2 text-sm md:text-base">
-      ${p.price}
-    </p>
+          <!-- Price -->
+          <p class="text-gray-500 italic mt-2 text-sm">
+            ${p.price}
+          </p>
 
-    <!-- Button (minimal style) -->
-    <a href="project-details.html?id=${p.id}"
-       class="inline-block mt-4 text-sm text-[#162346] border-b border-[#162346] hover:text-[#f6b352] hover:border-[#f6b352] transition">
-       Explore Project →
-    </a>
+          <!-- Button -->
+          <a href="project-details.html?id=${p.id}"
+             class="inline-block mt-4 text-sm text-[#162346] border-b border-[#162346] hover:text-[#f6b352] hover:border-[#f6b352] transition">
+             Explore Project →
+          </a>
 
-  </div>
+        </div>
 
-</div>
+      </div>
     `;
-    });
+  });
 
-    container.innerHTML = html;
+  container.innerHTML = html;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadProjects();
-});
 
+  // 👉 URL se type uthao
+  const type = getQueryParam("type");
+
+  if (type) {
+    loadProjects(type); // commercial / residential
+  } else {
+    loadProjects(); // all
+  }
+
+});
 
 function loadHomeProjects() {
 
@@ -2185,3 +2198,17 @@ function loadHomeProjects() {
 document.addEventListener("DOMContentLoaded", () => {
   loadHomeProjects();
 });
+// project search and filter functionality on project listing page
+function filterProjects() {
+
+  const type = document.getElementById("projectType").value;
+
+  // agar kuch select nahi kiya
+  if (!type) {
+    window.location.href = "project.html";
+    return;
+  }
+
+  // redirect with type
+  window.location.href = `project.html?type=${type}`;
+}

@@ -22,7 +22,7 @@ const testimonials = [
     name: "Why Choose Us",
     // designation: "Satisfied Customer",
     src:
-      "assets/img/ats-12.jpg"
+      "assets/img/hom3.jpg"
   }
 ];
 

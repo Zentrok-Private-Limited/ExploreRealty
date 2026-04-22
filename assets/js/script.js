@@ -22,14 +22,15 @@ function handleSubmit(e, type) {
     return;
   }
 
-  // 🔥 Disable button (prevent double click)
+  // 🔥 Disable button
   const btn = form.querySelector("button[type='submit']");
   btn.disabled = true;
   btn.innerText = "Submitting...";
 
-  data.formType = type;
+  // ✅ Dynamic API URL
+  const API_URL = `https://explore-backend-sax4.onrender.com/api/${type}`;
 
-  fetch("https://explore-backend-sax4.onrender.com/api/form", {
+  fetch(API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -46,8 +47,11 @@ function handleSubmit(e, type) {
     else if (type === "contact") {
       alert("Message sent successfully!");
     } 
+    else if (type === "enquiry") {
+      alert("Enquiry sent successfully!");
+    } 
     else {
-      alert("We will contact you soon!");
+      alert("Submitted successfully!");
     }
 
     form.reset();
@@ -56,7 +60,6 @@ function handleSubmit(e, type) {
     alert("Error submitting form");
   })
   .finally(() => {
-    // 🔥 Enable button back
     btn.disabled = false;
     btn.innerText = "Submit";
   });
