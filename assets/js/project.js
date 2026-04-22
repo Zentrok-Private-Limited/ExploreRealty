@@ -2120,7 +2120,7 @@ function loadProjects(filter = "all") {
         <!-- Image -->
         <a href="project-details.html?id=${p.id}">
           <img src="${p.img}" 
-               onerror="this.onerror=null; this.src='assets/img/default.jpg';"
+               onerror="this.onerror=null; this.src='/assets/img/default.png';"
                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
         </a>
 
