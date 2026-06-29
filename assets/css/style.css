@@ -23,6 +23,11 @@ body {
   font-size: 19px;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); } /* Ensure elements are duplicated to loop seamlessly */
+}
+
 /* ===============================
   text animation
 =================================*/
